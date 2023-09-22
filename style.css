@@ -1,0 +1,77 @@
+.top {
+    border: 3px solid #fff;
+}
+
+.banner img {
+    float: left;
+    width: auto;
+    height: 115px;
+}
+
+.banner_text {
+    padding: 15px;
+    width: auto;
+    height: auto;
+    float: right;
+    font-size: 65px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(225, 225, 225);
+}
+
+.middle {
+    background-color: rgb(247, 99, 0);
+    margin-top: 115px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+ .btn {
+    text-align: center;
+    margin: 10px;
+ }
+
+ .dis_txt{
+    font-weight: bolder;
+ }
+
+ #DisclaimeBtn {
+    color: #ff0000;
+    font-size: large;
+ }
+
+.program-select {
+    align-items: center;
+    text-align: center;
+}
+
+.select {
+    text-align: center;
+    margin-top: 50px;
+    font-size: larger;
+}
+
+#credit-price-container {
+    text-align: center;
+}
+
+#calculate-price-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#subject-select-container {
+    text-align: ;
+
+}
+
+#calculate-price-container {
+    text-align: center;
+}
+
+#total-price-container {
+    text-align: center;
+    font-size: larger;
+    font-weight: ;
+}
