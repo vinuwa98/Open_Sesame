@@ -1,7 +1,12 @@
+// Retrieve the disclaimerShown value from localStorage
 var disshow = localStorage.getItem('disclaimerShown');
-var selectedSubjects = [];
-var showTotalDegreePrice = false; // Added variable to track when to show Total Degree Price
 
+// Initialize variables
+var selectedSubjects = [];
+var showTotalDegreePrice = false;
+var totalDegreeCredits = 0;
+
+// Define engineering subjects
 var engineeringSubjects = [
     { name: 'Software Engineering Concepts and Programming - EEX3467', creditValue: 4 },
     { name: 'Web Application Development - EEI3346', creditValue: 3 },
@@ -15,20 +20,82 @@ var engineeringSubjects = [
     { name: 'Introduction to Business Studies - EEI3269 - EEM3366', creditValue: 3 },
     { name: 'Programming in Python - EEI3269 - EEI3372', creditValue: 3 },
     { name: 'Introduction to Laws of Sri Lanka - LLJ3265', creditValue: 2 }
+    // Define engineering subjects and their credit values here
+];
+    
+// Define health science subjects
+var healthScienceSubjects = [
+    { name: 'Ethics & History in Nursing - NGU3200', creditValue: 2 },
+    { name: 'Health Communication - NGU3301', creditValue: 3 },
+    { name: 'Psychology for Nursing - NGU3302', creditValue: 3 },
+    { name: 'Sociology for Nursing - NGU3203', creditValue: 2 },
+    { name: 'Fundamentals of Nursing I - NGU3504', creditValue: 5 },
+    { name: 'Simulation Lab Practicum in Nursing I - NGU3305', creditValue: 3 },
+    { name: 'Medical Surgical Nursing I - NGU3406', creditValue: 4 },
+    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
+    { name: 'Human Physiology - BSU3431', creditValue: 4 },
+    { name: 'Microbiology - BSU3235', creditValue: 2 },
+    { name: 'Pharmaceutical Chemistry I - BSU3340', creditValue: 3 },
+    { name: 'Pharmaceutical Chemistry II - BSU3341', creditValue: 3 },
+    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
+    { name: 'Human Physiology - BSU3431', creditValue: 4 },
+    { name: 'Biochemistry - FMU3300', creditValue: 3 },
+    { name: 'Pharmacognosy I - FMU3401', creditValue: 4 },
+    { name: 'Physical Pharmacy - FMU3302', creditValue: 3 },
+    { name: 'Pharmaceutics I - FMU3203', creditValue: 2 },
+    { name: 'Pharmaceutical Microbiology I - FMU3204', creditValue: 2 },
+    { name: 'Health Communication - FMU3205', creditValue: 2 },
+    { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 },
+    { name: 'Basics for Medical Laboratory Sciences - MDU3400', creditValue: 4 },
+    { name: 'Haematology I - MDU3401', creditValue: 4 },
+    { name: 'Medical Bacteriology - MDU3402', creditValue: 4 },
+    { name: 'Clinical Biochemistry I - MDU3303', creditValue: 3 },
+    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
+    { name: 'Work Based Training I - MDU3805', creditValue: 8 },
+    { name: 'Medical Parasitology - MDU3306', creditValue: 3 },
+    { name: 'Health Communication - MDU3207', creditValue: 2 },
+    { name: 'Introduction to Psychology - PLU3301', creditValue: 3 },
+    { name: 'Personality & Individual Differences - PLU3302', creditValue: 3 },
+    { name: 'Motivation and Emotion - PLU3303', creditValue: 3 },
+    { name: 'Ethics in Psychology - PLU3204', creditValue: 2 },
+    { name: 'Academic Writing in Psychology - PLU3205', creditValue: 2 },
+    { name: 'Communication & Study Skills for Psychology - PLU3206', creditValue: 2 },
+    { name: 'Lifespan Development - PLU3307', creditValue: 3 },
+    { name: 'Social Psychology - PLU3308', creditValue: 3 },
+    { name: 'Introduction to Counselling Psychology - PLU3309', creditValue: 3 },
+    { name: 'Biological Psychology - PLU3310', creditValue: 3 },
+    { name: 'Cognitive Psychology - PLU3311', creditValue: 3 },
+    // Define health science subjects and their credit values here
 ];
 
-var totalDegreeCredits = 131; // Total credits required for the degree
+// Define totalDegreeCredits for each degree program
+var degreeCredits = {
+    'software-engineering': 131,
+    'technology-engineering': 128,
+    'industrial-studies': 125,
+    'information-technology': 121,
+    'science': 122,
+    'it-honors': 123,
+    'nursing': 124,
+    'pharmacy': 125,
+    'laboratory-science': 126,
+    'psychology': 127,
+};
 
+// Check if the disclaimer has been shown previously
 if (disshow === null || disshow === 'false') {
     $("#DisclaimerTxt").hide();
 }
 
+// Event handler for the disclaimer button
 $("#DisclaimeBtn").click(function () {
     $("#DisclaimerTxt").fadeToggle();
+    // Toggle the disclaimerShown value in localStorage
     disshow = disshow === 'true' ? 'false' : 'true';
     localStorage.setItem('disclaimerShown', disshow);
 });
 
+// Event handler for the faculty selection
 $("#faculty-select").change(function () {
     var selectedFaculty = $(this).val();
     var programSelect = $("#program-select");
@@ -44,13 +111,19 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="information-technology">Bachelor of Science in Information Technology</option>');
         programSelect.append('<option value="science">Bachelor of Science</option>');
         programSelect.append('<option value="it-honors">Bachelor of Science Honor’s in IT degree</option>');
+    } else if (selectedFaculty === "health-sciences") {
+        programSelect.append('<option value="nursing">Bachelor of Science Honours in Nursing</option>');
+        programSelect.append('<option value="pharmacy">Bachelor of Pharmacy Honours</option>');
+        programSelect.append('<option value="laboratory-science">Bachelor of Medical Laboratory Sciences Honours</option>');
+        programSelect.append('<option value="psychology">Bachelor of Science Honours in Psychology</option>');
     }
 
     programSelect.prop("disabled", false);
-    $("#subject-select-container").hide(); // Hide subjects when faculty is selected
-    updateTotalPrice(); // Added to clear total price when faculty changes
+    $("#subject-select-container").hide();
+    updateTotalPrice();
 });
 
+// Event handler for the program selection
 $("#program-select").change(function () {
     selectedSubjects = [];
     updateTotalPrice();
@@ -61,10 +134,28 @@ $("#program-select").change(function () {
         $("#subject-checkboxes").empty();
 
         var subjects;
-        if (selectedProgram === "software-engineering" || selectedProgram === "technology-engineering" || selectedProgram === "industrial-studies") {
-            subjects = engineeringSubjects;
-        } else if (selectedProgram === "information-technology" || selectedProgram === "science" || selectedProgram === "it-honors") {
-            subjects = naturalSciencesSubjects;
+
+        // Define subjects for each program
+        if (selectedProgram === "software-engineering") {
+            subjects = engineeringSubjects; // Use engineering subjects
+        } else if (selectedProgram === "technology-engineering") {
+            subjects = engineeringSubjects; // Use engineering subjects
+        } else if (selectedProgram === "industrial-studies") {
+            subjects = engineeringSubjects; // Use engineering subjects
+        } else if (selectedProgram === "information-technology") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "science") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "it-honors") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "nursing") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "pharmacy") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "laboratory-science") {
+            subjects = healthScienceSubjects; // Use health science subjects
+        } else if (selectedProgram === "psychology") {
+            subjects = healthScienceSubjects; // Use health science subjects
         }
 
         if (subjects) {
@@ -75,6 +166,8 @@ $("#program-select").change(function () {
     }
 });
 
+
+// Event handler for subject checkboxes
 $("#subject-checkboxes").on("change", ".subject-checkbox", function () {
     if ($(this).is(":checked")) {
         selectedSubjects.push($(this).val());
@@ -87,16 +180,26 @@ $("#subject-checkboxes").on("change", ".subject-checkbox", function () {
     updateTotalPrice();
 });
 
+
+// Event handler for the calculate price button
 $("#calculate-price-container").on("click", "#calculate-price-button", function () {
     showTotalDegreePrice = true; // Set showTotalDegreePrice to true when the button is clicked
     updateTotalPrice();
     $("#total-degree-price").show(); // Show Total Degree Price when the button is clicked
 });
 
+// Event handler for the credit price input
+$("#credit-price").on("input", function () {
+    updateTotalPrice();
+})
+
+// Event handler for the credit price input
 $("#credit-price").on("input", function () {
     updateTotalPrice();
 });
 
+
+// Function to add subject checkboxes dynamically
 function addSubjectCheckboxes(subjects) {
     var subjectCheckboxes = $("#subject-checkboxes");
     for (var i = 0; i < subjects.length; i++) {
@@ -107,23 +210,33 @@ function addSubjectCheckboxes(subjects) {
     }
 }
 
+// Function to update the total price
 function updateTotalPrice() {
     var totalPrice = 0;
     var creditPrice = parseFloat($("#credit-price").val()) || 0;
+    var selectedProgram = $("#program-select").val();
 
     for (var i = 0; i < selectedSubjects.length; i++) {
         var subjectName = selectedSubjects[i];
-        var subject = engineeringSubjects.find(function (subj) {
-            return subj.name === subjectName;
-        });
+        var subject;
+
+        if (selectedProgram === "software-engineering" || selectedProgram === "technology-engineering" || selectedProgram === "industrial-studies") {
+            subject = engineeringSubjects.find(function (subj) {
+                return subj.name === subjectName;
+            });
+        } else {
+            subject = healthScienceSubjects.find(function (subj) {
+                return subj.name === subjectName;
+            });
+        }
 
         if (subject) {
             totalPrice += subject.creditValue * creditPrice;
         }
     }
 
-    var totalDegreePrice = totalDegreeCredits * creditPrice;
-    
+    var totalDegreePrice = degreeCredits[selectedProgram] * creditPrice; // Use the appropriate degree credit value
+
     if (showTotalDegreePrice) {
         $("#total-degree-price").text("Total Degree Price: රු" + totalDegreePrice.toFixed(2)).show();
     } else {
