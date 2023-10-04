@@ -68,6 +68,14 @@ var healthScienceSubjects = [
     // Define health science subjects and their credit values here
 ];
 
+// Define Humanities subjects
+var HumanitiesSubjects = [
+    { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+];
+
+
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
     'software-engineering': 131,
@@ -80,6 +88,11 @@ var degreeCredits = {
     'pharmacy': 125,
     'laboratory-science': 126,
     'psychology': 127,
+    'Arts-Honors': 128,
+    'Language-Teaching': 129,
+    'Laws-Degree': 130,
+    'Social-Sciences': 131,
+    'Community-Development': 132,
 };
 
 // Check if the disclaimer has been shown previously
@@ -116,6 +129,12 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="pharmacy">Bachelor of Pharmacy Honours</option>');
         programSelect.append('<option value="laboratory-science">Bachelor of Medical Laboratory Sciences Honours</option>');
         programSelect.append('<option value="psychology">Bachelor of Science Honours in Psychology</option>');
+    } else if (selectedFaculty === "humanities") {
+        programSelect.append('<option value="Arts-Honors">Bachelor of Arts Honors in Library and Information Studies</option>');
+        programSelect.append('<option value="Language-Teaching">B.A. Degree in English and English Language Teaching</option>');
+        programSelect.append('<option value="Social-Sciences">Bachelor of Arts in Social Sciences</option>');
+        programSelect.append('<option value="Community-Development">Bachelor of Arts in Youth and Community Development</option>');
+        programSelect.append('<option value="Laws-Degree">Bachelor of Laws Degree Programme (LLB)</option>');
     }
 
     programSelect.prop("disabled", false);
@@ -156,7 +175,17 @@ $("#program-select").change(function () {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "psychology") {
             subjects = healthScienceSubjects; // Use health science subjects
-        }
+        } else if (selectedProgram === "Arts-Honors") {
+            subjects = HumanitiesSubjects; // Use health science subjects
+        }  else if (selectedProgram === "Language-Teaching") {
+            subjects = HumanitiesSubjects;
+        } else if (selectedProgram === "Social-Sciences") {
+            subjects = HumanitiesSubjects;
+        } else if (selectedProgram === "Community-Development") {
+            subjects = HumanitiesSubjects;
+        } else if (selectedProgram === "Laws-Degree") {
+            subjects = HumanitiesSubjects;
+        } 
 
         if (subjects) {
             addSubjectCheckboxes(subjects);
@@ -238,12 +267,12 @@ function updateTotalPrice() {
     var totalDegreePrice = degreeCredits[selectedProgram] * creditPrice; // Use the appropriate degree credit value
 
     if (showTotalDegreePrice) {
-        $("#total-degree-price").text("Total Degree Price: රු" + totalDegreePrice.toFixed(2)).show();
+        $("#total-degree-price").text("Total Degree Price: රු " + totalDegreePrice.toFixed(2)).show();
     } else {
         $("#total-degree-price").hide();
     }
 
-    $("#total-price").text("Total Price: රු" + totalPrice.toFixed(2));
+    $("#total-price").text("First Year Total Price: රු " + totalPrice.toFixed(2));
 }
 
 // Initial setup
