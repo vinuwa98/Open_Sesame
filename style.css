@@ -1,87 +1,117 @@
-.top {
-    border: 3px solid #fff;
-}
+    .top {
+        border: 3px solid #fff;
+    }
 
-.banner img {
-    float: left;
-    width: auto;
-    height: 115px;
-}
+    .banner img {
+        float: left;
+        width: auto;
+        height: 115px;
+    }
 
-.banner_text {
-    padding: 15px;
-    width: auto;
-    height: auto;
-    float: right;
-    font-size: 65px;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    background-color: rgb(225, 225, 225);
-}
+    .banner_text {
+        padding: 15px;
+        width: auto;
+        height: 95px;
+        float: right;
+        font-size: 65px;
+        font-weight: bolder;
+        padding: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(225, 225, 225);
+    }
 
-.middle {
-    background-color: rgb(247, 99, 0);
-    margin-top: 115px;
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-}
- .btn {
-    text-align: center;
-    margin: 10px;
- }
+    .middle {
+        background-color: rgb(247, 99, 0);
+        margin-top: 115px;
+        padding: 15px;
+        text-align: center;
+        color: #fff;
+    }
+    .btn {
+        text-align: center;
+        margin: 10px;
+    }
 
- .dis_txt{
-    font-weight: bolder;
- }
+    .dis_txt{
+        font-weight: bolder;
+    }
 
- #DisclaimeBtn {
-    color: #ff0000;
-    font-size: large;
- }
+    #DisclaimeBtn {
+        color: #ff0000;
+        font-size: large;
+    }
 
 
-.select select,
-.program-select select,
-#credit-price {
-    width: 100%;
-    height: 40px;
-    text-align: center;
-}
+    .select select,
+    .program-select select,
+    #credit-price {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
 
-#credit-price-container,
-.program-select,
-#subject-select-container,
-#calculate-price-container,
-#total-price-container {
-    margin-top: 20px;
-    text-align: center;
-}
+    #credit-price-container,
+    .program-select,
+    #subject-select-container,
+    #calculate-price-container,
+    #total-price-container {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-.select h4,
-.program-select h4,
-#credit-price-container h4,
-#subject-select-container h4,
-#total-price-container h4 {
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
+    .select h4,
+    .program-select h4,
+    #credit-price-container h4,
+    #subject-select-container h4,
+    #total-price-container h4 {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
 
-#total-price-container {
-    text-align: center;
-    margin-top: 20px;
-    background-color: #f0f0f0; /* Background color for the square */
-    padding: 20px; /* Padding for the square */
-    border: 2px solid #000; /* Border for the square */
-    border-radius: 10px; /* Rounded corners for the square */
-}
+    #total-price-container {
+        text-align: center;
+        margin-top: 20px;
+        background-color: #f0f0f0; /* Background color for the square */
+        padding: 20px; /* Padding for the square */
+        border: 2px solid #000; /* Border for the square */
+        border-radius: 10px; /* Rounded corners for the square */
+    }
 
-#total-price,
-#total-degree-price {
-    font-size: 30px; /* Adjust the font size as needed */
-    font-weight: bold;
-    margin: 10px 0; /* Margin for spacing between elements */
-}
+    #total-price,
+    #total-degree-price {
+        font-size: 30px; /* Adjust the font size as needed */
+        font-weight: bold;
+        margin: 10px 0; /* Margin for spacing between elements */
+    }
+
+    @media screen and (max-width: 600px) {
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .banner {
+            text-align: center;
+        }
+    
+        .banner img {
+            width: 100%; /* Make the image take up the full width */
+            height: auto; /* Preserve the aspect ratio */
+        }
+    
+        .banner_text {
+            font-size: 24px; /* Adjust font size for mobile */
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    
+        .middle {
+            margin-top: 10px; /* Adjust the margin for spacing */
+        }
+    }

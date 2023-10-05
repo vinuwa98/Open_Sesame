@@ -244,35 +244,56 @@ function updateTotalPrice() {
     var totalPrice = 0;
     var creditPrice = parseFloat($("#credit-price").val()) || 0;
     var selectedProgram = $("#program-select").val();
+    var subjects;
 
-    for (var i = 0; i < selectedSubjects.length; i++) {
-        var subjectName = selectedSubjects[i];
-        var subject;
+    if (
+        selectedProgram === "software-engineering" ||
+        selectedProgram === "technology-engineering" ||
+        selectedProgram === "industrial-studies"
+    ) {
+        subjects = engineeringSubjects;
+    } else if (
+        selectedProgram === "information-technology" ||
+        selectedProgram === "science" ||
+        selectedProgram === "it-honors" ||
+        selectedProgram === "nursing" ||
+        selectedProgram === "pharmacy" ||
+        selectedProgram === "laboratory-science" ||
+        selectedProgram === "psychology"
+    ) {
+        subjects = healthScienceSubjects;
+    } else if (
+        selectedProgram === "Arts-Honors" ||
+        selectedProgram === "Language-Teaching" ||
+        selectedProgram === "Social-Sciences" ||
+        selectedProgram === "Community-Development" ||
+        selectedProgram === "Laws-Degree"
+    ) {
+        subjects = HumanitiesSubjects;
+    }
 
-        if (selectedProgram === "software-engineering" || selectedProgram === "technology-engineering" || selectedProgram === "industrial-studies") {
-            subject = engineeringSubjects.find(function (subj) {
+    if (subjects) {
+        for (var i = 0; i < selectedSubjects.length; i++) {
+            var subjectName = selectedSubjects[i];
+            var subject = subjects.find(function (subj) {
                 return subj.name === subjectName;
             });
-        } else {
-            subject = healthScienceSubjects.find(function (subj) {
-                return subj.name === subjectName;
-            });
-        }
 
-        if (subject) {
-            totalPrice += subject.creditValue * creditPrice;
+            if (subject) {
+                totalPrice += subject.creditValue * creditPrice;
+            }
         }
     }
 
-    var totalDegreePrice = degreeCredits[selectedProgram] * creditPrice; // Use the appropriate degree credit value
+    var totalDegreePrice = degreeCredits[selectedProgram] * creditPrice;
 
     if (showTotalDegreePrice) {
-        $("#total-degree-price").text("Total Degree Price: රු " + totalDegreePrice.toFixed(2)).show();
+        $("#total-degree-price").text("Total Degree Fee: රු " + totalDegreePrice.toFixed(2)).show();
     } else {
         $("#total-degree-price").hide();
     }
 
-    $("#total-price").text("First Year Total Price: රු " + totalPrice.toFixed(2));
+    $("#total-price").text("First Year Total Fee: රු " + totalPrice.toFixed(2));
 }
 
 // Initial setup
