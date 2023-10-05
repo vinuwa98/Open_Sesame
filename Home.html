@@ -4,70 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
    
 </head>
 <body>
-
+    
     <div class="top">
-        <div class="banner"> <img src="banner.png" alt="banner"> </div>
-        <div class="banner_text">To know about your full payment</div>
+        <div class="banner">
+            <img src="banner.png" alt="banner">
+            <div class="banner_text">To know about your full payment</div>
+        </div>
     </div>
     <div class="middle">
         General Inquiries: (+94) 011 2881 000 
         Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
     </div>
-    <p id="DisclaimerTxt" class="dis_txt">This website has no connection with the Open University of Sri Lanka. For your information, the approximate prices  of the programs in the Open University are shown on this website.Due to some reasons, these prices may change and this website does not take any responsibility for those changes.Please note that this website publishes approximate prices for Open University programmes. <br> <br>මෙම වෙබ් අඩවිය ශ්‍රී ලංකා විවෘත විශ්ව විද්‍යාලය සමග කිසිදු සම්බන්දතාවක් නොමැත.ඔබේ දැන ගැනීම සදහා විවෘත විශ්ව විද්‍යාලයේ ඇති වැඩසටහන් වල මිල ගනන් ආසන්න වශයෙන් මෙම වෙබ් අඩවියේ දක්වා ඇත.යම් හේතු නිසාවෙන් මෙම මිල ගනන් වෙනස් විය හැකි අතර එම වෙනස් වීම් සදහා මෙම වෙබ් අඩවිය කිසිදු වගකීමක් දරන්නේ නැත.මෙම වෙබ් අඩවිය විවෘත විශ්ව විද්‍යාලයේ වැඩසටහන් වල ආසන්න මිල ගණන් පළ කරන වෙබ් අඩවියක් බව කරුනාවෙන් සලකන්න.</p>
 
-    <div  class="btn">
-        <button id="DisclaimeBtn"> Click here to read or hide disclaimer</button>
-    </div>
+    <header class="header">
+        <a href="#l" class="logo">Logo</a>
 
-    <div class="select" id="select-container">
-        <h4>Select Your Faculty</h4>
-        <select id="faculty-select">
-            <option value="">Select Faculty</option>
-            <option value="engineering">Faculty of Engineering Technology</option>
-            <option value="natural-sciences">Faculty of Natural Sciences</option>
-            <option value="health-sciences">Faculty of Health Sciences</option>
-            <option value="management">Faculty of Management Studies</option>
-            <option value="humanities">Faculty of Humanities and Social Sciences</option>  
-        </select>
-    </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
 
-    
-    <div class="program-select" id="program-select-container">
-        <h4>Select Your Program</h4>
-        <select id="program-select" disabled>
-            <option value="">Select Program</option>
-        </select>
-    </div>
+        <nav class="navbar">
+            <a href="Home.html" style="--i:0;">Home</a>
+            <a href="Calculate.html" style="--i:1;">Calculate</a>
+            <a href="article.html" style="--i:2;">Article</a>
+            <a href="events.html" style="--i:3;">Events</a>
+            <a href="aboutus.html" style="--i:4;">About Us</a>
+        </nav>
 
-    <div id="credit-price-container">
-        <h4>Enter Credit Price:</h4>
-        <input type="number" id="credit-price" placeholder="Enter credit price" />
-    </div>
-
-    <div id="subject-select-container">
-        <h4>Select Your first year subjects</h4>
-        <div id="subject-checkboxes"></div>
-    </div>
-
-    <div id="calculate-price-container">
-        <button id="calculate-price-button">Check Your Full Amount</button>
-    </div>
-
-    <div id="total-price-container">
-        <h4>Price Details</h4>
-        <p id="total-price"></p>
-        <p id="total-degree-price"></p>
-    </div>
-
-    <script src="scripts.js"></script>
-    
-
-    
-
+    </header>
 </body>
 </html>
