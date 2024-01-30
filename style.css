@@ -199,7 +199,28 @@
         cursor: pointer;
         display: none;
     }
+     body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.section {
+    padding: 10px;
+    background-color: #e0dcdc;
+    text-align: center;
+    margin: 10px;
+}
+
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+    font-size: 1.1em;
+}
 
 
      .content {
@@ -309,6 +330,18 @@
             cursor: pointer;
             display: inline-flex;
         }
+        .section {
+        padding: 20px;
+    }
+    
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+
     
         #check:checked ~ .navbar {
             display: flex;
