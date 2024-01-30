@@ -26,104 +26,6 @@
             line-height: 1.6;
         }
 
-        .top {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .banner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            background-color: #333; /* Dark background color */
-            position: relative;
-        }
-
-        .banner img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .banner_text {
-            font-size: 24px; /* Adjusted font size */
-            font-weight: bold;
-            color: #fff; /* Text color */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for emphasis */
-            position: absolute;
-            z-index: 1;
-        }
-
-        .middle {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .header {
-            background-color: #f46f30; /* Orange color */
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo {
-            color: #fff;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            padding: 12px;
-            transition: background-color 0.3s;
-            margin: 0 10px;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .navbar a:hover {
-            background-color: #333;
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: #f46f30; /* Orange color */
-            }
-
-            .navbar a {
-                padding: 12px;
-                text-align: center;
-                display: block;
-                margin: 5px 0;
-                font-size: 16px;
-            }
-
-            .navbar a:hover {
-                background-color: #333;
-            }
-
-            #check:checked + .navbar {
-                display: flex;
-            }
-        }
-
         /* Styles for the event section */
         .event-section {
             background-color: #f8f8f8;
@@ -174,41 +76,6 @@
 </head>
 <body>
 
-    <!-- Top Section with Banner -->
-    <div class="top">
-        <div class="banner">
-            <img src="banner.png" alt="banner">
-            <div class="banner_text">TO KNOW ABOUT YOUR PAYMENTS</div>
-        </div>
-    </div>
-
-    <!-- Middle Section with Contact Information -->
-    <div class="middle">
-        <p style="margin: 0;">General Inquiries: (+94) 011 2881 000</p>
-        <p style="margin: 0;">Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040</p>
-    </div>
-
-    <!-- Header Section with Logo and Navigation -->
-    <header class="header">
-        <a href="Home.html" class="logo">Logo</a>
-
-        <!-- Hamburger Menu Icon for Mobile -->
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-
-        <!-- Navigation Links -->
-        <nav class="navbar">
-            <a href="Home.html">Home</a>
-            <a href="Calculate.html">Calculate</a>
-            <a href="article.html">Article</a>
-            <a href="events.html">Events</a>
-            <a href="aboutus.html">About Us</a>
-        </nav>
-    </header>
-
     <!-- Event Section -->
     <div class="event-section">
         <div class="event-title">Latest Event Highlights</div>
@@ -223,9 +90,9 @@
 
             <!-- Event 2 -->
             <div class="event-card">
-                <img src= alt="Event 2" class="event-image">
+                <img src="event2.jpg" class="event-image">
                 <h3><center>ART GALLERY</center></h3>
-                <p class="event-description">Description for Event 2. Share information about the activities and special moments during the event.</p>
+                <p class="event-description"><a href="event1-details.html">Click to know more..</a></p>
             </div>
 
             <!-- Add more events as needed -->
