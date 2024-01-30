@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>Calculate</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-       
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        .course-description {
+            display: none;
+        }
+
+        /* Added mobile styles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                text-align: center;
+            }
+
+            .navbar a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                color: white;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+
+            .icons {
+                display: block;
+            }
+
+            .navbar a:not(:first-child) {
+                margin-top: 1px;
+                /* Adjust the spacing between menu items */
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                border: 2px solid #333;
+            }
+
+            th,
+            td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+
+        }
+    </style>
+</head>
+
 <body>
-    
+
     <div class="top">
         <div class="banner">
             <img src="banner.png" alt="banner">
@@ -22,7 +80,7 @@
         </div>
     </div>
     <div class="middle">
-        General Inquiries: (+94) 011 2881 000 
+        General Inquiries: (+94) 011 2881 000
         Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
     </div>
 
@@ -42,7 +100,315 @@
             <a href="events.html" style="--i:3;">Events</a>
             <a href="aboutus.html" style="--i:4;">About Us</a>
         </nav>
+    </header> <br><br>
 
-    </header>
+    <!-- FAQ buttons with descriptions -->
+    <button class="course-button" data-target="common">Common FAQs</button> <br><br>
+    <button class="course-button" data-target="education">Faculty of Education</button> <br> <br>
+    <button class="course-button" data-target="engineering">Faculty of Engineering</button> <br> <br>
+    <button class="course-button" data-target="health-science">Faculty of Health Science</button><br> <br>
+    <button class="course-button" data-target="humanities">Faculty of Humanities & Social Science</button><br> <br>
+    <button class="course-button" data-target="natural-science">Faculty of Natural Sciences</button><br> <br>
+
+    <!-- Course descriptions -->
+    <div id="common" class="course-description">
+        <h2>Common FAQs</h2>
+        <p>
+        <p style="color: brown;"> 1. Will I be an external student?</p> <br>
+
+        All Open University of Sri Lanka (OUSL) students are internal students. We provide comprehensive learner
+        support through study material, tutorial support and other <br>academic assistance to all our students.<br> <br>
+        <p style="color: brown;"> 2. Can I study while being employed?</p><br>
+
+        Yes, our university has been established primarily to cater to adults and the employed.<br>
+        Flexible teaching-learning mode is particularly suited to those employed to achieve their higher educational
+        aspirations.<br>
+        Face-to-face teaching sessions are minimal. No regular lectures as in conventional universities.<br> <br>
+        <p style="color: brown;"> 3. When will applications be called for the Study Programmes?</p> <br>
+
+        Applications are called once every year through OUSL website and newspaper advertisements.<br> <br>
+        <p style="color: brown;"> 4. How can I apply for a study programme?</p> <br>
+
+        Applications must be submitted ONLINE before the deadline, using the link in the OUSL webpage.<br>
+        International students should contact the International Relations Division.<br>
+        Email : dirir@ou.ac.lk ; ird@ou.ac.lk<br> <br>
+        <p style="color: brown;"> 5. What are the entry requirements for admission to a Study Programme?</p><br>
+
+        Please refer the Faculty webpages.<br>
+        <p style="color: brown;"> 6. Is there any possibility to follow any degree programme without G.C.E. A/L
+            qualification?</p> <br>
+
+        Yes. However, you need to follow relevant Advanced Certificate Programme (foundation programme) recommended
+        by the faculty before applying for the programme.<br> <br>
+        <p style="color: brown;">7. How can I get more information about programmes?</p> <br>
+
+        You may download the Student Handbook from the Faculty website.<br> <br>
+        <p style="color: brown;"> 8. How am I informed about the registration?</p> <br>
+
+        Students will be informed individually to register for the Programme on a specified date by e-mail.<br> <br>
+        <p style="color: brown;"> 9. What are the documents that I should produce for the registration?</p><br>
+
+        Educational qualifications, birth certificate, national Identity card (NIC)<br>
+        Two colour passport size photographs<br> <br>
+        <p style="color: brown;"> 10. When will the registration take place?</p> <br>
+
+        Usually, one month after the closing date of the applications <br>
+        Must register on the date specified.<br> <br>
+        <p style="color: brown;"> 11. Do I have to come in-person for the registration?</p> <br>
+
+        Yes, it is essential that you come yourself for registration as there may be clarifications to make.<br>
+        In unavoidable circumstances you may send all relevant documents with copies through a nominated person with
+        a letter of authorisation.<br> <br>
+
+        </p>
+    </div>
+
+    <div id="education" class="course-description">
+        <h2>Faculty of Education</h2>
+        <p>
+        <p style="color: rgb(76, 76, 228);"> 1. What are the Study Programmes offered by the Faculty of Education?</p>
+        <br>
+        Study Programmes are made up of different course combinations for the award of a qualification through a
+        programme such as, Advanced Certificate, Honours <br> Degree, Postgraduate Diploma, and Masters’ Degree
+        programmes. Also, many short courses are offered by the Faculty of Education.<br><br>
+
+        <p style="color: brown;">Certificate Programmes</p><br>
+
+        • Advanced Certificate in Pre School Education Programme (ACPE)<br><br>
+
+        <p style="color: brown;"> Bachelor’s Degree Programmes </p><br><br>
+
+        • Bachelor of Education (Honours) in Natural Sciences [BEd Hons (Natural Sciences)] Degree Programme<br>
+        • Bachelor of Education (Honours) in Drama and Theatre [BEd Hons (Drama and Theatre)] Degree Programme<br>
+        • Bachelor of Education (Honours) in Special Needs Education [BEd Hons (Special Needs Education)] Degree
+        Programme<br>
+        • Bachelor of Education (Honours) in Primary Education [BEd Hons (Primary Education)] Degree Programme<br><br>
+
+        <p style="color: brown;"> Post Graduate Programmes</p><br>
+
+        • Post Graduate Diploma in Education Programme (PGDE)<br>
+        • Post Graduate Diploma in Special Needs Education Programme (PGDSNE)<br>
+
+        <p style="color: brown;">Masters’ Programmes</p><br>
+
+        • Degree of Master of Education Programme(MEd)<br>
+        • Degree of Master of Teacher Education Programme (MTE)<br>
+        • Degree of Master of Arts in Education Programme(MAE)<br>
+        • Degree of Master of Special Needs Education Programme (MEdSNE)<br>
+
+        <p style="color: rgb(76, 76, 228);"> 2. Are these programmes full time or part time?</p><br>
+
+        • All programmes are full time and will be taught using open and distance learning mode.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 3. What are the short courses conducted by the Faculty of Education?</p>
+        <br>
+
+        Short Courses<br>
+        • Short Course on Research Methodology<br>
+        • Short Course on Child Development<br>
+        • Short Course on Teaching Children with Learning Disabilities<br>
+        • Short Course on Inclusive Education<br>
+
+        <p style="color: rgb(76, 76, 228);">4. Will I be an external student?</p><br>
+
+        • All Open University of Sri Lanka (OUSL) students are internal students. We provide comprehensive learner
+        support through study material, tutorial support and<br> other academic assistance to all our students.<br><br>
+
+        <p style="color: rgb(76, 76, 228);">5. Can I study while being employed?</p><br>
+
+        • Yes, our university has been established primarily to cater to adults and the employed.<br>
+        • Flexible teaching-learning mode is particularly suited to those employed to achieve their higher
+        educational aspirations.<br>
+        • Face-to-face teaching sessions are minimal. No regular lectures as in conventional universities.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 6. When will applications be called for the Study Programmes?</p><br>
+
+        • Applications are called once every year through newspaper advertisements and university website.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 7. How can I apply for a study programme?</p><br>
+
+        • Applications must be submitted ONLINE before the deadline, using the link in the OUSL webpage.<br>
+        • International students should contact the International Relations Division.<br>
+        Email : dirir@ou.ac.lk ; ird@ou.ac.lk<br><br>
+
+        <p style="color: rgb(76, 76, 228);">8. What are the entry requirements for admission to a Study Programme?</p>
+        <br>
+
+        • Please refer the latest Student Handbook in the Faculty webpage.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 9. Is there any possibility to follow any degree programme without G.C.E.
+            A/L qualification?</p><br>
+
+        • Yes. However, you need to follow relevant Advanced Certificate Programme (foundation programme)
+        recommended by the faculty before applying for the<br> programme.<br><br>
+
+        <p style="color: rgb(76, 76, 228);">10. How can I get more information about programmes?</p><br>
+
+        • You may download the Student Handbook from the Faculty website.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 11. Are there Selection Tests for study programmes?</p><br>
+
+        There are selection tests for the following programmes.<br>
+        • Bachelor of Education (Honours) in Primary Education Degree Programme<br>
+        • Post Graduate Diploma in Education Programme<br>
+        • Degree of Master of Education Programme<br><br>
+
+        <p style="color: rgb(76, 76, 228);">12. Are there interviews for study programmes?</p>
+
+        There are interviews for the following programmes.<br>
+        • Degree of Master of Teacher Education Programme<br>
+        • Degree of Master of Arts in Education Programme<br>
+        • Degree of Master of Special Needs Education Degree Programme<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 13. Is there any age limit to follow any programme?</p><br>
+
+        • Should be over 18 years.<br><br>
+
+        <p style="color: rgb(76, 76, 228);">14. How am I informed about the registration?</p><br>
+
+        • Students will be informed individually to register for the Programme on a specified date by e-mail.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 15. What are the documents that I should produce for the registration?</p>
+        <br>
+
+        • Educational qualifications, birth certificate, national Identity card (NIC)<br>
+        • Two passport size colour photographs<br><br>
+
+        <p style="color: rgb(76, 76, 228);">16. When will the registration take place?</p><br>
+
+        • Usually, one month after the closing date of the applications<br>
+        • Must register on the date specified.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 17. Do I have to come in-person for the registration?</p><br>
+
+        • Yes, it is essential that you come yourself for registration as there may be clarifications to make.<br>
+        • In unavoidable circumstances you may send all relevant documents with copies through a nominated person
+        with a letter of authorisation.<br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 18. How much will I have to pay?</p><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Programme</th>
+                    <th>Amount (Approximately)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Certificate in Pre-School Education Programme Level 2</td>
+                    <td>Rs. 20,000/-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bachelor of Education (Honours) in Natural Sciences Degree Programme Level 5 & 6</td>
+                    <td>Rs. 146,320/-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor of Education (Honours) in Drama and Theatre Degree Programme Level 5 & 6</td>
+                    <td>Rs. 247,420/-</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bachelor of Education (Honours) in Special Needs Education Degree Programme Level 5 & 6</td>
+                    <td>Rs. 150,200/-</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bachelor of Education (Honours) in Primary Education Degree Programme Levels 3, 4, 5 & 6</td>
+                    <td>Rs. 206,000/-</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Post Graduate Diploma in Education Programme</td>
+                    <td>Rs. 69,100/-</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Post Graduate Diploma in Special Needs Education Programme</td>
+                    <td>Rs. 80,000/-</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Degree of Master of Education Programme</td>
+                    <td>Rs. 90,000/-</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Degree of Master of Teacher Education Programme</td>
+                    <td>Rs. 111,000/-</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Degree of Master of Special Needs Education Programme</td>
+                    <td>Rs. 120,000/-</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Degree of Master of Arts in Education Programme</td>
+                    <td>Not yet offered</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+        </p>
+    </div>
+
+    <div id="engineering" class="course-description">
+        <h2>Faculty of Engineering</h2>
+        <p>Discover engineering courses covering various disciplines.</p>
+    </div>
+
+    <div id="health-science" class="course-description">
+        <h2>Faculty of Health Science</h2>
+        <p>Learn about health science courses and programs offered.</p>
+    </div>
+
+    <div id="humanities" class="course-description">
+        <h2>Faculty of Humanities & Social Science</h2>
+        <p>Explore courses in humanities, social sciences, and related fields.</p>
+    </div>
+
+    <div id="natural-science" class="course-description">
+        <h2>Faculty of Natural Sciences</h2>
+        <p>Discover courses in natural sciences such as physics, chemistry, and biology.</p>
+    </div>
+
+    <script>
+        // Add event listeners for course buttons
+        var buttons = document.querySelectorAll('.course-button');
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var targetId = button.getAttribute('data-target');
+                var targetDescription = document.getElementById(targetId);
+
+                // Hide all descriptions
+                var allDescriptions = document.querySelectorAll('.course-description');
+                allDescriptions.forEach(function (description) {
+                    description.style.display = 'none';
+                });
+
+                // Show the selected description
+                if (targetDescription) {
+                    targetDescription.style.display = 'block';
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('check').addEventListener('change', function () {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show', this.checked);
+        });
+    </script>
 </body>
+
 </html>
