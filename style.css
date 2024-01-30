@@ -267,6 +267,50 @@
     .gallery a:hover .overlay {
         opacity: 1;
     }
+
+    .g2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .g2 a {
+        position: relative;
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        width: calc(33.33% - 20px); /* 3 items per row */
+    }
+    
+    .g2 a:hover {
+        transform: scale(1.05);
+    }
+    
+    .g2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+    }
+    .o2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .g2 a:hover .o2 {
+        opacity: 1;
+    }
+    
+    
+    
     @media screen and (max-width: 600px) {
         .top {
             display: flex;
