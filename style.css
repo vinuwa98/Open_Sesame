@@ -100,9 +100,6 @@
     margin: 10px 0; /* Margin for spacing between elements */
 }
 
-/* Importing Google Fonts for Poppins with specific weight and display settings */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
-
 /* Styling for the header section */
 .header {
     top: 0;
@@ -125,23 +122,6 @@
     height: 100%;
     background: #ffffff;
     z-index: -1;
-}
-
-/* Pseudo-element styling for the header gradient effect */
-.header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90dge, transparent, rgba(255,255,255,.4), transparent );
-    transition: .5s;
-}
-
-/* Header gradient effect on hover */
-.header:hover::after {
-    left: 100%;
 }
 
 /* Styling for the navbar with background color and full width */
@@ -171,21 +151,6 @@
     content: "";
     clear: both;
     display: table;
-}
-
-/* Styling for the checkbox used for mobile menu */
-#check {
-    display: none;
-}
-
-/* Styling for the icons used in mobile menu */
-.icons {
-    position: absolute;
-    right: 5%;
-    font-size: 2.8rem;
-    color: #ff0000;
-    cursor: pointer;
-    display: none;
 }
 
 /* Styling for the content section with padding */
