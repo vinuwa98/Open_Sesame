@@ -1,46 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Title of the document -->
     <title>Calculate</title>
+
+    <!-- External JavaScript files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-   
+
+    <!-- Internal styles for the document -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        .top {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background-color: #333; /* Dark background color */
+            position: relative;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner_text {
+            font-size: 24px; /* Adjusted font size */
+            font-weight: bold;
+            color: #fff; /* Text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for emphasis */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .middle {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #f46f30; /* Orange color */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #f46f30; /* Orange color */
+            }
+
+            .navbar a {
+                padding: 12px;
+                text-align: center;
+                display: block;
+                margin: 5px 0;
+                font-size: 16px;
+            }
+
+            .navbar a:hover {
+                background-color: #333;
+            }
+
+            #check:checked + .navbar {
+                display: flex;
+            }
+        }
+
+        /* Styles for the event section */
+        .event-section {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .event-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .event-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .event-card {
+            width: 300px;
+            margin: 20px 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .event-description {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!-- Top Section with Banner -->
     <div class="top">
         <div class="banner">
             <img src="banner.png" alt="banner">
-            <div class="banner_text">To know about your full payment</div>
+            <div class="banner_text">TO KNOW ABOUT YOUR PAYMENTS</div>
         </div>
     </div>
+
+    <!-- Middle Section with Contact Information -->
     <div class="middle">
-        General Inquiries: (+94) 011 2881 000 
-        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
+        <p style="margin: 0;">General Inquiries: (+94) 011 2881 000</p>
+        <p style="margin: 0;">Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040</p>
     </div>
 
+    <!-- Header Section with Logo and Navigation -->
     <header class="header">
-        <a href="#l" class="logo">Logo</a>
+        <a href="Home.html" class="logo">Logo</a>
 
+        <!-- Hamburger Menu Icon for Mobile -->
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
 
+        <!-- Navigation Links -->
         <nav class="navbar">
-            <a href="Home.html" style="--i:0;">Home</a>
-            <a href="Calculate.html" style="--i:1;">Calculate</a>
-            <a href="article.html" style="--i:2;">Article</a>
-            <a href="events.html" style="--i:3;">Events</a>
-            <a href="aboutus.html" style="--i:4;">About Us</a>
+            <a href="Home.html">Home</a>
+            <a href="Calculate.html">Calculate</a>
+            <a href="article.html">Article</a>
+            <a href="events.html">Events</a>
+            <a href="aboutus.html">About Us</a>
         </nav>
-        <p>hshsjjakks</p>
-   </header>
+    </header>
+
+    <!-- Event Section -->
+    <div class="event-section">
+        <div class="event-title">Latest Event Highlights</div>
+
+        <div class="event-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="event1.jpg" alt="Event 1" class="event-image">
+                <h3><center>SOFTFEST</center></h3>
+                <p class="event-description"><a href="event1-details.html">Click to know more..</a></p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src= alt="Event 2" class="event-image">
+                <h3><center>ART GALLERY</center></h3>
+                <p class="event-description">Description for Event 2. Share information about the activities and special moments during the event.</p>
+            </div>
+
+            <!-- Add more events as needed -->
+
+        </div>
+    </div>
+    <!-- End of Event Section -->
+
 </body>
 </html>
