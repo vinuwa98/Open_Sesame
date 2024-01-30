@@ -111,32 +111,21 @@
     z-index: 100;
 }
 
-/* Pseudo-element styling for the header background */
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: -1;
-}
 
 /* Styling for the navbar with background color and full width */
 .navbar {
     background-color: rgb(237, 124, 49);
     width: 100%; /* Set the width to 100% */
     box-sizing: border-box; /* Include padding and border in the element's total width */
+    text-align: center; /* Align the content to the right */
 }
 
 /* Styling for navbar links */
 .navbar a {
-    float: left;
-    display: block;
+    display: inline-block; /* Display links as inline-block to make them align horizontally */
     color: white;
     text-align: center;
-    padding: 20px 5%; /* Reduce padding to prevent exceeding the screen width */
+    padding: 20px 5%;
     text-decoration: none;
 }
 
