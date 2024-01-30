@@ -192,3 +192,19 @@
 .gallery a:hover .overlay {
     opacity: 1;
 }
+/* Styling for sections*/
+.section {
+    padding: 10px;
+    background-color: #d8d8d8;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+    font-size: 1.1em;
+}
