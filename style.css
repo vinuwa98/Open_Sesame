@@ -1,336 +1,241 @@
-    .top {
-        border: 3px solid #fff;
-    }
+/* Styling for the top section */
+.top {
+    border: 3px solid #fff;
+}
 
-    .banner img {
-        float: left;
-        width: auto;
-        height: 115px;
-    }
+/* Styling for the banner image */
+.banner img {
+    float: left;
+    width: auto;
+    height: 115px;
+}
 
-    .banner_text {
-        padding: 15px;
-        width: auto;
-        height: 95px;
-        float: right;
-        font-size: 65px;
-        font-weight: bolder;
-        padding: 10px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;
-        background-color: rgb(225, 225, 225);
-    }
+/* Styling for the banner text */
+.banner_text {
+    padding: 15px;
+    width: auto;
+    height: 95px;
+    float: right;
+    font-size: 65px;
+    font-weight: bolder;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(225, 225, 225);
+}
 
-    .middle {
-        background-color: rgb(247, 99, 0);
-        margin-top: 115px;
-        padding: 15px;
-        text-align: center;
-        color: #fff;
-    }
-    .btn {
-        text-align: center;
-        margin: 10px;
-    }
+/* Styling for the middle section */
+.middle {
+    background-color: rgb(247, 99, 0);
+    margin-top: 115px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
 
-    .dis_txt{
-        font-weight: bolder;
-    }
+/* Button styling */
+.btn {
+    text-align: center;
+    margin: 10px;
+}
 
-    #DisclaimeBtn {
-        color: #ff0000;
-        font-size: large;
-    }
+/* Styling for text with increased font weight */
+.dis_txt {
+    font-weight: bolder;
+}
 
+/* Styling for a specific button with a color and font size */
+#DisclaimeBtn {
+    color: #ff0000;
+    font-size: large;
+}
 
-    .select select,
-    .program-select select,
-    #credit-price {
-        width: 100%;
-        height: 40px;
-        text-align: center;
-    }
+/* Styling for various select elements */
+.select select,
+.program-select select,
+#credit-price {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
 
-    #credit-price-container,
-    .program-select,
-    #subject-select-container,
-    #calculate-price-container,
-    #total-price-container {
-        margin-top: 20px;
-        text-align: center;
-    }
+/* Styling for containers related to credit price, subjects, and total price */
+#credit-price-container,
+.program-select,
+#subject-select-container,
+#calculate-price-container,
+#total-price-container {
+    margin-top: 20px;
+    text-align: center;
+}
 
-    .select h4,
-    .program-select h4,
-    #credit-price-container h4,
-    #subject-select-container h4,
-    #total-price-container h4 {
-        font-family: sans-serif;
-        font-weight: bold;
-        text-align: center;
-        width: 100%;
-        font-size: 20px;
-    }
+/* Styling for headings within select containers */
+.select h4,
+.program-select h4,
+#credit-price-container h4,
+#subject-select-container h4,
+#total-price-container h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
 
-    #total-price-container {
-        text-align: center;
-        margin-top: 20px;
-        background-color: #f0f0f0; /* Background color for the square */
-        padding: 20px; /* Padding for the square */
-        border: 2px solid #000; /* Border for the square */
-        border-radius: 10px; /* Rounded corners for the square */
-    }
+/* Styling for the total price container with background color and border */
+#total-price-container {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Background color for the square */
+    padding: 20px; /* Padding for the square */
+    border: 2px solid #000; /* Border for the square */
+    border-radius: 10px; /* Rounded corners for the square */
+}
 
-    #total-price,
-    #total-degree-price {
-        font-size: 30px; /* Adjust the font size as needed */
-        font-weight: bold;
-        margin: 10px 0; /* Margin for spacing between elements */
-    }
+/* Styling for total price and total degree price */
+#total-price,
+#total-degree-price {
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin: 10px 0; /* Margin for spacing between elements */
+}
 
-    /*nav styles*/
-    
+/* Importing Google Fonts for Poppins with specific weight and display settings */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
-    @media screen and (max-width: 600px) {
-        .top {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .banner {
-            text-align: center;
-        }
-    
-        .banner img {
-            width: 100%; /* Make the image take up the full width */
-            height: auto; /* Preserve the aspect ratio */
-        }
-    
-        .banner_text {
-            font-size: 38px; /* Adjust font size for mobile */
-            text-align: center;
-            margin-top: 10px;
-            padding: 10px;
-        }
-    
-        .middle {
-            margin-top: 10px; /* Adjust the margin for spacing */
-        }
-       
-    }
+/* Styling for the header section */
+.header {
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
 
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
-    
-    .header {
-        top: 0;
-        left: 0;
-        width: auto;
-        padding: 1.3rem 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }
+/* Pseudo-element styling for the header background */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+}
 
-    .header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #ffffff;
-        z-index: -1;
-    }
+/* Pseudo-element styling for the header gradient effect */
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90dge, transparent, rgba(255,255,255,.4), transparent );
+    transition: .5s;
+}
 
-    .header::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90dge, transparent, rgba(255,255,255,.4), transparent );
-        transition: .5s;
-    }
+/* Header gradient effect on hover */
+.header:hover::after {
+    left: 100%;
+}
 
-    .header:hover::after {
-        left: 100%;
-    }
+/* Styling for the navbar with background color and full width */
+.navbar {
+    background-color: rgb(237, 124, 49);
+    width: 100%; /* Set the width to 100% */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
 
-    
+/* Styling for navbar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 5%; /* Reduce padding to prevent exceeding the screen width */
+    text-decoration: none;
+}
 
-    .navbar {
-        background-color: rgb(237, 124, 49);
-        width: 100%; /* Set the width to 100% */
-        box-sizing: border-box; /* Include padding and border in the element's total width */
-    }
-    
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px 5%; /* Reduce padding to prevent exceeding the screen width */
-        text-decoration: none;
-    }
-    
-    .navbar a:hover {
-        background-color: #333;
-    }
-    
-    .navbar::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+/* Styling for navbar links on hover */
+.navbar a:hover {
+    background-color: #333;
+}
 
-    #check {
-        display: none;
-    }
+/* Clearfix for the navbar */
+.navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-    .icons{
-        position: absolute;
-        right: 5%;
-        font-size: 2.8rem;
-        color:#ff0000;
-        cursor: pointer;
-        display: none;
-    }
+/* Styling for the checkbox used for mobile menu */
+#check {
+    display: none;
+}
 
+/* Styling for the icons used in mobile menu */
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #ff0000;
+    cursor: pointer;
+    display: none;
+}
 
-
-     .content {
+/* Styling for the content section with padding */
+.content {
     padding: 20px;
-    }
+}
 
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-    
-    .gallery a {
-        position: relative;
-        flex: 0 0 calc(33.33% - 20px);
-        margin: 10px;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-    }
-    
-    .gallery a:hover {
-        transform: scale(1.05);
-    }
-    
-    .gallery img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+/* Styling for the gallery section with flex layout and padding */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
-    .overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-    
-    .gallery a:hover .overlay {
-        opacity: 1;
-    }
-    @media screen and (max-width: 600px) {
-        .top {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .banner {
-            text-align: center;
-        }
-    
-        .banner img {
-            width: 100%;
-            height: auto;
-        }
-    
-        .banner_text {
-            font-size: 38px;
-            text-align: center;
-            margin-top: 10px;
-            padding: 10px;
-        }
-    
-        .middle {
-            margin-top: 10px;
-        }
-    
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1.3rem 0;
-            background-color: #f0f0f0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 100;
-        }
-    
-       
-    
-        .navbar a {
-            float: none;
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
+/* Styling for each gallery item with position, flex, margin, and transition */
+.gallery a {
+    position: relative;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
 
-        .gallery a {
-            flex: 0 0 calc(50% - 20px);
-        }
-    
-        .icons {
-            position: absolute;
-            right: 5%;
-            top: 15px;
-            font-size: 2.8rem;
-            color: #ff0000;
-            cursor: pointer;
-            display: inline-flex;
-        }
-    
-        #check:checked ~ .navbar {
-            display: flex;
-        }
-    
-        #check:checked ~ .icons #menu-icon {
-            display: none;
-        }
-    
-        #check:checked ~ .icons #close-icon {
-            display: block;
-        }
-    
-        #check:not(:checked) + .header {
-            display: none;
-        }
-    
-        #check:checked + .header {
-            display: flex;
-        }
+/* Styling for gallery items on hover with scale transformation */
+.gallery a:hover {
+    transform: scale(1.05);
+}
 
-        .navbar a {
-            padding: 20px; /* Adjust padding for mobile view */
-        }
-    }
-    
+/* Styling for gallery images with full width and border radius */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling for the overlay text in the gallery */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Styling for the overlay text on hover */
+.gallery a:hover .overlay {
+    opacity: 1;
+}
