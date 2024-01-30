@@ -162,9 +162,9 @@
     
 
     .navbar {
-        background-color: black;
-        width: 160%;
-        
+        background-color: rgb(247, 99, 0);
+        width: 100%; /* Set the width to 100% */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
     }
     
     .navbar a {
@@ -172,9 +172,8 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 20px 120px;
+        padding: 20px 5%; /* Reduce padding to prevent exceeding the screen width */
         text-decoration: none;
-        
     }
     
     .navbar a:hover {
@@ -329,4 +328,9 @@
         #check:checked + .header {
             display: flex;
         }
+
+        .navbar a {
+            padding: 20px; /* Adjust padding for mobile view */
+        }
     }
+    
