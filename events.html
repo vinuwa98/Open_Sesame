@@ -9,13 +9,35 @@
     <title>Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+    
+            // Array of messages to loop through
+            const messages = [
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
+            ];
+    
+            let index = 0;
+    
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+    
+        });
+    </script>
    
 </head>
 <body>
     
     <div class="top">
         <div class="banner">
-            <img src="banner.png" alt="banner">
+            <img src="Open sesame.png" alt="banner">
             <div class="banner_text">To know about your full payment</div>
         </div>
     </div>
@@ -25,7 +47,6 @@
     </div>
 
     <header class="header">
-
         <nav class="navbar">
             <a href="Home.html" style="--i:0;">Home</a>
             <a href="Calculate.html" style="--i:1;">Calculate</a>

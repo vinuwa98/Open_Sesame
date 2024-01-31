@@ -10,6 +10,28 @@
     <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+    
+            // Array of messages to loop through
+            const messages = [
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
+            ];
+    
+            let index = 0;
+    
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+    
+        });
+    </script>
     <style>
         .course-description {
             display: none;
@@ -75,7 +97,7 @@
 
     <div class="top">
         <div class="banner">
-            <img src="banner.png" alt="banner">
+            <img src="Open sesame.png" alt="banner">
             <div class="banner_text">To know about your full payment</div>
         </div>
     </div>
@@ -345,7 +367,591 @@
                     <td>Not yet offered</td>
                 </tr>
             </tbody>
+
+        </table><br><br>
+
+        <p style="color: rgb(76, 76, 228);"> 19. Should I pay full amount at once during the registration?</p><br>
+
+        • Payment can be made in four installments per year.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);"> 20. Will I be able to obtain a Mahapola or other Bursary awarded by the Open University?</p><br>
+        
+        • You are entitled to Mahapola bursaries if you are unemployed.<br>
+        • But you may be entitled to other bursaries awarded by the OUSL on merit/needs basis.<br>
+        • Student Handbook and OUSL website provide information on bursaries.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);"> 21. Can I add/drop courses after registration?</p><br>
+        
+        • Yes, the OUSL permits to add or drop courses during the ‘add/drop’ period, and to drop courses on the ‘drop date’.<br>
+        • Add/drop’ period and ‘drop date’ are informed through the Faculty webpage.<br>
+        • If you fail to drop a course during the ‘add/drop’ period but drop it subsequently, the fees applicable to that course will be forfeited. However, this will not have <br> any effects on the grades that you would get for this course after a subsequent registration.
+        • If you fail to drop a course even on the ‘drop date’, you are considered to have failed the course, and if you register again and follow the course the highest<br> grade you are entitled to is C grade.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);">22. Can I withdraw from the programme after registration?</p><br>
+        
+        Yes, you can. If you withdraw from the programme before the ‘add/drop’ period, you are refunded 90% of the course fees paid. Otherwise, all the course fees<br> paid will be forfeited.<br>
+        
+        <p style="color: rgb(76, 76, 228);"> 23. Can I get exemptions for prior qualifications?</p><br>
+        
+        • Yes, you may apply for specific exemptions from courses based on relevant prior qualifications.<br>
+        • Please refer Student Handbook for exemptions approved by the Faculty.<br>
+        • Applications can also be submitted for evaluation of other qualifications for exemptions. Application form can be downloaded from Faculty webpage.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);">24. Can I follow the Study Programme from any centre?</p><br>
+        
+        • All study programmes are conducted at Colombo Regional Centre.<br>
+        • Also, most of the study programs are conducted in Regional and study centres. For more information read the student handbook of the relevant study<br> programme.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);"> 25. What is the medium of Instruction?</p><br>
+        
+        • In most of the programmes medium of instruction are Sinhala, Tamil, and English.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);">26. What is distance mode of teaching-learning?</p><br>
+        
+        • Can pursue learning in your own time and pace, irrespective of location, age, or other barriers.<br>
+        • Learn via self-study course materials in the form of written texts and audio/visual aids.<br>
+        • Minimum number of face-to-face interactive sessions are conducted called ‘dayschools’.<br>
+        • Extensive support through online components.<br>
+        • Day schools (discussions), tutorials, and assignments facilitate learning. Day schools can be face-to-face or via web conferencing (such as Zoom platform).<br>
+        • Other teaching-learning activities include compulsory practical components, continuous assessments, and final examinations.<br><br>
+        
+        <p style="color: rgb(76, 76, 228);">27. What is the duration of the Programme(s)?</p><br>
+        <head>
+            <style>
+                table {
+                    width: 80%;
+                    border-collapse: collapse;
+                    margin: 20px;
+                }
+
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #fff;
+                }
+
+                tr:hover {
+                    background-color: #f5f5f5;
+                }
+
+                td {
+                    border-bottom: 2px solid pink; /* Pink color for row lines */
+                }
+
+                th:first-child, td:first-child {
+                    border-left: 2px solid white; /* White color for the first column line */
+                }
+
+                th:last-child, td:last-child {
+                    border-right: 2px solid white; /* White color for the last column line */
+                }
+            </style>
+        </head>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Programme</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Certificate in Pre School Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bachelor of Education (Honours) in Natural Sciences Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor of Education (Honours) in Drama and Theatre Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bachelor of Education (Honours) in Special Needs Education Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bachelor of Education (Honours) in Primary Education</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Post Graduate Diploma in Education Programme</td>
+                    <td>15 months</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Post Graduate Diploma in Special Needs Education Programme</td>
+                    <td>15 months</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Degree of Master of Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Degree of Master of Teacher Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Degree of Master of Arts in Education Programme</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Degree of Master of Special Needs Education Programme</td>
+                    <td>2 years</td>
+                </tr>
+            </tbody>
+        </table> <br><br> 
+
         </table>
+
+        <p style="color: rgb(76, 76, 228);">28. What is a credit?</p><br>
+
+• A “Credit” is the academic value of an OUSL course.<br>
+• Time you will have to allocate for studying a course depends on its credit rating.<br>
+• One Credit = 50 notional learning hours.<br><br>
+
+<p style="color: rgb(76, 76, 228);">29. When will I be issued my course material?</p><br>
+
+• Course material will be issued during the registration in print/ soft copy format after the registration.<br><br>
+
+<p style="color: rgb(76, 76, 228);">30. How can I get further information and help?</p><br>
+
+• Faculty Prospectus and Student Handbook: These publications provide important information in more detail for prospective and registered students.<br>
+• Orientation and counselling sessions: Provide advice on how to plan studies before registration to a Programme.<br>
+• Contact staff: After registering students can meet academic staff in relevant department and get advice/ clarify doubts on academic related queries.
+• Contact Faculty Help Desk- Ms. Morin Perera on 071-6368235 /raper@ou.ac.lk<br>
+• Contact relevant Head of the Department.<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    <title>Contact Table</title>
+</head>
+
+<body>
+
+    <h2>Contact Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Telephone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Head/Department of Secondary and Tertiary Education</td>
+                <td>112881425<br>112881231</td>
+                <td>hdste@ou.ac.lk</td>
+            </tr>
+            <tr>
+                <td>Head/Early Childhood and Primary Education</td>
+                <td>112881400</td>
+                <td>hdecpe@ou.ac.lk</td>
+            </tr>
+            <tr>
+                <td>Head/Special Needs Education</td>
+                <td>112881015</td>
+                <td>hdsne@ou.ac.lk</td>
+            </tr>
+            <tr>
+                <td>Head/Educational Leadership and Management</td>
+                <td>112881668</td>
+                <td>hdelm@ou.ac.lk</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+
+        </p>
+    </div>
+
+    <div id="engineering" class="course-description">
+        <h2>Faculty of Engineering</h2>
+        <p>
+            <p style="color: rgb(76, 76, 228);"> 1. What are the Study Programmes offered by the Faculty of Engineering Technology?</p><br>
+
+            Study Programmes are made up of different course combinations for the award of a qualification through a programme such as Advanced Certificate, Diploma,<br> Higher Diploma or Honours Degree;<br>
+            
+           <p style="color: black;" ><b>Bachelors Degree Programmes</b></p><br>
+            
+            Bachelor of Technology Honours in Engineering [BTech Hons]<br>
+            Bachelor of Industrial Studies Honours [BIS Hons]<br>
+            Bachelor of Software Engineering Honours [BSE Hons]<br><br>
+            <p style="color: black;" ><b> Higher Diploma Programmes</b></p><br>
+            
+            Higher Diploma in Technology<br>
+            Higher Diploma in Industrial Studies<br>
+            Higher Diploma in Software Engineering<br><br>
+            <p style="color: black;" ><b>Diploma Programme</b></p><br>
+            
+            Diploma in Information Systems and Technology (Not Offered in 2021)<br><br>
+            <p style="color: black;" ><b>  Advanced Certificate Programme</b></p><br>
+            
+            Advanced Certificate in Apparel Technology<br><br>
+             
+            
+            <p style="color: rgb(76, 76, 228);"> 2. What are the specialisations in each degree programme?</p><br>
+            
+            <p style="color: black;" ><b> Bachelor of Technology Hounours in Engineering</b></p><br>
+            
+            Agricultural Engineering<br>
+            Civil Engineering<br>
+            Computer Engineering<br>
+            Electrical Engineering<br>
+            Electronic and Communication Engineering<br>
+            Mechanical Engineering<br>
+            Mechatronics Engineering<br>
+            Textile and Clothing Engineering<br><br>
+            <p style="color: black;" ><b> Bachelor of Industrial Studies Hounours</b></p><br>
+            
+            Agriculture<br>
+            Apparel production and management<br>
+            Fashion design and product development<br>
+            Textile manufacture<br><br>
+            <p style="color: rgb(76, 76, 228);">3. Are these programmes full time or part time?</p><br>
+            
+            All programmes are full time and will be taught using open and distance learning mode.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 4. Will I be an external student?</p><br>
+            
+            All Open University of Sri Lanka (OUSL) students are internal students. We provide comprehensive learner support through study material, tutorial support and other <br>academic assistance to all our students.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 5. Can I study while being employed?</p><br>
+            
+            Yes, our university has been established primarily to cater to adults and the employed.<br>
+            Flexible teaching-learning mode is particularly suited to those employed to achieve their higher educational aspirations.<br>
+            Face-to-face teaching sessions are minimal. No regular lectures as in conventional universities.<br><br>
+            <p style="color: rgb(76, 76, 228);">  6. When will applications be called for the Study Programmes?</p><br>
+            
+            Applications are called once every year through newspaper advertisements and university website.<br>
+            For Academic Year 2021/2022: Applications will be called soon.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 7. How can I apply for a study programme?</p><br>
+            
+            Applications must be submitted ONLINE before the deadline, using the link in the OUSL webpage.<br>
+            International students should contact the International Relations Division. Email dirir@ou.ac.lk; ird@ou.ac.lk.<br><br>
+            <p style="color: rgb(76, 76, 228);">8. What are the entry requirements for admission to a Study Programme?</p><br>
+            
+            Please refer the latest Student Guidebook in the OUSL webpage<br><br>
+            <p style="color: rgb(76, 76, 228);"> 9. Is there any possibility to follow any degree programme without G.C.E. A/L qualification?</p><br>
+            
+            Yes. However, You need to follow relevant Advanced Certificate Programme (foundation programme) recommended by the Faculty before registering for the<br> programme.<br><br>
+            <p style="color: rgb(76, 76, 228);">10. How can I get more information about programmes?</p><br>
+            
+            You may download the Student Guidebook from the Faculty website<br><br>
+            <p style="color: rgb(76, 76, 228);"> 11. Are there Selection Tests for study programmes?</p><br>
+            
+            There is a selection test ONLY for the Bachelor of Software Engineering programme.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 12. Is there any age limit to follow any prgramme?</p><br>
+            
+            Should be over 18 years<br><br>
+            <p style="color: rgb(76, 76, 228);"> 13. How am I informed about the registration?</p><br>
+            
+            Students will be informed individually to register for the Programme on a specified date by e-mail.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 14. What are the documents that I should produce for the registration?</p><br>
+            
+            Educational qualifications, birth certificate, national Identity card (NIC)<br>
+            Two colour passport size photographs<br><br>
+            <p style="color: rgb(76, 76, 228);">15. When will the registration take place?</p><br>
+            
+            Usually, one month after the closing date of the applications<br>
+            Must register on the date specified.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 16. Do I have to come in-person for the registration?</p><br>
+            
+            Yes, it is essential that you come yourself for registration as there may be clarifications to make.<br>
+            In unavoidable circumstances you may send all relevant documents with copies through a nominated person with a letter of authorisation.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 17. How much will I have to pay?</p><br>
+            
+             
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Programme</th>
+                <th>Amount (Rs.) Approximately</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>Bachelor of Technology Honours in Engineering</td>
+                <td>300,000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bachelor of Industrial Studies Honours</td>
+                <td>275,000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bachelor of Software Engineering</td>
+                <td>475,000</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Advanced Certificate in Apparel Technology</td>
+                <td>45,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+           
+             
+            
+                 <p style="color: rgb(76, 76, 228);"> 18. Should I pay full amount at once during the registration?</p><br>
+            
+            Payment can be made in two or four installments per year.<br><br>
+            <p style="color: rgb(76, 76, 228);">19. Will I be able to obtain a Mahapola or other Bursary awarded by the Open University?</p><br>
+            
+            You are NOT entitled to Mahapola bursaries if employed.<br>
+            But you may be entitled to other bursaries awarded by the OUSL on merit/need basis.<br>
+            Student Guidebook and OUSL website provide information on bursaries.<br><br>
+            <p style="color: rgb(76, 76, 228);">20. Can I add/drop courses after registration?</p><br>
+            
+            Yes, the OUSL permits to add or drop courses during the ‘add/drop’ period, and to drop courses on the ‘drop date’.<br>
+            Add/drop’ period and ‘drop date’ are informed through the Faculty webpage<br>
+            If you fail to drop a course during the ‘add/drop’ period but drop it subsequently, the fees applicable to that course will be forfeited. However, this will not have any <br>effects on the grades that you would get for this course after a subsequent registration.<br>
+            If you fail to drop a course even on the ‘drop date’, you are considered to have failed the course, and if you register again and follow the course the highest grade you <br>are entitled to is C grade.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 21. Can I withdraw from the programme after registration?</p><br>
+            
+            Yes, you can. If you withdraw from the programme before the ‘add/drop’ period, you are refunded 90% of the course fees<br> paid. Otherwise, all the course fees paid will be forfeited.<br><br>
+            
+            <p style="color: rgb(76, 76, 228);">22. Can I get exemptions for prior qualifications?</p><br>
+            
+            Yes, You may apply for specific exemptions from courses based on relevant prior qualifications.<br>
+            Please refer Student Guidebook for exemptions approved by the Faculty.<br>
+            Applications can also be submitted for evaluation of other qualifications for exemptions. Application form can be downloaded from Faculty webpage.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 23. Can I follow the Study Programme from any center?</p><br>
+            
+            Most academic activities are conducted at Colombo Regional Centre.<br>
+            However, Continuous Assessment Tests and Final Examinations are conducted at Regional centres.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 24. What is the medium of Instruction?</p><br>
+            
+            Medium of instruction is English.<br><br>
+            <p style="color: rgb(76, 76, 228);">25. What is distance mode of teaching-learning?</p><br>
+            
+            Can pursue learning in your own time and pace, irrespective of location, age or other barriers.<br>
+            Face-to-face teaching sessions are minimal. Noregular lectures as in conventional universities.<br>
+            Learn via self-study course material in the form of written texts& audio/visual aids.<br>
+            Extensive support through online components.<br>
+            Day schools (discussions), tutorials and assignments facilitate learning. Day schools can be face-to-face or via web conferencing (such as Zoom platform).<br>
+            Other teaching-learning activities include compulsory practical components, continuous assessments, and final examinations.<br><br>
+            <p style="color: rgb(76, 76, 228);">26. What is the duration of the Programme(s)?</p><br>
+
+           
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    <title>Programme Duration Table</title>
+</head>
+
+<body>
+
+    <h2>Programme Duration Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Programme</th>
+                <th>Minimum Years</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bachelor of Technology Honours in Engineering</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Industrial Studies Honours</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Software Engineering Honours</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Higher Diploma in Technology</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Higher Diploma in Industrial Studies</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Higher Diploma in Software Engineering</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Advanced Certificate in Apparel Technology</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<br><br>
+            
+            
+
+
+       
+<p style="color: rgb(76, 76, 228);">27. What is a credit?</p><br>
+            A “Credit” is the academic value of an OUSL course.<br>
+            Time you will have to allocate for studying a course depends on its credit rating.<br>
+            One Credit = 50 notional learning hours.<br><br>
+            <p style="color: rgb(76, 76, 228);">  28. When will I be issued my course material?</p><br>
+            
+            Course material will be issued during the registration in print/ soft copy format after the registration.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 29. How can I obtain the activity diary?</p><br>
+            
+            Activity Diary for the whole year will be displayed in Faculty webpage and the MyOUSL (the online student portal) before starting academic activities.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 30. How can I get further information and help?</p><br><br>
+            
+            Faculty Prospectus and Student Guidebook: These publications provide important information in more detail for prospective and registered students.<br>
+            Orientation and counselling sessions: Provide advice on how to plan studies before registration to a Programme.<br>
+            Contact staff: After registering students can meet academic staff in relevant department and get advice/ clarify doubts on academic related queries.<br>
+            Contact relevant Head of Department:<br>
+            
+
+
+
+
 
 
 
@@ -355,19 +961,343 @@
         </p>
     </div>
 
-    <div id="engineering" class="course-description">
-        <h2>Faculty of Engineering</h2>
-        <p>Discover engineering courses covering various disciplines.</p>
-    </div>
-
     <div id="health-science" class="course-description">
         <h2>Faculty of Health Science</h2>
-        <p>Learn about health science courses and programs offered.</p>
+        <p>
+
+            <p style="color: rgb(76, 76, 228);"> 1. What are the Study Programmes offered by the Faculty of Health Sciences?</p><br>
+
+            Bachelor of Science Honours in Nursing [BSc Hons in Nursing]<br>
+            Bachelor of Medical Laboratory Sciences Honours [BMLS Hons]<br>
+            Bachelor of Pharmacy Honours [BPharm Hons]<br>
+            Bachelor of Science Honours in Psychology [BSc Hons in Psychology]<br>
+            Higher Diploma in Psychology is an interim qualification of BSc Hons in Psychology programme.<br><br>
+            
+            <p style="color: rgb(76, 76, 228);">  2. When will applications be called for the Study Programmes?</p><br>
+            
+            Applications are called once every year through newspaper advertisements.<br>
+            For Academic Year 2020/2021: Applications are called between 11th October to 11th November 2020.<br>
+            Applications must be submitted ONLINE before deadline, using the link in OUSL homepage.<br>
+            International students should contact the International Relations Division. Email dirir@ou.ac.lk; ird@ou.ac.lk.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 3. What are the qualifications required for admission to a Study Programme?</p><br>
+            
+            Check the Faculty Prospectus in the Faculty of Health Sciences webpage: https://www.ou.ac.lk/faculty-of-health-sciences/<br>
+            Or use the following link: https://www.ou.ac.lk/programmes-health-sciences/<br>
+            
+            Please note:<br>
+            
+            BSc Hons in Nursing, BMLS Hons and BPharm Hons: Applicants must possess prior qualifications in respective field (those having only A/Levels are not qualified for <br>admission).<br>
+            BSc Hons in Psychology: May apply only with A/Level in any study stream or equivalent qualifications.<br>
+            In addition, selection for admission to programmes is based on a Selection test.<br><br>
+            <p style="color: rgb(76, 76, 228);">4. Can I know more about the Selection Test?</p><br>
+            
+            All four Programmes conduct a written selection test. For BSc Hons Psychology degree only, applicants are also required to face an oral examination.<br>
+            BSc Nursing & BSc Psychology Hons programmes: Written selection test will be computer based.<br>
+            BMLS Hons & BPharm Hons Degree programmes: Selection test will be paper based.<br>
+            Nature of the written selection test is informed in the Prospectus.<br>
+            When youapply online, an admission card will be generated informing the date, time, centre, and other details. Must produce a printout of the admission card and NIC <br>at the test.<br>
+            Cut off mark for the selection of students is determined by each department.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 5. How will I know if I am selected for admission to the Programme of Study?</p><br>
+            
+            List of provisionally selected students based on a merit list, will be published in the OUSL website.<br><br>
+            <p style="color: rgb(76, 76, 228);">  6. If selected, how do I register for the Programme of Study?</p><br>
+            
+            Selected students will be informed individually to register for the Programme on a specified date.<br>
+            Must submit originals and photocopies of your educational and other required documents to confirm the registration.<br>
+            Must register on the date specified. Registration after the scheduled registration period will not be permitted.<br>
+            Following initial registration as a new student, youmust re-register each academic year.<br><br>
+            <p style="color: rgb(76, 76, 228);">7. Do I have to come myself for registration?</p><br>
+            
+            Yes, it is essential that you come yourself for registration as there are decisions to make.<br>
+            In unavoidable circumstances you may send all relevant documents with copies through another person with a letter of authorization.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 8. Can I change courses after registration?</p><br>
+            
+            Yes,the OUSL permits to add or drop courses on the add/drop date and to drop courses on the drop date.<br>
+            Add and drop datesare informed in the Prospectus.<br>
+            You cannot drop or add courses for an academic year beyond these dates, without academic and/or financial penalties.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 9. Can I withdraw from the whole programme after registration?</p><br>
+            
+            You can withdraw from the programme with a refund, provided a request is made before the add/drop date.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 10. How much will I have to pay?</p><br><br>
+            
+            Fees payable for the Academic year 2020/2021 by local students are:<br>
+            
+            <!DOCTYPE html>
+            <html lang="en">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    table {
+                        width: 80%;
+                        border-collapse: collapse;
+                        margin: 20px;
+                    }
+            
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                    }
+            
+                    th {
+                        background-color: #f2f2f2;
+                    }
+            
+                    tr:nth-child(even) {
+                        background-color: #f9f9f9;
+                    }
+            
+                    tr:nth-child(odd) {
+                        background-color: #fff;
+                    }
+            
+                    tr:hover {
+                        background-color: #f5f5f5;
+                    }
+                </style>
+                <title>Fee Structure Table</title>
+            </head>
+            
+            <body>
+            
+                <h2>Fee Structure Table</h2>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fee (Rs)</th>
+                            <th>Nursing</th>
+                            <th>BMLS</th>
+                            <th>BPharm</th>
+                            <th>Psychology</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Registration Fee</td>
+                            <td>400.00</td>
+                            <td>400.00</td>
+                            <td>400.00</td>
+                            <td>400.00</td>
+                        </tr>
+                        <tr>
+                            <td>Facility Fee</td>
+                            <td>1500.00</td>
+                            <td>1500.00</td>
+                            <td>1500.00</td>
+                            <td>1500.00</td>
+                        </tr>
+                        <tr>
+                            <td>Library Facility Fee</td>
+                            <td>100.00</td>
+                            <td>100.00</td>
+                            <td>100.00</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Laboratory Facility Fee</td>
+                            <td>-</td>
+                            <td>1500.00</td>
+                            <td>1500.00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Refundable Lab Fee</td>
+                            <td>-</td>
+                            <td>2500.00</td>
+                            <td>2500.00</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition fees per credit: Levels 03 & 04</td>
+                            <td>-</td>
+                            <td>2870.00</td>
+                            <td>2870.00</td>
+                            <td>2720.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition fees per credit: Levels 05 & 06</td>
+                            <td>3030.00</td>
+                            <td>3100.00</td>
+                            <td>3110.00</td>
+                            <td>3030.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </body>
+            
+            </html><br><br>
+
+            Total amount payable will depends on number of courses a student offers for theacademic year. Also, fees can be paid in two installments for each academic year.<br>
+Fees stated in the above table are applicable only for academic year 2020/2021 and may change in subsequent years.<br><br>
+            
+
+
+
+<p style="color: rgb(76, 76, 228);"> 11. Can I get exemptions for prior qualifications?</p><br>
+            
+            Yes, you may request for specific exemptions from courses based on relevant prior qualifications.<br>
+            Specific qualifications with respect to BSc Hons in Nursing, BMLS Hons and BPharm Hons programmes have been evaluated, and exemptions are granted as <br>informed in the Prospectus.<br>
+            Applications can also be submitted for evaluation of other qualifications for exemptions. Application form can be downloaded from Faculty of Health Sciences <br>webpage (https://www.ou.ac.lk/downloads-health-sc/). Must apply with proof before 25.02.2021.<br>
+            Total exemptions granted shall not exceed 60 credits. Exemptions granted should be claimed at Registration for them to be valid.<br><br>
+            <p style="color: rgb(76, 76, 228);">  12. How are the Study Programmes conducted and when will they commence?</p><br>
+            
+            Academic activities of programmes will be conducted adopting the distance mode of teaching-learning.<br>
+            Medium of instructions is English.<br>
+            Most academic activities are conducted only at Colombo Regional Centre. Continuous Assessment Tests and Final examinations are conducted at Regional centres.<br>
+            Activities of the Academic Year 2020/2021 are tentatively scheduled to commence in April 2021.<br><br>
+            <p style="color: rgb(76, 76, 228);">13. What is the distance mode of teaching-learning?</p><br>
+            
+            Can pursue learning in your own time and pace, irrespective of location, age or other barriers.<br>
+            Face-to-face teaching sessions are minimal. Noregular lectures as in conventional universities.<br>
+            Learn via self-study course material in the form of written texts& audio/visual aids.<br>
+            Extensive support through online components.<br>
+            Day schools (discussions), tutorials and assignments facilitate learning. Day schools can be face-to-face or via web conferencing (such as Zoom platform).<br>
+            Other teaching-learning activities include compulsory practical components, continuous assessments, and final examinations.<br><br>
+            <p style="color: rgb(76, 76, 228);">14. Can I study while being employed?</p><br>
+            
+            Yes, our university has been established primarily to cater to adults and the employed.<br>
+            Flexible teaching-learning mode is particularly suited for those employed to achieve their higher educational aspirations.<br><br>
+            <p style="color: rgb(76, 76, 228);">15. Will I be an external student?</p><br>
+            
+            All OUSL students are internal students. We provide comprehensive learner support through study material, tutorial support and other academic assistance to all our <br>students.<br><br>
+            <p style="color: rgb(76, 76, 228);"> 16. What is the duration of the Honours Degree Programme and how many credits can I register for?</p><br>
+            
+            All Honours degree programmes can be completed in a minimum of 04 years. Those who obtain exemptions, may even complete in less than 4 years.<br>
+            Can register for a minimum of 8 credits and a maximum of 30 credits for an academic year. You can decide the workload within this credit limit, depending on the time available for studies.<br>
+            You decide how many years you will spend on completing the programme (whether to complete within minimum duration or take more time).<br>
+            Should complete requirements for the award of the honoursdegree within 12 academic years from the initial registration to the programme.<br><br>
+            <p style="color: rgb(76, 76, 228);">17. What is a credit?</p><br>
+            
+            A “credit” is the academic value of an Open University course.<br>
+            Time you will have to allocate for studying a course depends on its credit rating.<br>
+            One credit = 50 notional learning hours.<br><br>
+            <p style="color: rgb(76, 76, 228);">18. When will I be issued my study material?</p><br>
+            
+            Course material will be given in electronic format after your registration to the programme is confirmed.<br>
+            Timetables and other relevant course information will also be provided via departmental webpage and the MyOUSL (the online student portal).<br><br>
+            <p style="color: rgb(76, 76, 228);">19. Will I be able to obtain a Mahapola or other Bursary awarded by the Open University?</p><br>
+            
+            You are NOT entitled for Mahapola bursaries if employed.<br>
+            But you may be entitled for other bursaries awarded by the OUSL on merit/need basis.<br>
+            Student handbook and OUSL website provide information on bursaries& how to apply.<br><br>
+            <p style="color: rgb(76, 76, 228);">20. How can I get further information and help?</p><br>
+            
+            Faculty Prospectus and Undergraduate Guidebook: These handbooks provide important information in more detail for prospective and registered students.<br>
+            Orientation and counselling sessions: Provide advice on how to plan studies before registration to a Programme. Each student will also be assigned a personal<br> academic counsellor.<br>
+            Contact staff: After registering, meet academic staff in relevant department and getadvice/clarify doubts on academic related queries.<br>
+            Contact relevant Head of Department:<br>
+
+            
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    table {
+                        width: 80%;
+                        border-collapse: collapse;
+                        margin: 20px;
+                    }
+            
+                    th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: left;
+                    }
+            
+                    th {
+                        background-color: #f2f2f2;
+                    }
+            
+                    tr:nth-child(even) {
+                        background-color: #f9f9f9;
+                    }
+            
+                    tr:nth-child(odd) {
+                        background-color: #fff;
+                    }
+            
+                    tr:hover {
+                        background-color: #f5f5f5;
+                    }
+                </style>
+                <title></title>
+            </head>
+            
+            <body>
+            
+                
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>Post</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Head, Nursing</td>
+                            <td>011-2881325</td>
+                            <td>hdnurse@ou.ac.lk</td>
+                            <td>P.O. Box 21, Nugegoda</td>
+                        </tr>
+                        <tr>
+                            <td>Head, MLS</td>
+                            <td>011-2881146</td>
+                            <td>hdmedilab@ou.ac.lk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Head, Pharmacy</td>
+                            <td>011-2881131</td>
+                            <td>hdpharma@ou.ac.lk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Head, Basic Sc.</td>
+                            <td>011-2881000 ext 663</td>
+                            <td>hdbasicsc@ou.ac.lk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Head, Psychology and Counselling</td>
+                            <td>011-2881000 ext 702</td>
+                            <td>hdpcoun@ou.ac.lk</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </body>
+            
+            </html>
+            
+
+            Contact Dean/Health Sciences on 011-2881075 or email: deanhealth@ou.ac.lk. Assistant Registrar on 011-2881355 or email: arhealth@ou.ac.lk<br>
+            OUSL Counselling Unitat Health Centre, Central campus: Aprofessional counsellor is available during weekdaysto offer free and confidential psychological <br>counselling services to promote mental health and wellbeing of registered students. Telephone: 0112881361(ext: 361); WhatsApp: 070 251 0820; Email: <br>counsellor@ou.ac.lk<br><br>
+
+           
+
+
+
+
+
+
+
+
+        </p>
     </div>
 
     <div id="humanities" class="course-description">
         <h2>Faculty of Humanities & Social Science</h2>
-        <p>Explore courses in humanities, social sciences, and related fields.</p>
+        <p>Under Constrictions.</p>
     </div>
 
     <div id="natural-science" class="course-description">
