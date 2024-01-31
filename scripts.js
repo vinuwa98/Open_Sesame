@@ -104,6 +104,38 @@ var MechanicalEngineeringSubjects = [
     // Define engineering subjects and their credit values here
 ];
 
+// Define Textile Engineering subjects
+var TextileEngineeringSubjects = [
+    { name: 'Garment Analysis and Sewing Machinery - TAX3331', creditValue: 3 },
+    { name: 'Fibre Science and Technology  - TAX3458', creditValue: 4 },
+    { name: 'Yarn Manufacture I - TAX3459', creditValue: 4 },
+    { name: 'Introduction to Electrical Engineering - EEX3410', creditValue: 4 },
+    { name: 'Software Development for Engineers - EEX3417', creditValue: 4 },
+    { name: 'Fluid Mechanics and Thermodynamics - DMX3401', creditValue: 2 },
+    { name: 'Workshop Practice - DMX3107', creditValue: 1 },
+    { name: 'Introduction to Engineering Design Graphics - DMX3305', creditValue: 4 },
+    { name: 'Engineering Mathematics I - MHZ3551', creditValue: 5 },
+    { name: 'Engineering Mathematics II - MHZ3552 ', creditValue: 5 },
+    { name: 'Communication Skills - AGM3203', creditValue: 2 }
+    // Define engineering subjects and their credit values here
+];
+
+// Define Agriculture-studies subjects
+var AgriculturestudiesSubjects = [
+    { name: 'Land and Soil Tillage Management - AGI3450', creditValue: 4 },
+    { name: 'Agricultural Biology - AGI3551', creditValue: 4 },
+    { name: 'Crop Production and Technology - AGI3552', creditValue: 4 },
+    { name: 'Plant Protection - AGI3553', creditValue: 4 },
+    { name: 'Communication Skills - AGM3203', creditValue: 4 },
+    { name: 'Principles of Economics - AGM3354', creditValue: 2 },
+    { name: 'Mathematics for Agriculture - MHZ3458', creditValue: 1 },
+    { name: 'Introduction to Computer Application - TAK3237', creditValue: 4 },
+    { name: 'Engineering Mathematics I - MHZ3551', creditValue: 5 },
+    { name: 'Engineering Mathematics II - MHZ3552 ', creditValue: 5 },
+    { name: 'Communication Skills - AGM3203', creditValue: 2 }
+    // Define engineering subjects and their credit values here
+];
+
     
 // Define health science subjects
 var healthScienceSubjects = [
@@ -166,7 +198,9 @@ var degreeCredits = {
     'Computer-engineering': 152,
     'Electrical-engineering': 152,
     'Mechanical-engineering': 152,
-    'industrial-studies': 125,
+    'Mechatronics-engineering' : 152,
+    'Textile-engineering': 152,
+    'industrial-studies': 130,
     'information-technology': 121,
     'science': 122,
     'it-honors': 123,
@@ -211,7 +245,10 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="Mechanical-engineering">Bachelor of Science Honours in Engineering – Mechanical Engineering</option>');
         programSelect.append('<option value="Mechatronics-engineering">Bachelor of Science Honours in Engineering – Mechatronics Engineering</option>');
         programSelect.append('<option value="Textile-engineering">Bachelor of Science Honours in Engineering – Textile & Clothing</option>');
-        programSelect.append('<option value="industrial-studies">Bachelor of Industrial Studies Honours</option>');
+        programSelect.append('<option value="Agriculture-studies">Bachelor of Industrial Studies Honours – Agriculture</option>');
+        programSelect.append('<option value="Apparel-studies">Bachelor of Industrial Studies Honours – Apparel Production and Management</option>');
+        programSelect.append('<option value="Fashion-studies">Bachelor of Industrial Studies Honours – Fashion Design and Product Development</option>');
+        programSelect.append('<option value="Textile-studies">Bachelor of Industrial Studies Honours – Textile Manufacture Specialization</option>');
     } else if (selectedFaculty === "natural-sciences") {
         programSelect.append('<option value="information-technology">Bachelor of Science in Information Technology</option>');
         programSelect.append('<option value="science">Bachelor of Science</option>');
@@ -259,6 +296,10 @@ $("#program-select").change(function () {
             subjects = MechanicalEngineeringSubjects; // Use Mechanical Engineering subjects
         } else if (selectedProgram === "Electrical-engineering") {
             subjects = ElectricalEngineeringSubjects; // Use Electrical Engineering subjects
+        } else if (selectedProgram === "Mechatronics-engineering") {
+            subjects = MechanicalEngineeringSubjects; // Use Mechatronics Engineering subjects
+        } else if (selectedProgram === "Textile-engineering") {
+            subjects = TextileEngineeringSubjects; // Use Textile Engineering subjects
         } else if (selectedProgram === "it-honors") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "nursing") {
@@ -365,6 +406,14 @@ function updateTotalPrice() {
         selectedProgram === "Mechanical-engineering"
     ) {
         subjects = MechanicalEngineeringSubjects;
+    }else if (
+        selectedProgram === "Mechatronics-engineering"
+    ) {
+        subjects = MechanicalEngineeringSubjects; 
+    }else if (
+        selectedProgram === "Textile-engineering"
+    ) {
+        subjects = TextileEngineeringSubjects;          
     }else if (
         selectedProgram === "information-technology" ||
         selectedProgram === "science" ||
