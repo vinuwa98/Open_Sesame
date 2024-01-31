@@ -71,6 +71,39 @@ var CivilEngineeringSubjects = [
     { name: 'Communication Skills - AGM3203', creditValue: 2 }
     // Define engineering subjects and their credit values here
 ];
+
+// Define Electrical Engineering subjects
+var ElectricalEngineeringSubjects = [
+    { name: 'Electrical Measurements and Instrumentation - EEX3331', creditValue: 3 },
+    { name: 'Communications and Computer Technology - EEX3336', creditValue: 3 },
+    { name: 'Electronics I - EEX3351', creditValue: 3 },
+    { name: 'Introduction to Electrical Engineering - EEX3410', creditValue: 4 },
+    { name: 'Software Development for Engineers - EEX3417', creditValue: 4 },
+    { name: 'Fluid Mechanics and Thermodynamics - DMX3401', creditValue: 4 },
+    { name: 'Introduction to Engineering Design Graphics - DMX3305', creditValue: 3 },
+    { name: 'Workshop Practice - DMX3107', creditValue: 1 },
+    { name: 'Engineering Mathematics I - MHZ3551', creditValue: 5 },
+    { name: 'Engineering Mathematics II - MHZ3552 ', creditValue: 5 },
+    { name: 'Communication Skills - AGM3203', creditValue: 2 }
+    // Define engineering subjects and their credit values here
+];
+
+// Define Mechanical Engineering subjects
+var MechanicalEngineeringSubjects = [
+    { name: 'Fluid Mechanics and Thermodynamics - DMX3401', creditValue: 4 },
+    { name: 'Engineering Mechanics - DMX3302', creditValue: 3 },
+    { name: 'Introduction to Engineering Materials  - DMX3203', creditValue: 2 },
+    { name: 'Applied Electronics - DMX3304', creditValue: 3 },
+    { name: 'Introduction to Engineering Design Graphics - DMX3305', creditValue: 3 },
+    { name: 'Introduction to Manufacturing Processes - DMX3206', creditValue: 2 },
+    { name: 'Workshop Practice - DMX3107', creditValue: 1 },
+    { name: 'Software Development for Engineers - EEX3417', creditValue: 4 },
+    { name: 'Engineering Mathematics I - MHZ3551', creditValue: 5 },
+    { name: 'Engineering Mathematics II - MHZ3552 ', creditValue: 5 },
+    { name: 'Communication Skills - AGM3203', creditValue: 2 }
+    // Define engineering subjects and their credit values here
+];
+
     
 // Define health science subjects
 var healthScienceSubjects = [
@@ -131,7 +164,8 @@ var degreeCredits = {
     'Agricultural-engineering': 152,
     'Civil-engineering': 152,
     'Computer-engineering': 152,
-    'technology-engineering': 128,
+    'Electrical-engineering': 152,
+    'Mechanical-engineering': 152,
     'industrial-studies': 125,
     'information-technology': 121,
     'science': 122,
@@ -218,11 +252,13 @@ $("#program-select").change(function () {
         } else if (selectedProgram === "Agricultural-engineering") {
             subjects = AgriculturalEngineeringSubjects; // Use Agricultural engineering subjects
         } else if (selectedProgram === "Civil-engineering") {
-            subjects =  CivilEngineeringSubjects; // Use engineering subjects
+            subjects =  CivilEngineeringSubjects; // Use Civil engineering subjects
         } else if (selectedProgram === "Computer-engineering") {
-            subjects = ComputerEngineeringSubjects; // Use health science subjects
-        } else if (selectedProgram === "science") {
-            subjects = healthScienceSubjects; // Use health science subjects
+            subjects = ComputerEngineeringSubjects; // Use Computer Engineering subjects
+        } else if (selectedProgram === "Mechanical-engineering") {
+            subjects = MechanicalEngineeringSubjects; // Use Mechanical Engineering subjects
+        } else if (selectedProgram === "Electrical-engineering") {
+            subjects = ElectricalEngineeringSubjects; // Use Electrical Engineering subjects
         } else if (selectedProgram === "it-honors") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "nursing") {
@@ -321,6 +357,14 @@ function updateTotalPrice() {
         selectedProgram === "Computer-engineering"
     ) {
         subjects = ComputerEngineeringSubjects;
+    }else if (
+        selectedProgram === "Electrical-engineering"
+    ) {
+        subjects = ElectricalEngineeringSubjects;
+    }else if (
+        selectedProgram === "Mechanical-engineering"
+    ) {
+        subjects = MechanicalEngineeringSubjects;
     }else if (
         selectedProgram === "information-technology" ||
         selectedProgram === "science" ||
