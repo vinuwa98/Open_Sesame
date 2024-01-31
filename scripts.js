@@ -123,19 +123,56 @@ var TextileEngineeringSubjects = [
 // Define Agriculture-studies subjects
 var AgriculturestudiesSubjects = [
     { name: 'Land and Soil Tillage Management - AGI3450', creditValue: 4 },
-    { name: 'Agricultural Biology - AGI3551', creditValue: 4 },
-    { name: 'Crop Production and Technology - AGI3552', creditValue: 4 },
-    { name: 'Plant Protection - AGI3553', creditValue: 4 },
-    { name: 'Communication Skills - AGM3203', creditValue: 4 },
-    { name: 'Principles of Economics - AGM3354', creditValue: 2 },
-    { name: 'Mathematics for Agriculture - MHZ3458', creditValue: 1 },
-    { name: 'Introduction to Computer Application - TAK3237', creditValue: 4 },
-    { name: 'Engineering Mathematics I - MHZ3551', creditValue: 5 },
-    { name: 'Engineering Mathematics II - MHZ3552 ', creditValue: 5 },
-    { name: 'Communication Skills - AGM3203', creditValue: 2 }
+    { name: 'Agricultural Biology - AGI3551', creditValue: 5 },
+    { name: 'Crop Production and Technology - AGI3552', creditValue: 5 },
+    { name: 'Plant Protection - AGI3553', creditValue: 5 },
+    { name: 'Communication Skills - AGM3203', creditValue: 2 },
+    { name: 'Principles of Economics - AGM3354', creditValue: 3 },
+    { name: 'Mathematics for Agriculture - MHZ3458', creditValue: 4 },
+    { name: 'Introduction to Computer Application - TAK3237', creditValue: 2 },
     // Define engineering subjects and their credit values here
 ];
 
+// Define Apparel-studies subjects
+var ApparelstudiesSubjects = [
+    { name: 'Fibre to Fabric - AGI3450', creditValue: 4 },
+    { name: 'Garment Analysis and Sewing Machinery - TAX3331', creditValue: 3 },
+    { name: 'Garment Accessories - TAI3332', creditValue: 3 },
+    { name: 'Pattern Construction - TAI3533', creditValue: 5 },
+    { name: 'Basics of Human Resource Management - TAM3234', creditValue: 3 },
+    { name: 'Management Studies - TAM3535', creditValue: 5 },
+    { name: 'Statistics for Industrial Studies - MHZ3576', creditValue: 5 },
+    { name: 'Introduction to Computer Applications - TAK3237', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Fashion-studies subjects
+var FashionstudiesSubjects = [
+    { name: 'Fibre to Fabric - AGI3450', creditValue: 4 },
+    { name: 'Garment Analysis and Sewing Machinery - TAX3331', creditValue: 3 },
+    { name: 'Garment Accessories - TAI3332', creditValue: 3 },
+    { name: 'Pattern Construction - TAI3533', creditValue: 5 },
+    { name: 'Basics of Human Resource Management - TAM3234', creditValue: 3 },
+    { name: 'Management Studies - TAM3535', creditValue: 5 },
+    { name: 'Statistics for Industrial Studies - MHZ3576', creditValue: 5 },
+    { name: 'Fashion Illustration I - TAI3270', creditValue: 2 },
+    { name: 'Introduction to Computer Applications - TAK3237', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Textile-studies subjects
+var TextilestudiesSubjects = [
+    { name: 'Fibre Science & Technology - TAX3458', creditValue: 4 },
+    { name: 'Yarn Manufacture I - TAX3459 ', creditValue: 4 },
+    { name: 'Garment Analysis and Sewing Machinery - TAX3331', creditValue: 3 },
+    { name: 'Garment Accessories - TAI3332', creditValue: 3 },
+    { name: 'Statistics for Industrial Studies - MHZ3576', creditValue: 5 },
+    { name: 'Basics of Human Resource Management - TAM3234', creditValue: 2 },
+    { name: 'Management Studies - TAM3535', creditValue: 5 },
+    { name: 'Fashion Illustration I - TAI3270', creditValue: 2 },
+    { name: 'Introduction to Computer Applications - TAK3237', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
     
 // Define health science subjects
 var healthScienceSubjects = [
@@ -200,7 +237,10 @@ var degreeCredits = {
     'Mechanical-engineering': 152,
     'Mechatronics-engineering' : 152,
     'Textile-engineering': 152,
-    'industrial-studies': 130,
+    'Agriculture-studies' : 130,
+    'Apparel-studies' : 130,
+    'Fashion-studies' : 130,
+    'Textile-studies' : 130,
     'information-technology': 121,
     'science': 122,
     'it-honors': 123,
@@ -300,6 +340,14 @@ $("#program-select").change(function () {
             subjects = MechanicalEngineeringSubjects; // Use Mechatronics Engineering subjects
         } else if (selectedProgram === "Textile-engineering") {
             subjects = TextileEngineeringSubjects; // Use Textile Engineering subjects
+        } else if (selectedProgram === "Agriculture-studies") {
+            subjects = AgriculturestudiesSubjects; // Use Agriculture Studies subjects
+        } else if (selectedProgram === "Apparel-studies") {
+            subjects = ApparelstudiesSubjects; // Use Apparel Studies subjects
+        } else if (selectedProgram === "Fashion-studies") {
+            subjects = FashionstudiesSubjects; // Use Fasion Studies subjects
+        } else if (selectedProgram === "Textile-studies") {
+            subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
         } else if (selectedProgram === "it-honors") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "nursing") {
@@ -413,7 +461,23 @@ function updateTotalPrice() {
     }else if (
         selectedProgram === "Textile-engineering"
     ) {
-        subjects = TextileEngineeringSubjects;          
+        subjects = TextileEngineeringSubjects; 
+    }else if (
+        selectedProgram === "Agriculture-studies"
+    ) {
+        subjects = AgriculturestudiesSubjects;    
+    }else if (
+        selectedProgram === "Apparel-studies"
+    ) {
+        subjects = ApparelstudiesSubjects;  
+    }else if (
+        selectedProgram === "Fashion-studies"
+    ) {
+        subjects = FashionstudiesSubjects;   
+    }else if (
+        selectedProgram === "Textile-studies"
+    ) {
+        subjects = TextilestudiesSubjects;           
     }else if (
         selectedProgram === "information-technology" ||
         selectedProgram === "science" ||
