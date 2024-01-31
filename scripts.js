@@ -173,6 +173,47 @@ var TextilestudiesSubjects = [
     { name: 'Introduction to Computer Applications - TAK3237', creditValue: 2 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define science subjects
+var scienceSubjects = [
+    { name: 'Diversity of Plants - BYU3500', creditValue: 5 },
+    { name: 'Organization of Cells and Plant Biochemistry - BYU3301 ', creditValue: 3 },
+    { name: 'Basic Principles of Chemistry I - CYU3300', creditValue: 3 },
+    { name: 'Basic Principles of Chemistry II - CYU3201', creditValue: 2 },
+    { name: 'Basic Practical Chemistry - CYU3302', creditValue: 3 },
+    { name: 'General and Thermal Physics - PHU3300', creditValue: 3 },
+    { name: 'Basic Electromagnetism - PHU3301', creditValue: 3 },
+    { name: 'Waves in Physics - PHU3202', creditValue: 2 },
+    { name: 'Animal Life and Diversity - ZYU3500', creditValue: 5 },
+    { name: 'Biogeography - ZYU3301 ', creditValue: 3 },
+    { name: 'Introduction to Computer Programming - CSU3200', creditValue: 2 },
+    { name: 'Database Design and Implementation - CSU3301', creditValue: 3 },
+    { name: 'Data Structures & Algorithms - CSU3302', creditValue: 3 },
+    { name: 'Vector Algebra - ADU3300', creditValue: 3 },
+    { name: 'Basic Statistics - ADU3201', creditValue: 2 },
+    { name: 'Differential Equations - ADU3302', creditValue: 3 },
+    { name: 'Mathematical Logic and Mathematical Proofs - PEU3300', creditValue: 3 },
+    { name: 'Foundation of Mathematics - PEU3301', creditValue: 3 },
+    { name: 'Vector Spaces - PEU3202', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define information-technology subjects
+var informationtechnologySubjects = [
+    { name: 'Computer Organization and Communication - COU3300', creditValue: 3 },
+    { name: 'Database Management Systems - COU3301 ', creditValue: 3 },
+    { name: 'System Analysis and Design - COU3202', creditValue: 2 },
+    { name: 'Discrete Mathematics I - ADU3330', creditValue: 3 },
+    { name: 'Fundamentals of Programming - COU3304', creditValue: 3 },
+    { name: 'Software Engineering - COU3303', creditValue: 3 },
+    { name: 'Web Development - ITU3201', creditValue: 2 },
+    { name: 'Computer Security Concepts - COU3305', creditValue: 3 },
+    { name: 'Fundamentals of Information Systems - ISU3300', creditValue: 3 },
+    { name: 'Data Structures and Algorithms - COU3306 ', creditValue: 3 },
+    { name: 'IT Organization - ISU3201', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
+    
     
 // Define health science subjects
 var healthScienceSubjects = [
@@ -241,8 +282,8 @@ var degreeCredits = {
     'Apparel-studies' : 130,
     'Fashion-studies' : 130,
     'Textile-studies' : 130,
-    'information-technology': 121,
-    'science': 122,
+    'science': 120,
+    'information-technology': 120,
     'it-honors': 123,
     'nursing': 124,
     'pharmacy': 125,
@@ -290,9 +331,13 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="Fashion-studies">Bachelor of Industrial Studies Honours – Fashion Design and Product Development</option>');
         programSelect.append('<option value="Textile-studies">Bachelor of Industrial Studies Honours – Textile Manufacture Specialization</option>');
     } else if (selectedFaculty === "natural-sciences") {
+        programSelect.append('<option value="science">Bachelor of Science Honours in Botany</option>');
+        programSelect.append('<option value="science">Bachelor of Science Honours in Chemistry</option>');
+        programSelect.append('<option value="science">Bachelor of Science Honours in Mathematics</option>');
+        programSelect.append('<option value="science">Bachelor of Science honours in Physics</option>');
+        programSelect.append('<option value="science">Bachelor of Science Honours in Zoology</option>');
         programSelect.append('<option value="information-technology">Bachelor of Science in Information Technology</option>');
-        programSelect.append('<option value="science">Bachelor of Science</option>');
-        programSelect.append('<option value="it-honors">Bachelor of Science Honor’s in IT degree</option>');
+        programSelect.append('<option value="it-honors">Bachelor of Science Honours in IT degree</option>');
     } else if (selectedFaculty === "health-sciences") {
         programSelect.append('<option value="nursing">Bachelor of Science Honours in Nursing</option>');
         programSelect.append('<option value="pharmacy">Bachelor of Pharmacy Honours</option>');
@@ -346,6 +391,14 @@ $("#program-select").change(function () {
             subjects = ApparelstudiesSubjects; // Use Apparel Studies subjects
         } else if (selectedProgram === "Fashion-studies") {
             subjects = FashionstudiesSubjects; // Use Fasion Studies subjects
+        } else if (selectedProgram === "Textile-studies") {
+            subjects = TextilestudiesSubjects; // Use Fasion Studies 
+        } else if (selectedProgram === "science") {
+            subjects = scienceSubjects; // Use Science subjects
+        } else if (selectedProgram === "information-technology") {
+            subjects = informationtechnologySubjects; // Use information technology subjects
+        } else if (selectedProgram === "Textile-studies") {
+            subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
         } else if (selectedProgram === "Textile-studies") {
             subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
         } else if (selectedProgram === "it-honors") {
@@ -477,7 +530,15 @@ function updateTotalPrice() {
     }else if (
         selectedProgram === "Textile-studies"
     ) {
-        subjects = TextilestudiesSubjects;           
+        subjects = TextilestudiesSubjects; 
+    }else if (
+        selectedProgram === "science"
+    ) {
+        subjects = scienceSubjects;   
+    }else if (
+        selectedProgram === "information-technology"
+    ) {
+        subjects = informationtechnologySubjects;             
     }else if (
         selectedProgram === "information-technology" ||
         selectedProgram === "science" ||
