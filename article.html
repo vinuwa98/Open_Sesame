@@ -10,6 +10,35 @@
     <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+
+            // Array of messages to loop through
+            const messages = [
+                "To know about your university",
+                "To know about university events",
+                "To know about your degree"
+            ];
+
+            let index = 0;
+
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+
+            // Clear the interval after a specific number of iterations (adjust as needed)
+            const totalIterations = 10; // Change this to the desired number of iterations
+            let iterations = 0;
+
+            setTimeout(function() {
+                clearInterval(intervalId);
+            }, 2000 * totalIterations);
+        });
+    </script>
     <style>
         .course-description {
             display: none;
@@ -48,6 +77,25 @@
                 /* Adjust the spacing between menu items */
             }
 
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                border: 2px solid #333;
+            }
+
+            th,
+            td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+
         }
     </style>
 </head>
@@ -66,13 +114,6 @@
     </div>
 
     <header class="header">
-        <a href="#l" class="logo">Logo</a>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
 
         <nav class="navbar">
             <a href="Home.html" style="--i:0;">Home</a>
@@ -333,6 +374,7 @@
                     <td>Not yet offered</td>
                 </tr>
             </tbody>
+
         </table><br><br>
 
         <p style="color: rgb(76, 76, 228);"> 19. Should I pay full amount at once during the registration?</p><br>
@@ -388,43 +430,41 @@
                     border-collapse: collapse;
                     margin: 20px;
                 }
-        
+
                 th, td {
                     border: 1px solid #ddd;
                     padding: 8px;
                     text-align: left;
                 }
-        
+
                 th {
                     background-color: #f2f2f2;
                 }
-        
+
                 tr:nth-child(even) {
                     background-color: #f9f9f9;
                 }
-        
+
                 tr:nth-child(odd) {
                     background-color: #fff;
                 }
-        
+
                 tr:hover {
                     background-color: #f5f5f5;
                 }
-        
+
                 td {
                     border-bottom: 2px solid pink; /* Pink color for row lines */
                 }
-        
+
                 th:first-child, td:first-child {
                     border-left: 2px solid white; /* White color for the first column line */
                 }
-        
+
                 th:last-child, td:last-child {
                     border-right: 2px solid white; /* White color for the last column line */
                 }
             </style>
-
-
         </head>
 
         <table>
@@ -493,6 +533,8 @@
                 </tr>
             </tbody>
         </table> <br><br> 
+
+        </table>
 
         <p style="color: rgb(76, 76, 228);">28. What is a credit?</p><br>
 
@@ -589,6 +631,7 @@
 </body>
 
 </html>
+
 
         </p>
     </div>

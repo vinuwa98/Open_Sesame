@@ -9,6 +9,35 @@
     <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+
+            // Array of messages to loop through
+            const messages = [
+                "To know about your university",
+                "To know about university events",
+                "To know about your degree"
+            ];
+
+            let index = 0;
+
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+
+            // Clear the interval after a specific number of iterations (adjust as needed)
+            const totalIterations = 10; // Change this to the desired number of iterations
+            let iterations = 0;
+
+            setTimeout(function() {
+                clearInterval(intervalId);
+            }, 2000 * totalIterations);
+        });
+    </script>
 </head>
 <body>
 <body>
@@ -21,27 +50,50 @@
     </div>
     <div class="middle">
         General Inquiries: (+94) 011 2881 000 
-        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
-        hhkshdiuhfojkjoodijk
+        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040   
     </div>
 
     <header class="header">
-        <a href="#l" class="logo">Logo</a>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-
         <nav class="navbar">
             <a href="Home.html" style="--i:0;">Home</a>
             <a href="Calculate.html" style="--i:1;">Calculate</a>
-            <a href="Article.html" style="--i:2;">Article</a>
-            <a href="Event.html" style="--i:3;">Events</a>
+            <a href="article.html" style="--i:2;">Article</a>
+            <a href="events.html" style="--i:3;">Events</a>
             <a href="aboutus.html" style="--i:4;">About Us</a>
         </nav>
-
     </header>
+
+     <!-- Latest Updates and Achievements Section -->
+     <div class="section" id="latest-updates">
+        <h2>Latest Updates and Achievements</h2>
+        <p>
+            Explore our latest articles and stay informed about the groundbreaking research and achievements of our students and faculty.
+            From cutting-edge discoveries to inspiring success stories, Open University of SriLanka is a hub of innovation and excellence.
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="article.html">
+            <img src="Brotherhood.jpg" alt="Article Image">
+            <div class="overlay">Read Article</div>
+        </a>
+        
+        <a href="events.html">
+            <img src="SoftFest.jpg" alt="Event Image">
+            <div class="overlay">View Event</div>
+        </a>
+
+        <!-- Add more gallery items as needed -->
+    </div>
+    <!-- Upcoming Events Section -->
+    <div class="section" id="upcoming-events">
+        <h2>Upcoming Events to Fuel Your Curiosity</h2>
+        <p>
+            Mark your calendar!  
+        </p>
+    </div>
+
+</body>
+</html>
+
 </body>
 </html>

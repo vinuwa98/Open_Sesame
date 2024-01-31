@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+
+            // Array of messages to loop through
+            const messages = [
+                "To know about your university",
+                "To know about university events",
+                "To know about your degree"
+            ];
+
+            let index = 0;
+
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+
+            // Clear the interval after a specific number of iterations (adjust as needed)
+            const totalIterations = 10; // Change this to the desired number of iterations
+            let iterations = 0;
+
+            setTimeout(function() {
+                clearInterval(intervalId);
+            }, 2000 * totalIterations);
+        });
+    </script>
 </head>
 <body>
-
-    <input type="checkbox" id="check">
-    <label class="icons" for="check" id="menu-icon">&#9776;</label>
 
     <div class="top">
         <div class="banner">
@@ -26,7 +53,6 @@
     </div>
 
     <header class="header">
-        <a href="#logo" class="logo">Logo</a>
         <nav class="navbar">
             <a href="Home.html" style="--i:0;">Home</a>
             <a href="Calculate.html" style="--i:1;">Calculate</a>
