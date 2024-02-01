@@ -215,7 +215,7 @@
  /* Your existing styles go here */
 
 .vertical-articles {
-    position: right fixed;
+    justify-content: flex-end;
     width:500px; /* Adjust the width as needed */
     margin: 20px;
 }
