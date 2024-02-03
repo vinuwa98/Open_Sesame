@@ -216,11 +216,11 @@ var informationtechnologySubjects = [
 
 // Define nursing subjects
 var nursingSubjects = [
-    { name: 'Computer Organization and Communication - COU3300', creditValue: 3 },
-    { name: 'Database Management Systems - COU3301 ', creditValue: 3 },
-    { name: 'System Analysis and Design - COU3202', creditValue: 2 },
-    { name: 'Discrete Mathematics I - ADU3330', creditValue: 3 },
-    { name: 'Fundamentals of Programming - COU3304', creditValue: 3 },
+    { name: 'Ethics & History in Nursing - NGU3200', creditValue: 2 },
+    { name: 'Health Communication - NGU3301', creditValue: 3 },
+    { name: 'Psychology for Nursing - NGU3302', creditValue: 3 },
+    { name: 'Sociology for Nursing - NGU3203', creditValue: 2 },
+    { name: 'Fundamentals of Nursing I - NGU3504', creditValue: 5 },
     { name: 'Software Engineering - COU3303', creditValue: 3 },
     { name: 'Web Development - ITU3201', creditValue: 2 },
     { name: 'Computer Security Concepts - COU3305', creditValue: 3 },
