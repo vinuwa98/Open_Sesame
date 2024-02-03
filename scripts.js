@@ -568,6 +568,10 @@ function updateTotalPrice() {
         selectedProgram === "laboratory-science"
     ) {
         subjects = laboratorySubjects;
+    }else if (
+        selectedProgram === "psychology"
+    ) {
+        subjects = psychologySubjects;
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
