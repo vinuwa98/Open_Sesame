@@ -215,7 +215,7 @@ var informationtechnologySubjects = [
 ];
 
 // Define nursing subjects
-var informationtechnologySubjects = [
+var nursingSubjects = [
     { name: 'Computer Organization and Communication - COU3300', creditValue: 3 },
     { name: 'Database Management Systems - COU3301 ', creditValue: 3 },
     { name: 'System Analysis and Design - COU3202', creditValue: 2 },
