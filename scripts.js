@@ -244,31 +244,9 @@ var pharmacySubjects = [
     { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 }
     // Define engineering subjects and their credit values here
 ];
-    
-    
-// Define health science subjects
-var healthScienceSubjects = [
-    { name: 'Ethics & History in Nursing - NGU3200', creditValue: 2 },
-    { name: 'Health Communication - NGU3301', creditValue: 3 },
-    { name: 'Psychology for Nursing - NGU3302', creditValue: 3 },
-    { name: 'Sociology for Nursing - NGU3203', creditValue: 2 },
-    { name: 'Fundamentals of Nursing I - NGU3504', creditValue: 5 },
-    { name: 'Simulation Lab Practicum in Nursing I - NGU3305', creditValue: 3 },
-    { name: 'Medical Surgical Nursing I - NGU3406', creditValue: 4 },
-    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
-    { name: 'Human Physiology - BSU3431', creditValue: 4 },
-    { name: 'Microbiology - BSU3235', creditValue: 2 },
-    { name: 'Pharmaceutical Chemistry I - BSU3340', creditValue: 3 },
-    { name: 'Pharmaceutical Chemistry II - BSU3341', creditValue: 3 },
-    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
-    { name: 'Human Physiology - BSU3431', creditValue: 4 },
-    { name: 'Biochemistry - FMU3300', creditValue: 3 },
-    { name: 'Pharmacognosy I - FMU3401', creditValue: 4 },
-    { name: 'Physical Pharmacy - FMU3302', creditValue: 3 },
-    { name: 'Pharmaceutics I - FMU3203', creditValue: 2 },
-    { name: 'Pharmaceutical Microbiology I - FMU3204', creditValue: 2 },
-    { name: 'Health Communication - FMU3205', creditValue: 2 },
-    { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 },
+
+// Define laboratory-science subjects
+var laboratorySubjects = [
     { name: 'Basics for Medical Laboratory Sciences - MDU3400', creditValue: 4 },
     { name: 'Haematology I - MDU3401', creditValue: 4 },
     { name: 'Medical Bacteriology - MDU3402', creditValue: 4 },
@@ -277,6 +255,11 @@ var healthScienceSubjects = [
     { name: 'Work Based Training I - MDU3805', creditValue: 8 },
     { name: 'Medical Parasitology - MDU3306', creditValue: 3 },
     { name: 'Health Communication - MDU3207', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define psychology subjects
+var psychologySubjects = [
     { name: 'Introduction to Psychology - PLU3301', creditValue: 3 },
     { name: 'Personality & Individual Differences - PLU3302', creditValue: 3 },
     { name: 'Motivation and Emotion - PLU3303', creditValue: 3 },
@@ -288,9 +271,10 @@ var healthScienceSubjects = [
     { name: 'Introduction to Counselling Psychology - PLU3309', creditValue: 3 },
     { name: 'Biological Psychology - PLU3310', creditValue: 3 },
     { name: 'Cognitive Psychology - PLU3311', creditValue: 3 },
-    // Define health science subjects and their credit values here
+    // Define engineering subjects and their credit values here
 ];
-
+     
+    
 // Define Humanities subjects
 var HumanitiesSubjects = [
     { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
@@ -435,11 +419,11 @@ $("#program-select").change(function () {
         } else if (selectedProgram === "nursing") {
             subjects = nursingSubjects; // Use nursing subjects
         } else if (selectedProgram === "pharmacy") {
-            subjects = pharmacySubjects; // Use health science subjects
+            subjects = pharmacySubjects; // Use pharmacy subjects
         } else if (selectedProgram === "laboratory-science") {
-            subjects = healthScienceSubjects; // Use health science subjects
+            subjects = laboratorySubjects; // Use labratory subjects
         } else if (selectedProgram === "psychology") {
-            subjects = healthScienceSubjects; // Use health science subjects
+            subjects = psychologySubjects; // Use psychology subjects
         } else if (selectedProgram === "Arts-Honors") {
             subjects = HumanitiesSubjects; // Use health science subjects
         }  else if (selectedProgram === "Language-Teaching") {
@@ -580,6 +564,10 @@ function updateTotalPrice() {
         selectedProgram === "pharmacy"
     ) {
         subjects = pharmacySubjects;
+    }else if (
+        selectedProgram === "laboratory-science"
+    ) {
+        subjects = laboratorySubjects;
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
