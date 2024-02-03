@@ -221,12 +221,11 @@ var nursingSubjects = [
     { name: 'Psychology for Nursing - NGU3302', creditValue: 3 },
     { name: 'Sociology for Nursing - NGU3203', creditValue: 2 },
     { name: 'Fundamentals of Nursing I - NGU3504', creditValue: 5 },
-    { name: 'Software Engineering - COU3303', creditValue: 3 },
-    { name: 'Web Development - ITU3201', creditValue: 2 },
-    { name: 'Computer Security Concepts - COU3305', creditValue: 3 },
-    { name: 'Fundamentals of Information Systems - ISU3300', creditValue: 3 },
-    { name: 'Data Structures and Algorithms - COU3306 ', creditValue: 3 },
-    { name: 'IT Organization - ISU3201', creditValue: 2 },
+    { name: 'Simulation Lab Practicum in Nursing I - NGU3305', creditValue: 3 },
+    { name: 'Medical Surgical Nursing I - NGU3406', creditValue: 4 },
+    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
+    { name: 'Human Physiology - BSU3431', creditValue: 4 },
+    { name: 'Microbiology - BSU3235', creditValue: 2 },
     // Define engineering subjects and their credit values here
 ];
     
@@ -384,7 +383,7 @@ $("#program-select").change(function () {
 
         var subjects;
 
-        // Define subjects for each program
+        // Define engineering subjects for each program
         if (selectedProgram === "software-engineering") {
             subjects = engineeringSubjects; // Use engineering subjects
         } else if (selectedProgram === "Agricultural-engineering") {
@@ -409,16 +408,16 @@ $("#program-select").change(function () {
             subjects = FashionstudiesSubjects; // Use Fasion Studies subjects
         } else if (selectedProgram === "Textile-studies") {
             subjects = TextilestudiesSubjects; // Use Fasion Studies 
+        
+        // Define science subjects for each program
         } else if (selectedProgram === "science") {
             subjects = scienceSubjects; // Use Science subjects
         } else if (selectedProgram === "information-technology") {
             subjects = informationtechnologySubjects; // Use information technology subjects
-        } else if (selectedProgram === "Textile-studies") {
-            subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
-        } else if (selectedProgram === "Textile-studies") {
-            subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
+        
+         // Define Health subjects for each program
         } else if (selectedProgram === "nursing") {
-            subjects = healthScienceSubjects; // Use health science subjects
+            subjects = nursingSubjects; // Use nursing subjects
         } else if (selectedProgram === "pharmacy") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "laboratory-science") {
@@ -489,7 +488,7 @@ function addSubjectCheckboxes(subjects) {
     }
 }
 
-// Function to update the total price
+    // Function to update the engineering degrees total price
 function updateTotalPrice() {
     var totalPrice = 0;
     var creditPrice = parseFloat($("#credit-price").val()) || 0;
@@ -544,7 +543,9 @@ function updateTotalPrice() {
     }else if (
         selectedProgram === "Textile-studies"
     ) {
-        subjects = TextilestudiesSubjects; 
+        subjects = TextilestudiesSubjects;
+
+    // Function to update the science degrees total price
     }else if (
         selectedProgram === "science"
     ) {
@@ -552,17 +553,13 @@ function updateTotalPrice() {
     }else if (
         selectedProgram === "information-technology"
     ) {
-        subjects = informationtechnologySubjects;             
+        subjects = informationtechnologySubjects; 
+    
+    // Function to update the Health degrees total price
     }else if (
-        selectedProgram === "information-technology" ||
-        selectedProgram === "science" ||
-        selectedProgram === "it-honors" ||
-        selectedProgram === "nursing" ||
-        selectedProgram === "pharmacy" ||
-        selectedProgram === "laboratory-science" ||
-        selectedProgram === "psychology"
+        selectedProgram === "nursing"
     ) {
-        subjects = healthScienceSubjects;
+        subjects = nursingSubjects;
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
