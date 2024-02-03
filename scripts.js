@@ -213,6 +213,22 @@ var informationtechnologySubjects = [
     { name: 'IT Organization - ISU3201', creditValue: 2 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define nursing subjects
+var informationtechnologySubjects = [
+    { name: 'Computer Organization and Communication - COU3300', creditValue: 3 },
+    { name: 'Database Management Systems - COU3301 ', creditValue: 3 },
+    { name: 'System Analysis and Design - COU3202', creditValue: 2 },
+    { name: 'Discrete Mathematics I - ADU3330', creditValue: 3 },
+    { name: 'Fundamentals of Programming - COU3304', creditValue: 3 },
+    { name: 'Software Engineering - COU3303', creditValue: 3 },
+    { name: 'Web Development - ITU3201', creditValue: 2 },
+    { name: 'Computer Security Concepts - COU3305', creditValue: 3 },
+    { name: 'Fundamentals of Information Systems - ISU3300', creditValue: 3 },
+    { name: 'Data Structures and Algorithms - COU3306 ', creditValue: 3 },
+    { name: 'IT Organization - ISU3201', creditValue: 2 },
+    // Define engineering subjects and their credit values here
+];
     
     
 // Define health science subjects
@@ -401,8 +417,6 @@ $("#program-select").change(function () {
             subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
         } else if (selectedProgram === "Textile-studies") {
             subjects = TextilestudiesSubjects; // Use Fasion Studies subjects
-        } else if (selectedProgram === "it-honors") {
-            subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "nursing") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "pharmacy") {
