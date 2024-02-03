@@ -273,7 +273,19 @@ var psychologySubjects = [
     { name: 'Cognitive Psychology - PLU3311', creditValue: 3 },
     // Define engineering subjects and their credit values here
 ];
-     
+
+// Define HR-Management subjects
+var HRManagementSubjects = [
+    { name: 'Introduction to Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing  - MMU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Human Resource Ethics or Human Resource Personality - HRU3301,HRU3302', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
     
 // Define Humanities subjects
 var HumanitiesSubjects = [
@@ -304,6 +316,7 @@ var degreeCredits = {
     'pharmacy': 125,
     'laboratory-science': 126,
     'psychology': 127,
+    'HR-Management': 130,
     'Arts-Honors': 128,
     'Language-Teaching': 129,
     'Laws-Degree': 130,
@@ -358,6 +371,12 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="pharmacy">Bachelor of Pharmacy Honours</option>');
         programSelect.append('<option value="laboratory-science">Bachelor of Medical Laboratory Sciences Honours</option>');
         programSelect.append('<option value="psychology">Bachelor of Science Honours in Psychology</option>');
+    } else if (selectedFaculty === "management") {
+        programSelect.append('<option value="HR-Management">Bachelor of Management Studies Honours in Human Resource Management</option>');
+        programSelect.append('<option value="Marketing-Management">Bachelor of Management Studies Honours in Marketing Management</option>');
+        programSelect.append('<option value="Management-Studies">Bachelor of Management Studies Honours</option>');
+        programSelect.append('<option value="Accounting-Management">Bachelor of Management Studies Honours in Accounting and Finance</option>');
+        programSelect.append('<option value="BMS-Degree">BMS (Hons.) degree linked with the University of Essex Management Studies</option>');
     } else if (selectedFaculty === "humanities") {
         programSelect.append('<option value="Arts-Honors">Bachelor of Arts Honors in Library and Information Studies</option>');
         programSelect.append('<option value="Language-Teaching">B.A. Degree in English and English Language Teaching</option>');
@@ -424,8 +443,10 @@ $("#program-select").change(function () {
             subjects = laboratorySubjects; // Use labratory subjects
         } else if (selectedProgram === "psychology") {
             subjects = psychologySubjects; // Use psychology subjects
-        } else if (selectedProgram === "Arts-Honors") {
-            subjects = HumanitiesSubjects; // Use health science subjects
+
+         // Define Management subjects for each program    
+        } else if (selectedProgram === "HR-Management") {
+            subjects = HRManagementSubjects; // Use health science subjects
         }  else if (selectedProgram === "Language-Teaching") {
             subjects = HumanitiesSubjects;
         } else if (selectedProgram === "Social-Sciences") {
