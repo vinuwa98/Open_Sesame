@@ -241,7 +241,7 @@ var pharmacySubjects = [
     { name: 'Pharmaceutics I - FMU3203', creditValue: 2 },
     { name: 'Pharmaceutical Microbiology I - FMU3204', creditValue: 2 },
     { name: 'Health Communication - FMU3205', creditValue: 2 },
-    { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 },e: 2 },
+    { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 }
     // Define engineering subjects and their credit values here
 ];
     
