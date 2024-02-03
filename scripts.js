@@ -228,6 +228,22 @@ var nursingSubjects = [
     { name: 'Microbiology - BSU3235', creditValue: 2 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define pharmacy subjects
+var pharmacySubjects = [
+    { name: 'Pharmaceutical Chemistry I - BSU3340', creditValue: 3 },
+    { name: 'Pharmaceutical Chemistry II - BSU3341', creditValue: 3 },
+    { name: 'Human Anatomy - BSU3230', creditValue: 2 },
+    { name: 'Human Physiology - BSU3431', creditValue: 4 },
+    { name: 'Biochemistry - FMU3300', creditValue: 3 },
+    { name: 'Pharmacognosy I - FMU3401', creditValue: 4 },
+    { name: 'Physical Pharmacy - FMU3302', creditValue: 3 },
+    { name: 'Pharmaceutics I - FMU3203', creditValue: 2 },
+    { name: 'Pharmaceutical Microbiology I - FMU3204', creditValue: 2 },
+    { name: 'Health Communication - FMU3205', creditValue: 2 },
+    { name: 'Essential Mathematics for Pharmacy - FMU3206', creditValue: 2 },e: 2 },
+    // Define engineering subjects and their credit values here
+];
     
     
 // Define health science subjects
@@ -419,7 +435,7 @@ $("#program-select").change(function () {
         } else if (selectedProgram === "nursing") {
             subjects = nursingSubjects; // Use nursing subjects
         } else if (selectedProgram === "pharmacy") {
-            subjects = healthScienceSubjects; // Use health science subjects
+            subjects = pharmacySubjects; // Use health science subjects
         } else if (selectedProgram === "laboratory-science") {
             subjects = healthScienceSubjects; // Use health science subjects
         } else if (selectedProgram === "psychology") {
@@ -560,6 +576,10 @@ function updateTotalPrice() {
         selectedProgram === "nursing"
     ) {
         subjects = nursingSubjects;
+    }else if (
+        selectedProgram === "pharmacy"
+    ) {
+        subjects = pharmacySubjects;
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
