@@ -325,6 +325,19 @@ var AccountingManagementSubjects = [
     { name: 'Aesthetics and Anthropology for Managers - AFU3303', creditValue: 3 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define BMS-Degree subjects
+var BMSDegreeSubjects = [
+    { name: 'Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401 ', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Aesthetics and Anthropology for Managers - AFU3303', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
     
 // Define Humanities subjects
 var HumanitiesSubjects = [
