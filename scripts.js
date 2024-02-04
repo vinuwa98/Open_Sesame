@@ -691,4 +691,4 @@ function updateTotalPrice() {
 
 // Initial setup
 $("#subject-select-container").hide(); // Hide subjects by default
-$("#total-degree-price").hide(); // Hide Total Degree Price by default
+$("#total-degree-price").hide(); // Hide Total Degree Price by defaultaaaaaaa
