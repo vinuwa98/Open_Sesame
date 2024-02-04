@@ -286,6 +286,32 @@ var HRManagementSubjects = [
     { name: 'Human Resource Ethics or Human Resource Personality - HRU3301,HRU3302', creditValue: 3 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define Marketing-Management subjects
+var MarketingManagementSubjects = [
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Introduction to Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Creative Marketing - MMU3302', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Management-Studies subjects
+var ManagementStudiesSubjects = [
+    { name: 'Principles of Management - MMU3401', creditValue: 4 },
+    { name: 'Introduction to Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Creative Marketing - MMU3302', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
     
 // Define Humanities subjects
 var HumanitiesSubjects = [
@@ -317,6 +343,7 @@ var degreeCredits = {
     'laboratory-science': 126,
     'psychology': 127,
     'HR-Management': 130,
+    'Marketing-Management': 130,
     'Arts-Honors': 128,
     'Language-Teaching': 129,
     'Laws-Degree': 130,
@@ -447,8 +474,8 @@ $("#program-select").change(function () {
          // Define Management subjects for each program    
         } else if (selectedProgram === "HR-Management") {
             subjects = HRManagementSubjects; // Use health science subjects
-        }  else if (selectedProgram === "Language-Teaching") {
-            subjects = HumanitiesSubjects;
+        }  else if (selectedProgram === "Marketing-Management") {
+            subjects = MarketingManagementSubjects;
         } else if (selectedProgram === "Social-Sciences") {
             subjects = HumanitiesSubjects;
         } else if (selectedProgram === "Community-Development") {
@@ -593,6 +620,17 @@ function updateTotalPrice() {
         selectedProgram === "psychology"
     ) {
         subjects = psychologySubjects;
+    
+    // Function to update the Management degrees total price
+
+    }else if (
+        selectedProgram === "HR-Management"
+    ) {
+            subjects = HRManagementSubjects;
+    }else if (
+        selectedProgram === "Marketing-Management"
+    ) {
+            subjects = MarketingManagementSubjects;
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
