@@ -309,7 +309,20 @@ var ManagementStudiesSubjects = [
     { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
     { name: 'Human Resource Management - HRU3406', creditValue: 4 },
     { name: 'Business Communication - OSU3309', creditValue: 3 },
-    { name: 'Creative Marketing - MMU3302', creditValue: 3 },
+    { name: 'Innovation and Entrepreneurship - OSU3308', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Accounting-Management subjects
+var AccountingManagementSubjects = [
+    { name: 'Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401 ', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Aesthetics and Anthropology for Managers - AFU3303', creditValue: 3 },
     // Define engineering subjects and their credit values here
 ];
     
@@ -344,6 +357,8 @@ var degreeCredits = {
     'psychology': 127,
     'HR-Management': 130,
     'Marketing-Management': 130,
+    'Management-Studies': 130,
+    'Accounting-Management':130,
     'Arts-Honors': 128,
     'Language-Teaching': 129,
     'Laws-Degree': 130,
@@ -476,10 +491,10 @@ $("#program-select").change(function () {
             subjects = HRManagementSubjects; // Use health science subjects
         }  else if (selectedProgram === "Marketing-Management") {
             subjects = MarketingManagementSubjects;
-        } else if (selectedProgram === "Social-Sciences") {
-            subjects = HumanitiesSubjects;
-        } else if (selectedProgram === "Community-Development") {
-            subjects = HumanitiesSubjects;
+        } else if (selectedProgram === "Management-Studies") {
+            subjects = ManagementStudiesSubjects;
+        } else if (selectedProgram === "Accounting-Management") {
+            subjects = AccountingManagementSubjects;
         } else if (selectedProgram === "Laws-Degree") {
             subjects = HumanitiesSubjects;
         } 
@@ -631,6 +646,15 @@ function updateTotalPrice() {
         selectedProgram === "Marketing-Management"
     ) {
             subjects = MarketingManagementSubjects;
+    }else if (
+        selectedProgram === "Management-Studies"
+    ) {
+            subjects = ManagementStudiesSubjects;
+    }else if (
+        selectedProgram === "Accounting-Management"
+    ) {
+            subjects = AccountingManagementSubjects;
+    
     } else if (
         selectedProgram === "Arts-Honors" ||
         selectedProgram === "Language-Teaching" ||
