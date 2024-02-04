@@ -304,8 +304,8 @@ var MarketingManagementSubjects = [
 var ManagementStudiesSubjects = [
     { name: 'Principles of Management - OSU3401', creditValue: 4 },
     { name: 'Financial Accounting  - AFU3401 ', creditValue: 4 },
-    { name: 'Principles of Management - OSU3401', creditValue: 4 },
     { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
     { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
     { name: 'Human Resource Management - HRU3406', creditValue: 4 },
     { name: 'Business Communication - OSU3309', creditValue: 3 },
