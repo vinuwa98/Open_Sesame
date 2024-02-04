@@ -302,8 +302,8 @@ var MarketingManagementSubjects = [
 
 // Define Management-Studies subjects
 var ManagementStudiesSubjects = [
-    { name: 'Principles of Management - MMU3401', creditValue: 4 },
-    { name: 'Introduction to Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Financial Accounting  - AFU3401 ', creditValue: 4 },
     { name: 'Principles of Management - OSU3401', creditValue: 4 },
     { name: 'Microeconomics - AFU3402', creditValue: 4 },
     { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
