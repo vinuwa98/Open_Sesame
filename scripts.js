@@ -337,6 +337,17 @@ var ArtsHonorsSubjects = [
     { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
 ];
 
+// Define Arts-Honors subjects
+var ArtsHonorsSubjects = [
+    { name: 'Information and Knowledge Society - HSU5301', creditValue: 3 },
+    { name: 'Advanced Library Cataloguing - HSU5602', creditValue: 6 },
+    { name: 'Advanced Library Classification - HSU5603', creditValue: 6 },
+    { name: 'Indexing & Abstracting Practices - HSU5304', creditValue: 3 },
+    { name: 'Intellectual Property Law - HSU5305', creditValue: 3 },
+    { name: 'Types of Libraries and Information Services - HSU5306', creditValue: 3 },
+    { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
+];
+
 
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
