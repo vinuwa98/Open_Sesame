@@ -423,8 +423,8 @@ $("#faculty-select").change(function () {
         programSelect.append('<option value="Arts-Honors">Bachelor of Arts Honors in Library and Information Studies</option>');
         programSelect.append('<option value="Language-Teaching">B.A. Degree in English and English Language Teaching</option>');
         programSelect.append('<option value="Social-Sciences">Master of Arts in Development Studies and Public Policy</option>');
-        programSelect.append('<option value="Community-Development">Bachelor of Arts in Youth and Community Development</option>');
-        programSelect.append('<option value="Laws-Degree">Bachelor of Laws Degree Programme (LLB)</option>');
+        programSelect.append('<option value="Community-Development">Bachelor of Arts in Social Sciences</option>');
+        programSelect.append('<option value="Laws-Degree">Bachelor of Arts in Youth and Community Development</option>');
     }
 
     programSelect.prop("disabled", false);
