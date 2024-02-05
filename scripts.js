@@ -330,7 +330,11 @@ var AccountingManagementSubjects = [
 var ArtsHonorsSubjects = [
     { name: 'Information and Knowledge Society - HSU5301', creditValue: 3 },
     { name: 'Advanced Library Cataloguing - HSU5602', creditValue: 6 },
-    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Advanced Library Classification - HSU5603', creditValue: 6 },
+    { name: 'Indexing & Abstracting Practices - HSU5304', creditValue: 3 },
+    { name: 'Intellectual Property Law - HSU5305', creditValue: 3 },
+    { name: 'Types of Libraries and Information Services - HSU5306', creditValue: 3 },
+    { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
 ];
 
 
@@ -359,11 +363,7 @@ var degreeCredits = {
     'Marketing-Management': 120,
     'Management-Studies': 120,
     'Accounting-Management':120,
-    'Arts-Honors': 128,
-    'Language-Teaching': 129,
-    'Laws-Degree': 130,
-    'Social-Sciences': 131,
-    'Community-Development': 132,
+    'Arts-Honors':120,
 };
 
 // Check if the disclaimer has been shown previously
@@ -495,8 +495,10 @@ $("#program-select").change(function () {
             subjects = ManagementStudiesSubjects;
         } else if (selectedProgram === "Accounting-Management") {
             subjects = AccountingManagementSubjects;
-        } else if (selectedProgram === "Laws-Degree") {
-            subjects = HumanitiesSubjects;
+
+        // Define Arts subjects for each program    
+        } else if (selectedProgram === "Arts-Honors") {
+            subjects = ArtsHonorsSubjects;
         } 
 
         if (subjects) {
@@ -654,15 +656,13 @@ function updateTotalPrice() {
         selectedProgram === "Accounting-Management"
     ) {
             subjects = AccountingManagementSubjects;
-    
+
+    // Function to update the Management degrees total price
+
     } else if (
-        selectedProgram === "Arts-Honors" ||
-        selectedProgram === "Language-Teaching" ||
-        selectedProgram === "Social-Sciences" ||
-        selectedProgram === "Community-Development" ||
-        selectedProgram === "Laws-Degree"
+        selectedProgram === "Arts-Honors"
     ) {
-        subjects = HumanitiesSubjects;
+        subjects = ArtsHonorsSubjects;
     }
 
     if (subjects) {
