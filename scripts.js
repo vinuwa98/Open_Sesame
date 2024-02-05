@@ -326,8 +326,8 @@ var AccountingManagementSubjects = [
     // Define engineering subjects and their credit values here
 ];
     
-// Define Humanities subjects
-var HumanitiesSubjects = [
+// Define Arts-Honors subjects
+var ArtsHonorsSubjects = [
     { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
     { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
     { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
