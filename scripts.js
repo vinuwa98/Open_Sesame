@@ -328,8 +328,8 @@ var AccountingManagementSubjects = [
     
 // Define Arts-Honors subjects
 var ArtsHonorsSubjects = [
-    { name: 'Information and Knowledge Society - HSU5301', creditValue: 5 },
-    { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
+    { name: 'Information and Knowledge Society - HSU5301', creditValue: 3 },
+    { name: 'Advanced Library Cataloguing - HSU5602', creditValue: 6 },
     { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
 ];
 
