@@ -256,3 +256,35 @@
     font-size: 14px;
     color: #666;
 }
+/*Upcoming events gallery*/
+.upcoming-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 230px;
+    padding: 40px;
+}
+
+.upcoming-gallery img {
+    width: 200%;
+    height: auto;
+    max-width: 200%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.upcoming-gallery img:hover {
+    transform: scale(1.1);
+}
+.upcoming-gallery a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+ 
+.figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+}
