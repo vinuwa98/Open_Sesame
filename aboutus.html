@@ -9,13 +9,35 @@
     <title>Calculate</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+    
+            // Array of messages to loop through
+            const messages = [
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
+            ];
+    
+            let index = 0;
+    
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+    
+        });
+    </script>
    
 </head>
 <body>
     
     <div class="top">
         <div class="banner">
-            <img src="banner.png" alt="banner">
+            <img src="Open sesame.png" alt="banner">
             <div class="banner_text">To know about your full payment</div>
         </div>
     </div>
@@ -35,5 +57,21 @@
         </nav>
 
     </header>
+
+    <div class="about-us-container">
+        <img src="kylix.png" alt="Kylix Logo" class="about-us-logo">
+        <div class="about-us-content">
+            <h2>About Us - Team Kylix</h2>
+            <p>Team Kylix, established in December 2022 by Vinod Warnakulasooriya, a software engineering student at the Open University of Sri Lanka, is dedicated to gaining valuable experience in the software development industry.</p>
+            <p>Our team has grown since its inception, and we are passionate about building dreams through innovative software solutions. Join us on our journey to explore the realms of technology and create meaningful projects.</p>
+            <h3>Meet Our Team</h3>
+            <ul>
+                <li><strong>Vinod Warnakulasooriya</strong> - Founder & Software Engineer</li>
+                <li><strong>John Doe</strong> - UI/UX Designer</li>
+                <li><strong>Jane Smith</strong> - Backend Developer</li>
+                <!-- Add more team members and their roles as needed -->
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

@@ -21,7 +21,7 @@
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Styling for the middle section */
@@ -118,6 +118,8 @@
     width: 100%; /* Set the width to 100% */
     box-sizing: border-box; /* Include padding and border in the element's total width */
     text-align: center; /* Align the content to the right */
+    font-weight: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Styling for navbar links */
@@ -207,4 +209,50 @@
 .section p {
     color: #666;
     font-size: 1.1em;
+}
+ /* recent posts */
+
+ /* Your existing styles go here */
+
+.vertical-articles {
+    justify-content: flex-end;
+    width:500px; /* Adjust the width as needed */
+    margin: 20px;
+}
+
+.vertical-articles h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.article {
+    display:flex; /* Use flexbox for layout */
+    border: 1px solid #c4c4c4; /* Border for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1px; /* Padding inside the box */
+    margin-bottom: 10px;
+    
+}
+
+
+.article img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px; /* Add some spacing between image and content */
+    transition: transform 0.3s;
+}
+
+.article-content {
+    flex-grow: 1; /* Allow content to grow and take available space */
+}
+
+.article h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.article p {
+    font-size: 14px;
+    color: #666;
 }
