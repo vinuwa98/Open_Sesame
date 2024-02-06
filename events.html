@@ -9,6 +9,56 @@
     <title>Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        
+        /* Styles for the event section */
+        .event-section {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .event-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .event-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .event-card {
+            width: 300px;
+            margin: 20px 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .event-description {
+            color: #555;
+        }
+    </style>
    
 </head>
 <body>
@@ -35,7 +85,35 @@
         </nav>
     </header>
 
-    <h1 style="font-size: 40px ;text-align: center; " >stupid Kanzul</h1>
+      <!-- Event Section -->
+    <div class="event-section">
+        <div class="event-title">Latest Event Highlights</div>
 
+        <div class="event-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="SoftFest.jpg" alt="Event 1" class="event-image">
+                <h3><center>SOFTFEST</center></h3>
+                <p class="event-description"><a href="event1-details.html">Click to know more..</a></p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src="event2.jpg" class="event-image">
+                <h3><center>ART GALLERY</center></h3>
+                <p class="event-description"><a href="event1-details.html">Click to know more..</a></p>
+            </div>
+
+            <div class="event-card">
+                <img src="event2.jpg" class="event-image">
+                <h3><center>ART GALLERY</center></h3>
+                <p class="event-description"><a href="event1-details.html">Click to know more..</a></p>
+            </div>
+
+            <!-- Add more events as needed -->
+
+        </div>
+    </div>
+    <!-- End of Event Section -->
 </body>
 </html>
