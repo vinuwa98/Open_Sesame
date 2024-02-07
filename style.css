@@ -288,3 +288,101 @@
     font-size: 20px;
     color: #555;
 }
+
+/*----------------------About us page styles------------------*/
+
+#about-us-logo {
+    /*just to center the logo*/
+    margin: 0 auto;
+    display:block;
+}
+#h1_style {
+    font-family:monospace;
+    text-align: center;
+    font-stretch: ultra-expanded;
+    font-size: 60px;
+}
+.heading_font {
+    font-family: fantasy;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 30px;
+    color: orangered;
+}
+
+#aboutus_para {
+    text-align: center;
+    font-family: 'Snell Roundhand', cursive;
+}
+
+#team-container{
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 50%);
+    row-gap: 10%;
+    margin-bottom: 7%;
+}
+
+.member {
+    border: 1px solid black;
+    border-radius:30px ;
+    background-color: rgb(51, 49, 49);
+}
+
+.mem_pp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float:left;
+    margin: 10px;
+}
+
+.mem_name {
+    font-family: monospace;
+    color: white;
+    font-size:20px;
+    padding-bottom: 0px;
+    line-height: 0%; /* Adjust the line height as needed */
+}
+
+.mem_title {
+    font-family: monospace;
+    color: gray;
+    font-size:15px;
+    margin-top: -2%;
+}
+
+.mem_socials {
+    justify-content: start;
+    display: flex;
+}
+
+.mem_soc_rec {
+    width:20px;
+    height:20px;
+    border:1px solid white;
+    margin:1% 6% 0% 0%;
+}
+
+.fb_logo {
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJUfZ3ptRihADxxse64onZAIyihhkmbNl-KgxgGaVay4A-fkDVnQlDeUlyZ3f593IQ5wo&usqp=CAU');
+}
+
+.insta_logo {
+    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeS0hRnfcT7cwS_PrzWLcF15Mwm5pNSzxqUQ&usqp=CAU');
+}
+
+.lkin_logo {
+    content: url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-icon.png');
+}
+
+
+.twt_logo {
+    content: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=626&ext=jpg&ga=GA1.1.1862338985.1707062131&semt=ais');
+}
+
+#footer_para {
+    text-align: center;
+}
