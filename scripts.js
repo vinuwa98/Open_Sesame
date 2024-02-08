@@ -348,6 +348,16 @@ var ArtsHonorsSubjects = [
     { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
 ];
 
+// Define Social-Sciences subjects
+var SocialSciencesSubjects = [
+    { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Communication and Media Ethics - DSU3522', creditValue: 5 },
+    { name: 'Principles of Economics 2 - DSU3532', creditValue: 5 },
+    { name: 'Introduction to International Politics - DSU3541', creditValue: 3 },
+    { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
+];
 
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
