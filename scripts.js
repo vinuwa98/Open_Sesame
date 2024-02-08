@@ -553,6 +553,9 @@ $("#program-select").change(function () {
 
         } else if (selectedProgram === "Community-Development") {
             subjects = CommunityDevelopmentSubjects;
+
+        } else if (selectedProgram === "Community-Development") {
+            subjects = CommunityDevelopmentSubjects;
         } 
 
         if (subjects) {
@@ -721,6 +724,10 @@ function updateTotalPrice() {
         selectedProgram === "Social-Sciences"
     ) {
         subjects = SocialSciencesSubjects;
+    } else if (
+        selectedProgram === "Community-Development"
+    ) {
+        subjects = CommunityDevelopmentSubjects;
     } else if (
         selectedProgram === "Community-Development"
     ) {
