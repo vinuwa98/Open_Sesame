@@ -358,6 +358,7 @@ var SocialSciencesSubjects = [
     { name: 'Introduction to International Politics - DSU3541', creditValue: 5 },
     { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
     { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
+    { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
 ];
 
 // Define totalDegreeCredits for each degree program
