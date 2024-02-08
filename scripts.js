@@ -373,7 +373,7 @@ var CommunityDevelopmentSubjects = [
 ];
 
 // Define Laws-Degree subjects
-var CommunityDevelopmentSubjects = [
+var LawsDegreeSubjects = [
     { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
     { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
     { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
@@ -554,8 +554,8 @@ $("#program-select").change(function () {
         } else if (selectedProgram === "Community-Development") {
             subjects = CommunityDevelopmentSubjects;
 
-        } else if (selectedProgram === "Community-Development") {
-            subjects = CommunityDevelopmentSubjects;
+        } else if (selectedProgram === "Laws-Degree") {
+            subjects = L;
         } 
 
         if (subjects) {
