@@ -372,6 +372,16 @@ var CommunityDevelopmentSubjects = [
     { name: 'Social Harmony - DSE3215', creditValue: 2 },
 ];
 
+// Define Laws-Degree subjects
+var CommunityDevelopmentSubjects = [
+    { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Young People and Society - DSU3562', creditValue: 5 },
+    { name: 'Politics and Governance: an introduction - DSU3542', creditValue: 5 },
+    { name: 'Management and Leadership Skills for Youth Work - DSU3563', creditValue: 5 },
+    { name: 'Social Harmony - DSE3215', creditValue: 2 },
+];
 
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
@@ -401,6 +411,7 @@ var degreeCredits = {
     'Arts-Honors':120,
     'Social-Sciences':120,
     'Community-Development':120,
+    'Laws-Degree':120,
 };
 
 // Check if the disclaimer has been shown previously
