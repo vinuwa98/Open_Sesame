@@ -357,6 +357,7 @@ var SocialSciencesSubjects = [
     { name: 'Principles of Economics 2 - DSU3532', creditValue: 5 },
     { name: 'Introduction to International Politics - DSU3541', creditValue: 5 },
     { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
+    { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
 ];
 
 // Define totalDegreeCredits for each degree program
