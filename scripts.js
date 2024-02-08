@@ -555,7 +555,7 @@ $("#program-select").change(function () {
             subjects = CommunityDevelopmentSubjects;
 
         } else if (selectedProgram === "Laws-Degree") {
-            subjects = L;
+            subjects = LawsDegreeSubjects;
         } 
 
         if (subjects) {
@@ -729,9 +729,9 @@ function updateTotalPrice() {
     ) {
         subjects = CommunityDevelopmentSubjects;
     } else if (
-        selectedProgram === "Community-Development"
+        selectedProgram === "Laws-Degree"
     ) {
-        subjects = CommunityDevelopmentSubjects;
+        subjects = LawsDegreeSubjects;
     }
 
     if (subjects) {
