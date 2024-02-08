@@ -358,7 +358,7 @@ var SocialSciencesSubjects = [
     { name: 'Introduction to International Politics - DSU3541', creditValue: 5 },
     { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
     { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
-    { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
+    { name: ' Social Harmony - DSE3215', creditValue: 2 },
 ];
 
 // Define totalDegreeCredits for each degree program
@@ -387,6 +387,7 @@ var degreeCredits = {
     'Management-Studies': 120,
     'Accounting-Management':120,
     'Arts-Honors':120,
+    'Social-Sciences':120,
 };
 
 // Check if the disclaimer has been shown previously
@@ -522,6 +523,9 @@ $("#program-select").change(function () {
         // Define Arts subjects for each program    
         } else if (selectedProgram === "Arts-Honors") {
             subjects = ArtsHonorsSubjects;
+
+        } else if (selectedProgram === "Social-Sciences") {
+            subjects = SocialSciencesSubjects;
         } 
 
         if (subjects) {
@@ -686,6 +690,10 @@ function updateTotalPrice() {
         selectedProgram === "Arts-Honors"
     ) {
         subjects = ArtsHonorsSubjects;
+    } else if (
+        selectedProgram === "Social-Sciences"
+    ) {
+        subjects = SocialSciencesSubjects;
     }
 
     if (subjects) {
