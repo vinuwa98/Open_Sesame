@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Initial text
             document.querySelector('.banner_text').innerText = "To know about your full payment";
-    
+
             // Array of messages to loop through
             const messages = [
                 "To know about  university",
                 "To know about  events",
                 "To know about  degree"
             ];
-    
+
             let index = 0;
-    
+
             // Set interval to change text every 5 seconds
-            const intervalId = setInterval(function() {
+            const intervalId = setInterval(function () {
                 document.querySelector('.banner_text').innerText = messages[index];
                 index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
             }, 2000);
-    
+
         });
+
+        function biglogo(x){
+            x.style.height="32px";
+            x.style.width="32px";
+        }
+
+        function normallogo(x){
+            x.style.height="20px";
+            x.style.width="20px";
+        }
     </script>
-   
+
 </head>
+
 <body>
-    
+
     <div class="top">
         <div class="banner">
             <img src="Open sesame.png" alt="banner">
@@ -42,7 +54,7 @@
         </div>
     </div>
     <div class="middle">
-        General Inquiries: (+94) 011 2881 000 
+        General Inquiries: (+94) 011 2881 000
         Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
     </div>
 
@@ -59,19 +71,190 @@
     </header>
 
     <div class="about-us-container">
-        <img src="kylix.png" alt="Kylix Logo" class="about-us-logo">
+        <img src="kylix.png" alt="Kylix Logo" id="about-us-logo">
+        <h1 id="h1_style">Team Kylix</h1>
+        <hr>
         <div class="about-us-content">
-            <h2>About Us - Team Kylix</h2>
-            <p>Team Kylix, established in December 2022 by Vinod Warnakulasooriya, a software engineering student at the Open University of Sri Lanka, is dedicated to gaining valuable experience in the software development industry.</p>
-            <p>Our team has grown since its inception, and we are passionate about building dreams through innovative software solutions. Join us on our journey to explore the realms of technology and create meaningful projects.</p>
-            <h3>Meet Our Team</h3>
-            <ul>
-                <li><strong>Vinod Warnakulasooriya</strong> - Founder & Software Engineer</li>
-                <li><strong>John Doe</strong> - UI/UX Designer</li>
-                <li><strong>Jane Smith</strong> - Backend Developer</li>
-                <!-- Add more team members and their roles as needed -->
-            </ul>
+            <h2 class="heading_font">About Us</h2>
+            <p id="aboutus_para">
+                Team Kylix,is a dynamic force in the software
+                development arena. Founded in December 2022, our team has blossomed into a vibrant community of
+                dedicated individuals united by a shared passion for innovation and excellence. With a relentless drive
+                to push the boundaries of technology, we embark on each project with enthusiasm and determination,
+                fueled by the belief that every challenge is an opportunity for growth. Together, we strive to create
+                meaningful software solutions that not only meet but exceed expectations, leaving a lasting impact on
+                the industry and society at large.
+
+                At the heart of Team Kylix lies a relentless drive to push the boundaries of what's possible, fueled by
+                a passion for problem-solving and a thirst for knowledge. With each project we undertake, we strive not
+                only to deliver exceptional results but also to leave a lasting impression on the industry. As
+                trailblazers in the ever-evolving landscape of software development, we embrace challenges as
+                opportunities for growth and innovation. Our dedication to excellence and our unwavering commitment to
+                our craft propel us forward, inspiring us to reach new heights and set new standards for success.
+
+                Join us on our journey as we write the next chapter in our story, where the possibilities are limitless,
+                and the future is ours to shape. Together, let's harness the power of technology to make a meaningful
+                difference in the world, one line of code at a time.</p>
+            <h3 class="heading_font">Meet Our Team</h3>
+            <div id="team-container">
+
+                <!--Team member 01-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://avatars.githubusercontent.com/u/116092558?v=4" class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Vinod Warnakulasooriya</p>
+                        <p class="mem_title">Founder & Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 02-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://avatars.githubusercontent.com/u/116260105?v=4"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Ishfa Ishak</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 03-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://lh3.googleusercontent.com/nQoqkJdwxQMxFeA9bcSS6xzCLkliYmd_-0SUwtiNobA8RknKCFTMQsZFyOQvbmfAnNroy2MuwzJKSWS6nUIv8UYgIMRgiP4Qm6r2wok=s120"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Kanzul Nuha</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 04-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://avatars.githubusercontent.com/u/119842704?v=4"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Shamra Faizal</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/shamra__faizal', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 05-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://lh3.googleusercontent.com/nQoqkJdwxQMxFeA9bcSS6xzCLkliYmd_-0SUwtiNobA8RknKCFTMQsZFyOQvbmfAnNroy2MuwzJKSWS6nUIv8UYgIMRgiP4Qm6r2wok=s120"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Oshada Rathnasiri</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 06-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://avatars.githubusercontent.com/u/107571029?v=4"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Hafsa Sindikar</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com/profile.php?id=100086929982474', '_blank');"
+                                class="fb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/hafsazinthikar', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/hafsa-sindikar-8195532a0/', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onclick="window.open('https://twitter.com/hafsasindikar', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Team member 07-->
+                <div class="member">
+                    <!--Change your PP here--->
+                    <img src="https://avatars.githubusercontent.com/u/116559859?v=4"
+                        class="mem_pp">
+                    <div class="mem_details">
+                        <p class="mem_name">Vidura Abeysinghe</p>
+                        <p class="mem_title">Developer of team Kylix | Undergraduate</p>
+                        <div class="mem_socials">
+                            <!--Change ur socials here-->
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/vd___a', '_blank');"
+                                class="insta_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/viduraabeysinghe/', '_blank');"
+                                class="lkin_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://twitter.com/Vidura_13', '_blank');"
+                                class="twt_logo mem_soc_rec"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <p id="footer_para">&copy; 2024</p>
+    </footer>
 </body>
+
 </html>

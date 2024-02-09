@@ -286,14 +286,102 @@ var HRManagementSubjects = [
     { name: 'Human Resource Ethics or Human Resource Personality - HRU3301,HRU3302', creditValue: 3 },
     // Define engineering subjects and their credit values here
 ];
+
+// Define Marketing-Management subjects
+var MarketingManagementSubjects = [
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Introduction to Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Creative Marketing - MMU3302', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Management-Studies subjects
+var ManagementStudiesSubjects = [
+    { name: 'Principles of Management - OSU3401', creditValue: 4 },
+    { name: 'Financial Accounting  - AFU3401 ', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Innovation and Entrepreneurship - OSU3308', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
+
+// Define Accounting-Management subjects
+var AccountingManagementSubjects = [
+    { name: 'Financial Accounting - AFU3401', creditValue: 4 },
+    { name: 'Principles of Management - OSU3401 ', creditValue: 4 },
+    { name: 'Marketing Management and Ethics in Marketing - MMU3401', creditValue: 4 },
+    { name: 'Microeconomics - AFU3402', creditValue: 4 },
+    { name: 'Quantitative Techniques for Management - OSU3407', creditValue: 4 },
+    { name: 'Human Resource Management - HRU3406', creditValue: 4 },
+    { name: 'Business Communication - OSU3309', creditValue: 3 },
+    { name: 'Aesthetics and Anthropology for Managers - AFU3303', creditValue: 3 },
+    // Define engineering subjects and their credit values here
+];
     
-// Define Humanities subjects
-var HumanitiesSubjects = [
+// Define Arts-Honors subjects
+var ArtsHonorsSubjects = [
+    { name: 'Information and Knowledge Society - HSU5301', creditValue: 3 },
+    { name: 'Advanced Library Cataloguing - HSU5602', creditValue: 6 },
+    { name: 'Advanced Library Classification - HSU5603', creditValue: 6 },
+    { name: 'Indexing & Abstracting Practices - HSU5304', creditValue: 3 },
+    { name: 'Intellectual Property Law - HSU5305', creditValue: 3 },
+    { name: 'Types of Libraries and Information Services - HSU5306', creditValue: 3 },
+    { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
+];
+
+// Define Arts-Honors subjects
+var ArtsHonorsSubjects = [
+    { name: 'Information and Knowledge Society - HSU5301', creditValue: 3 },
+    { name: 'Advanced Library Cataloguing - HSU5602', creditValue: 6 },
+    { name: 'Advanced Library Classification - HSU5603', creditValue: 6 },
+    { name: 'Indexing & Abstracting Practices - HSU5304', creditValue: 3 },
+    { name: 'Intellectual Property Law - HSU5305', creditValue: 3 },
+    { name: 'Types of Libraries and Information Services - HSU5306', creditValue: 3 },
+    { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
+];
+
+// Define Social-Sciences subjects
+var SocialSciencesSubjects = [
     { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
     { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
     { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Communication and Media Ethics - DSU3522', creditValue: 5 },
+    { name: 'Principles of Economics 2 - DSU3532', creditValue: 5 },
+    { name: 'Introduction to International Politics - DSU3541', creditValue: 5 },
+    { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
+    { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
+    { name: ' Social Harmony - DSE3215', creditValue: 2 },
 ];
 
+// Define Community-Development subjects
+var CommunityDevelopmentSubjects = [
+    { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Young People and Society - DSU3562', creditValue: 5 },
+    { name: 'Politics and Governance: an introduction - DSU3542', creditValue: 5 },
+    { name: 'Management and Leadership Skills for Youth Work - DSU3563', creditValue: 5 },
+    { name: 'Social Harmony - DSE3215', creditValue: 2 },
+];
+
+// Define Laws-Degree subjects
+var LawsDegreeSubjects = [
+    { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Young People and Society - DSU3562', creditValue: 5 },
+    { name: 'Politics and Governance: an introduction - DSU3542', creditValue: 5 },
+    { name: 'Management and Leadership Skills for Youth Work - DSU3563', creditValue: 5 },
+    { name: 'Social Harmony - DSE3215', creditValue: 2 },
+];
 
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
@@ -316,12 +404,14 @@ var degreeCredits = {
     'pharmacy': 125,
     'laboratory-science': 126,
     'psychology': 127,
-    'HR-Management': 130,
-    'Arts-Honors': 128,
-    'Language-Teaching': 129,
-    'Laws-Degree': 130,
-    'Social-Sciences': 131,
-    'Community-Development': 132,
+    'HR-Management': 120,
+    'Marketing-Management': 120,
+    'Management-Studies': 120,
+    'Accounting-Management':120,
+    'Arts-Honors':120,
+    'Social-Sciences':120,
+    'Community-Development':120,
+    'Laws-Degree':120,
 };
 
 // Check if the disclaimer has been shown previously
@@ -447,14 +537,25 @@ $("#program-select").change(function () {
          // Define Management subjects for each program    
         } else if (selectedProgram === "HR-Management") {
             subjects = HRManagementSubjects; // Use health science subjects
-        }  else if (selectedProgram === "Language-Teaching") {
-            subjects = HumanitiesSubjects;
+        }  else if (selectedProgram === "Marketing-Management") {
+            subjects = MarketingManagementSubjects;
+        } else if (selectedProgram === "Management-Studies") {
+            subjects = ManagementStudiesSubjects;
+        } else if (selectedProgram === "Accounting-Management") {
+            subjects = AccountingManagementSubjects;
+
+        // Define Arts subjects for each program    
+        } else if (selectedProgram === "Arts-Honors") {
+            subjects = ArtsHonorsSubjects;
+
         } else if (selectedProgram === "Social-Sciences") {
-            subjects = HumanitiesSubjects;
+            subjects = SocialSciencesSubjects;
+
         } else if (selectedProgram === "Community-Development") {
-            subjects = HumanitiesSubjects;
+            subjects = CommunityDevelopmentSubjects;
+
         } else if (selectedProgram === "Laws-Degree") {
-            subjects = HumanitiesSubjects;
+            subjects = LawsDegreeSubjects;
         } 
 
         if (subjects) {
@@ -593,14 +694,44 @@ function updateTotalPrice() {
         selectedProgram === "psychology"
     ) {
         subjects = psychologySubjects;
+    
+    // Function to update the Management degrees total price
+
+    }else if (
+        selectedProgram === "HR-Management"
+    ) {
+            subjects = HRManagementSubjects;
+    }else if (
+        selectedProgram === "Marketing-Management"
+    ) {
+            subjects = MarketingManagementSubjects;
+    }else if (
+        selectedProgram === "Management-Studies"
+    ) {
+            subjects = ManagementStudiesSubjects;
+    }else if (
+        selectedProgram === "Accounting-Management"
+    ) {
+            subjects = AccountingManagementSubjects;
+
+    // Function to update the Management degrees total price
+
     } else if (
-        selectedProgram === "Arts-Honors" ||
-        selectedProgram === "Language-Teaching" ||
-        selectedProgram === "Social-Sciences" ||
-        selectedProgram === "Community-Development" ||
+        selectedProgram === "Arts-Honors"
+    ) {
+        subjects = ArtsHonorsSubjects;
+    } else if (
+        selectedProgram === "Social-Sciences"
+    ) {
+        subjects = SocialSciencesSubjects;
+    } else if (
+        selectedProgram === "Community-Development"
+    ) {
+        subjects = CommunityDevelopmentSubjects;
+    } else if (
         selectedProgram === "Laws-Degree"
     ) {
-        subjects = HumanitiesSubjects;
+        subjects = LawsDegreeSubjects;
     }
 
     if (subjects) {
@@ -629,4 +760,4 @@ function updateTotalPrice() {
 
 // Initial setup
 $("#subject-select-container").hide(); // Hide subjects by default
-$("#total-degree-price").hide(); // Hide Total Degree Price by default
+$("#total-degree-price").hide(); // Hide Total Degree Price by defaultaaaaaaa
