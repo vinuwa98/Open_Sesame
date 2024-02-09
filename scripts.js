@@ -348,6 +348,40 @@ var ArtsHonorsSubjects = [
     { name: 'Advanced Library Automation - HSU5607', creditValue: 6 },
 ];
 
+// Define Social-Sciences subjects
+var SocialSciencesSubjects = [
+    { name: 'Introduction to Communication Theory and Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles of Economics I - DSU3531', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Communication and Media Ethics - DSU3522', creditValue: 5 },
+    { name: 'Principles of Economics 2 - DSU3532', creditValue: 5 },
+    { name: 'Introduction to International Politics - DSU3541', creditValue: 5 },
+    { name: 'Politics and Governance: An Introduction - DSU3542', creditValue: 5 },
+    { name: 'Understanding Sri Lankan Society and Culture - DSU3552', creditValue: 5 },
+    { name: ' Social Harmony - DSE3215', creditValue: 2 },
+];
+
+// Define Community-Development subjects
+var CommunityDevelopmentSubjects = [
+    { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Young People and Society - DSU3562', creditValue: 5 },
+    { name: 'Politics and Governance: an introduction - DSU3542', creditValue: 5 },
+    { name: 'Management and Leadership Skills for Youth Work - DSU3563', creditValue: 5 },
+    { name: 'Social Harmony - DSE3215', creditValue: 2 },
+];
+
+// Define Laws-Degree subjects
+var LawsDegreeSubjects = [
+    { name: 'Introduction to Communication Theory & Practice - DSU3521', creditValue: 5 },
+    { name: 'Principles and Practices of Youth in Development Work - DSU3561', creditValue: 5 },
+    { name: 'Understanding Society and Culture - DSU3551', creditValue: 5 },
+    { name: 'Young People and Society - DSU3562', creditValue: 5 },
+    { name: 'Politics and Governance: an introduction - DSU3542', creditValue: 5 },
+    { name: 'Management and Leadership Skills for Youth Work - DSU3563', creditValue: 5 },
+    { name: 'Social Harmony - DSE3215', creditValue: 2 },
+];
 
 // Define totalDegreeCredits for each degree program
 var degreeCredits = {
@@ -375,6 +409,9 @@ var degreeCredits = {
     'Management-Studies': 120,
     'Accounting-Management':120,
     'Arts-Honors':120,
+    'Social-Sciences':120,
+    'Community-Development':120,
+    'Laws-Degree':120,
 };
 
 // Check if the disclaimer has been shown previously
@@ -510,6 +547,15 @@ $("#program-select").change(function () {
         // Define Arts subjects for each program    
         } else if (selectedProgram === "Arts-Honors") {
             subjects = ArtsHonorsSubjects;
+
+        } else if (selectedProgram === "Social-Sciences") {
+            subjects = SocialSciencesSubjects;
+
+        } else if (selectedProgram === "Community-Development") {
+            subjects = CommunityDevelopmentSubjects;
+
+        } else if (selectedProgram === "Laws-Degree") {
+            subjects = LawsDegreeSubjects;
         } 
 
         if (subjects) {
@@ -674,6 +720,18 @@ function updateTotalPrice() {
         selectedProgram === "Arts-Honors"
     ) {
         subjects = ArtsHonorsSubjects;
+    } else if (
+        selectedProgram === "Social-Sciences"
+    ) {
+        subjects = SocialSciencesSubjects;
+    } else if (
+        selectedProgram === "Community-Development"
+    ) {
+        subjects = CommunityDevelopmentSubjects;
+    } else if (
+        selectedProgram === "Laws-Degree"
+    ) {
+        subjects = LawsDegreeSubjects;
     }
 
     if (subjects) {
