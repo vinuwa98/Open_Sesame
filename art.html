@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            text-align: center;
+        }
+
+        .overlay-content h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .overlay-content p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+    </style>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+    
+            // Array of messages to loop through
+            const messages = [
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
+            ];
+    
+            let index = 0;
+    
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function() {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+    
+        });
+    </script>
+</head>
+<body>
+
+    
+    <div class="top">
+        <div class="banner">
+            <img src="Open sesame.png" alt="banner">
+            <div class="banner_text">To know about your full payment</div>
+        </div>
+    </div>
+    <div class="middle">
+        General Inquiries: (+94) 011 2881 000 
+        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040   
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="Home.html" style="--i:0;">Home</a>
+            <a href="Calculate.html" style="--i:1;">Calculate</a>
+            <a href="article.html" style="--i:2;">Article</a>
+            <a href="events.html" style="--i:3;">Events</a>
+            <a href="aboutus.html" style="--i:4;">About Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2><center>ART GALLERY</center></h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="art2.jpg" alt="Event 1">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 1</h3>
+                        <p>Description of Event 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art 1.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more images and descriptions as needed -->
+        </div>
+    </div>
+</body>
