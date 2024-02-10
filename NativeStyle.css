@@ -6,7 +6,7 @@
 /* Styling for the banner image */
 .banner img {
     float: left; /* Float the banner image to the left */
-    width: 100%; /* Auto width for responsiveness */
+    width: auto; /* Auto width for responsiveness */
     height: 115px; /* Set the height of the banner image */
 }
 
