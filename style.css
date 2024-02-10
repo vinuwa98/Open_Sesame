@@ -153,6 +153,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    
+    
 }
 
 /* Styling for each gallery item with position, flex, margin, and transition */
@@ -174,7 +176,8 @@
 /* Styling for gallery images with full width and border radius */
 .gallery img {
     width: 100%;
-    height: auto;
+    
+    height: 100%;
     border-radius: 8px;
 }
 
@@ -197,18 +200,19 @@
 /* Styling for sections*/
 .section {
     padding: 10px;
-    background-color: #d8d8d8;
+    background-color: #000000;
     text-align: center;
     margin-top: 5px;
 }
 
 .section h2 {
-    color: #333;
+    font-size: 30px;
+    color: #fffdfd;
 }
 
 .section p {
-    color: #666;
-    font-size: 1.1em;
+    color: #c2c2c2;
+    font-size: 20px;
 }
  /* recent posts */
 
@@ -216,12 +220,13 @@
 
 .vertical-articles {
     justify-content: flex-end;
-    width:500px; /* Adjust the width as needed */
+    width:25%; /* Adjust the width as needed */
     margin: 20px;
+    float :left;
 }
 
 .vertical-articles h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -231,6 +236,7 @@
     border-radius: 8px; /* Rounded corners */
     padding: 1px; /* Padding inside the box */
     margin-bottom: 10px;
+    
     
 }
 
@@ -248,20 +254,20 @@
 }
 
 .article h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .article p {
-    font-size: 14px;
-    color: #666;
+    font-size: 30px;
+    color: #353434;
 }
 /*Upcoming events gallery*/
 .upcoming-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 230px;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 300px;
+    padding: 20px;
 }
 
 .upcoming-gallery img {
