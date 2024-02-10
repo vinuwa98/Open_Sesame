@@ -15,20 +15,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
+            background-color: #ffffff;
         }
 
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 20px;
         }
 
@@ -38,6 +38,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            height: 250px;
         }
 
         .gallery-item:hover {
@@ -48,6 +49,7 @@
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
         }
 
         .overlay {
@@ -83,6 +85,8 @@
             margin: 10px 0 0;
             font-size: 14px;
         }
+
+       
     </style>
 
     
@@ -134,7 +138,8 @@
     </header>
 
     <div class="container">
-        <h2><center>ART GALLERY</center></h2>
+        <h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular'; font-size:  50px; font-weight: bolder;"><center>ART GALLERY</center></h2>
+        <p style="font-size: larger;"><b>The Art Gallery Competition of 2024, organized by the Brotherhood Department of Social Sciences of BA 23' within the Faculty of Humanities and Social Sciences</b>, showcased remarkable artistic talent and cultural enrichment. Participants exhibited their creativity, fostering a vibrant atmosphere of innovation and expression. The event facilitated interdisciplinary dialogue, celebrating diverse perspectives through art. It stood as a testament to the enduring significance of the arts in enriching society.</p>
         <div class="gallery">
             <div class="gallery-item">
                 <img src="art2.jpg" alt="Event 1">
@@ -154,6 +159,78 @@
                     </div>
                 </div>
             </div>
+            <div class="gallery-item">
+                <img src="art3.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art6.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art8.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art10.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art7.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art9.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art4.jpg" alt="Event 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Event 2</h3>
+                        <p>Description of Event 2</p>
+                    </div>
+                </div>
+            </div>
+           <div class="gallery-item">
+            <img src="art5.jpg" alt="Event 2" >
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>Event 2</h3>
+                    <p>Description of Event 2</p>
+                </div>
+            </div>
+        </div>
             <!-- Add more images and descriptions as needed -->
         </div>
     </div>
