@@ -386,3 +386,18 @@
 #footer_para {
     text-align: center;
 }
+
+
+/*----------------------Article page styles------------------*/  
+
+.course-button{
+    font-size: 15px;
+}
+
+.faq_qu{
+    font-size: 18px;
+    color: brown;
+}
+.faq_answer{
+    font-size: 17px;
+}
