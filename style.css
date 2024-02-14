@@ -407,3 +407,23 @@
 .faq_answer{
     font-size: 17px;
 }
+
+.foedu_qu{
+    color: rgb(76, 76, 228);
+    font-size: 18px;
+}
+
+.foedu_answer{
+    color: #000;
+    font-size: 17px;
+}
+
+.foeng_qu{
+    color: rgb(76, 76, 228);
+    font-size: 18px;
+}
+
+.foeng_answer{
+    color: #000;
+    font-size: 17px;
+}
