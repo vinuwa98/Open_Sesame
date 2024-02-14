@@ -64,8 +64,8 @@
 }
 
 .member img {
-    width: 100px; /* Adjust member image size */
-    height: 100px;
+    width: 80px; /* Adjust member image size */
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
