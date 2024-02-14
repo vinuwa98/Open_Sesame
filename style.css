@@ -10,6 +10,11 @@
     height: 115px;
 }
 
+.banner {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 /* Styling for the banner text */
 .banner_text {
     padding: 15px;
@@ -127,7 +132,7 @@
     display: inline-block; /* Display links as inline-block to make them align horizontally */
     color: white;
     text-align: center;
-    padding: 20px 5%;
+    padding: 20px 6.8%;
     text-decoration: none;
 }
 
@@ -153,8 +158,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
 }
 
 /* Styling for each gallery item with position, flex, margin, and transition */
@@ -176,8 +179,7 @@
 /* Styling for gallery images with full width and border radius */
 .gallery img {
     width: 100%;
-    
-    height: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -200,19 +202,18 @@
 /* Styling for sections*/
 .section {
     padding: 10px;
-    background-color: #000000;
+    background-color: #d8d8d8;
     text-align: center;
     margin-top: 5px;
 }
 
 .section h2 {
-    font-size: 30px;
-    color: #fffdfd;
+    color: #333;
 }
 
 .section p {
-    color: #c2c2c2;
-    font-size: 20px;
+    color: #666;
+    font-size: 1.1em;
 }
  /* recent posts */
 
@@ -220,13 +221,12 @@
 
 .vertical-articles {
     justify-content: flex-end;
-    width:25%; /* Adjust the width as needed */
+    width:500px; /* Adjust the width as needed */
     margin: 20px;
-    float :left;
 }
 
 .vertical-articles h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -236,7 +236,6 @@
     border-radius: 8px; /* Rounded corners */
     padding: 1px; /* Padding inside the box */
     margin-bottom: 10px;
-    
     
 }
 
@@ -254,20 +253,20 @@
 }
 
 .article h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
 .article p {
-    font-size: 30px;
-    color: #353434;
+    font-size: 14px;
+    color: #666;
 }
 /*Upcoming events gallery*/
 .upcoming-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
-    gap: 300px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 230px;
+    padding: 40px;
 }
 
 .upcoming-gallery img {
@@ -393,37 +392,106 @@
     text-align: center;
 }
 
+/* Add slideshow CSS styles here */
+.slideshow-container {
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+    padding-top: 15px;
+    height: 400px; /* Set a fixed height for the slideshow container */
+}
 
-/*----------------------Article page styles------------------*/  
+.mySlides {
+    display: none;
+}
 
-.course-button{
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
     font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
-.faq_qu{
-    font-size: 18px;
-    color: brown;
-}
-.faq_answer{
-    font-size: 17px;
-}
-
-.foedu_qu{
-    color: rgb(76, 76, 228);
-    font-size: 18px;
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
-.foedu_answer{
-    color: #000;
-    font-size: 17px;
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.foeng_qu{
-    color: rgb(76, 76, 228);
-    font-size: 18px;
+.active, .dot:hover {
+    background-color: #717171;
 }
 
-.foeng_answer{
-    color: #000;
-    font-size: 17px;
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
