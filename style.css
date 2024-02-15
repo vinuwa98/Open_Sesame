@@ -91,18 +91,24 @@
 #total-price-container {
     text-align: center;
     margin-top: 20px;
-    background-color: #f0f0f0; /* Background color for the square */
-    padding: 20px; /* Padding for the square */
-    border: 2px solid #000; /* Border for the square */
-    border-radius: 10px; /* Rounded corners for the square */
+    background-color: #f0f0f0;
+    /* Background color for the square */
+    padding: 20px;
+    /* Padding for the square */
+    border: 2px solid #000;
+    /* Border for the square */
+    border-radius: 10px;
+    /* Rounded corners for the square */
 }
 
 /* Styling for total price and total degree price */
 #total-price,
 #total-degree-price {
-    font-size: 30px; /* Adjust the font size as needed */
+    font-size: 30px;
+    /* Adjust the font size as needed */
     font-weight: bold;
-    margin: 10px 0; /* Margin for spacing between elements */
+    margin: 10px 0;
+    /* Margin for spacing between elements */
 }
 
 /* Styling for the header section */
@@ -120,16 +126,20 @@
 /* Styling for the navbar with background color and full width */
 .navbar {
     background-color: rgb(237, 124, 49);
-    width: 100%; /* Set the width to 100% */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    text-align: center; /* Align the content to the right */
+    width: 100%;
+    /* Set the width to 100% */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    text-align: center;
+    /* Align the content to the right */
     font-weight: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Styling for navbar links */
 .navbar a {
-    display: inline-block; /* Display links as inline-block to make them align horizontally */
+    display: inline-block;
+    /* Display links as inline-block to make them align horizontally */
     color: white;
     text-align: center;
     padding: 20px 6.8%;
@@ -199,6 +209,7 @@
 .gallery a:hover .overlay {
     opacity: 1;
 }
+
 /* Styling for sections*/
 .section {
     padding: 10px;
@@ -215,13 +226,15 @@
     color: #666;
     font-size: 1.1em;
 }
- /* recent posts */
 
- /* Your existing styles go here */
+/* recent posts */
+
+/* Your existing styles go here */
 
 .vertical-articles {
     justify-content: flex-end;
-    width:500px; /* Adjust the width as needed */
+    width: 500px;
+    /* Adjust the width as needed */
     margin: 20px;
 }
 
@@ -231,25 +244,32 @@
 }
 
 .article {
-    display:flex; /* Use flexbox for layout */
-    border: 1px solid #c4c4c4; /* Border for the box */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1px; /* Padding inside the box */
+    display: flex;
+    /* Use flexbox for layout */
+    border: 1px solid #c4c4c4;
+    /* Border for the box */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 1px;
+    /* Padding inside the box */
     margin-bottom: 10px;
-    
+
 }
 
 
 .article img {
-    width: 150px; /* Adjust the width as needed */
+    width: 150px;
+    /* Adjust the width as needed */
     height: auto;
     border-radius: 8px;
-    margin-right: 10px; /* Add some spacing between image and content */
+    margin-right: 10px;
+    /* Add some spacing between image and content */
     transition: transform 0.3s;
 }
 
 .article-content {
-    flex-grow: 1; /* Allow content to grow and take available space */
+    flex-grow: 1;
+    /* Allow content to grow and take available space */
 }
 
 .article h3 {
@@ -261,6 +281,7 @@
     font-size: 14px;
     color: #666;
 }
+
 /*Upcoming events gallery*/
 .upcoming-gallery {
     display: grid;
@@ -281,12 +302,13 @@
 .upcoming-gallery img:hover {
     transform: scale(1.1);
 }
+
 .upcoming-gallery a {
     display: block;
     text-decoration: none;
     color: inherit;
 }
- 
+
 .figcaption {
     margin-top: 10px;
     text-align: center;
@@ -297,16 +319,17 @@
 /*----------------------About us page styles------------------*/
 
 #about-us-logo {
-    /*just to center the logo*/
     margin: 0 auto;
-    display:block;
+    display: block;
 }
+
 #h1_style {
-    font-family:monospace;
+    font-family: monospace;
     text-align: center;
     font-stretch: ultra-expanded;
     font-size: 60px;
 }
+
 .heading_font {
     font-family: fantasy;
     text-align: center;
@@ -321,18 +344,18 @@
     font-family: 'Snell Roundhand', cursive;
 }
 
-#team-container{
-    display:grid;
+#team-container {
+    display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, 50%);
+    grid-template-rows: repeat(3, 34%);
     row-gap: 10%;
     margin-bottom: 7%;
 }
 
 .member {
     border: 1px solid black;
-    border-radius:30px ;
+    border-radius: 30px;
     background-color: rgb(51, 49, 49);
 }
 
@@ -340,22 +363,23 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    float:left;
+    float: left;
     margin: 10px;
 }
 
 .mem_name {
     font-family: monospace;
     color: white;
-    font-size:20px;
+    font-size: 20px;
     padding-bottom: 0px;
-    line-height: 0%; /* Adjust the line height as needed */
+    line-height: 0%;
+    /* Adjust the line height as needed */
 }
 
 .mem_title {
     font-family: monospace;
     color: gray;
-    font-size:15px;
+    font-size: 15px;
     margin-top: -2%;
 }
 
@@ -365,10 +389,11 @@
 }
 
 .mem_soc_rec {
-    width:20px;
-    height:20px;
-    border:1px solid white;
-    margin:1% 6% 0% 0%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin: 1% 6% 0% 0%;
+    cursor:pointer;
 }
 
 .fb_logo {
@@ -376,11 +401,11 @@
 }
 
 .insta_logo {
-    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeS0hRnfcT7cwS_PrzWLcF15Mwm5pNSzxqUQ&usqp=CAU');
+    content: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRaC0q2xUf-0r-0x-kLULtFtYa3sMyv50AuNoPjrx2EL_pIZSohDsp-1TU8IEYx0vrCU2w6ePKYLw_mhtD3ySjXJPEKQw=s1600');
 }
 
 .lkin_logo {
-    content: url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-icon.png');
+    content: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRs88g81zuc3ZVVYnA4JMUIpECPQRW5m12s4t564oFOrO5ReuXw0p6TRosKaG-crkqdxhMP2IiERVXE78hAW3TDWt55DQ=s2560');
 }
 
 
@@ -388,8 +413,71 @@
     content: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=626&ext=jpg&ga=GA1.1.1862338985.1707062131&semt=ais');
 }
 
+.gthb_logo {
+    content: url('https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png');
+}
+
 #footer_para {
     text-align: center;
+}
+
+
+#whatsappButton {
+    background-image: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYT35QQZz7ogvLBoYRr4Akj29AicxjeLzFpGXd75eT-DF9hi5MPP_7Xl2huNdkIYUuNhMASvM5xo-P2d0HfRJmWgOujb-w=s2560');
+    width: 4%;
+    height: 8.2%;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 4px 8px black;
+}
+
+#linkedInButton {
+    background-image: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRs88g81zuc3ZVVYnA4JMUIpECPQRW5m12s4t564oFOrO5ReuXw0p6TRosKaG-crkqdxhMP2IiERVXE78hAW3TDWt55DQ=s2560');
+    width: 4%;
+    height: 8.2%;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 11%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 4px 8px black;
+}
+
+#logoLetters {
+    text-align: center;
+}
+
+.logoLetter {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 64px;
+    
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*-------------------------------- End of About us page styles  ----------------------------------------*/
+
+
+button {
+    cursor:pointer;
 }
 
 /* Add slideshow CSS styles here */
@@ -398,7 +486,8 @@
     position: relative;
     margin: auto;
     padding-top: 15px;
-    height: 400px; /* Set a fixed height for the slideshow container */
+    height: 400px;
+    /* Set a fixed height for the slideshow container */
 }
 
 .mySlides {
@@ -406,7 +495,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -428,7 +518,8 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -464,7 +555,8 @@
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 

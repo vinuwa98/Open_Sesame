@@ -11,6 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="NativeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Initial text
@@ -33,14 +36,14 @@
 
         });
 
-        function biglogo(x){
-            x.style.height="32px";
-            x.style.width="32px";
+        function biglogo(x) {
+            x.style.height = "32px";
+            x.style.width = "32px";
         }
 
-        function normallogo(x){
-            x.style.height="20px";
-            x.style.width="20px";
+        function normallogo(x) {
+            x.style.height = "20px";
+            x.style.width = "20px";
         }
     </script>
 
@@ -73,7 +76,20 @@
 
     <div class="about-us-container">
         <img src="Source/kylix.png" alt="Kylix Logo" id="about-us-logo">
-        <h1 id="h1_style">Team Kylix</h1>
+
+        <div id="logoLetters">
+            <span style="animation-delay:0.2s ;" class="logoLetter">T</span>
+            <span style="animation-delay:0.4s ;" class="logoLetter">e</span>
+            <span style="animation-delay:0.6s ;" class="logoLetter">a</span>
+            <span style="animation-delay:0.8s ;" class="logoLetter">m</span>
+            <span style="animation-delay:1s ;" class="logoLetter">&nbsp;</span>
+            <span style="animation-delay:1.2s ;" class="logoLetter">K</span>
+            <span style="animation-delay:1.4s ;" class="logoLetter">y</span>
+            <span style="animation-delay:1.6s ;" class="logoLetter">l</span>
+            <span style="animation-delay:1.8s ;" class="logoLetter">i</span>
+            <span style="animation-delay:2s ;" class="logoLetter">x</span>
+        </div>
+
         <hr>
         <div class="about-us-content">
             <h2 class="heading_font">About Us</h2>
@@ -108,13 +124,20 @@
                         <p class="mem_title">Founder & Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -123,20 +146,26 @@
                 <!--Team member 02-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/116260105?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/116260105?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Ishfa Ishak</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/ishfa_ishak?igsh=ZGUzMzM3NWJiOQ', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/ishfa_ishak?igsh=ZGUzMzM3NWJiOQ', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/ishfa-ishak-a41073239', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/ishfa-ishak-a41073239', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -152,13 +181,20 @@
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -167,20 +203,26 @@
                 <!--Team member 04-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/119842704?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/119842704?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Shamra Faizal</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/shamra__faizal', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/shamra__faizal', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -189,20 +231,21 @@
                 <!--Team member 05-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://lh3.googleusercontent.com/nQoqkJdwxQMxFeA9bcSS6xzCLkliYmd_-0SUwtiNobA8RknKCFTMQsZFyOQvbmfAnNroy2MuwzJKSWS6nUIv8UYgIMRgiP4Qm6r2wok=s120"
+                    <img src="https://avatars.githubusercontent.com/u/144241980?s=400&u=d268d6683e3b0f8ef2e47ce0ae1496f7c82f870c&v=4"
                         class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Oshada Rathnasiri</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
-                                class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
-                                class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/crp_oshada', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -211,20 +254,26 @@
                 <!--Team member 06-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/107571029?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/107571029?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Hafsa Sindikar</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com/profile.php?id=100086929982474', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com/profile.php?id=100086929982474', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/hafsazinthikar', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/hafsazinthikar', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/hafsa-sindikar-8195532a0/', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/hafsa-sindikar-8195532a0/', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://twitter.com/hafsasindikar', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/hafsasindikar', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -233,18 +282,23 @@
                 <!--Team member 07-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/116559859?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/116559859?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Vidura Abeysinghe</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/vd___a', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/vd___a', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/viduraabeysinghe/', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/viduraabeysinghe/', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://twitter.com/Vidura_13', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/Vidura_13', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -252,6 +306,14 @@
             </div>
         </div>
     </div>
+
+    <button onclick="window.open('https://whatsapp.com/channel/0029VaChd6G3wtb0OKkKEg23', '_blank');" id="whatsappButton">
+    </button>
+
+    <button onclick="window.open('https://www.linkedin.com/company/team-kylix/', '_blank');" id="linkedInButton">
+    </button>
+
+
 
     <footer>
         <p id="footer_para">&copy; 2024</p>
