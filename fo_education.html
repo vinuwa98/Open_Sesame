@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initial text
+            document.querySelector('.banner_text').innerText = "To know about your full payment";
+
+            // Array of messages to loop through
+            const messages = [
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
+            ];
+
+            let index = 0;
+
+            // Set interval to change text every 5 seconds
+            const intervalId = setInterval(function () {
+                document.querySelector('.banner_text').innerText = messages[index];
+                index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
+            }, 2000);
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="banner">
+            <img src="Source/Open sesame.png" alt="banner">
+            <div class="banner_text">To know about your full payment</div>
+        </div>
+    </div>
+    <div class="middle">
+        General Inquiries: (+94) 011 2881 000
+        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
+    </div>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <a href="Home.html" style="--i:0;">Home</a>
+            <a href="Calculate.html" style="--i:1;">Calculate</a>
+            <a href="article.html" style="--i:2;">Article</a>
+            <a href="events.html" style="--i:3;">Events</a>
+            <a href="aboutus.html" style="--i:4;">About Us</a>
+        </nav>
+    </header> <br><br>
+
+    <div id="education" class="course-description">
+        <h2>Faculty of Education</h2>
+        <p>
+        <p class="foedu_qu"> 1. What are the Study Programmes offered by the Faculty of Education?</p><br>
+        <p class="foedu_answer">Study Programmes are made up of different course combinations for the award of a
+            qualification through a
+            programme such as, Advanced Certificate, Honours <br> Degree, Postgraduate Diploma, and Masters’ Degree
+            programmes. Also, many short courses are offered by the Faculty of Education.</p><br>
+
+        <p style="color: brown;">Certificate Programmes</p>
+
+        • Advanced Certificate in Pre School Education Programme (ACPE)<br><br>
+
+        <p style="color: brown;"> Bachelor’s Degree Programmes </p>
+        • Bachelor of Education (Honours) in Natural Sciences [BEd Hons (Natural Sciences)] Degree Programme<br>
+        • Bachelor of Education (Honours) in Drama and Theatre [BEd Hons (Drama and Theatre)] Degree Programme<br>
+        • Bachelor of Education (Honours) in Special Needs Education [BEd Hons (Special Needs Education)] Degree
+        Programme<br>
+        • Bachelor of Education (Honours) in Primary Education [BEd Hons (Primary Education)] Degree Programme<br><br>
+
+        <p style="color: brown;"> Post Graduate Programmes</p>
+
+        • Post Graduate Diploma in Education Programme (PGDE)<br>
+        • Post Graduate Diploma in Special Needs Education Programme (PGDSNE)<br><br>
+
+        <p style="color: brown;">Masters’ Programmes</p>
+
+        • Degree of Master of Education Programme(MEd)<br>
+        • Degree of Master of Teacher Education Programme (MTE)<br>
+        • Degree of Master of Arts in Education Programme(MAE)<br>
+        • Degree of Master of Special Needs Education Programme (MEdSNE)<br><br>
+
+        <p class="foedu_qu"> 2. Are these programmes full time or part time?</p>
+        <p class="foedu_answer">• All programmes are full time and will be taught using open and distance learning mode.
+        </p><br>
+
+        <p class="foedu_qu"> 3. What are the short courses conducted by the Faculty of Education?</p>
+        <p class="foedu_answer">Short Courses<br>
+            • Short Course on Research Methodology<br>
+            • Short Course on Child Development<br>
+            • Short Course on Teaching Children with Learning Disabilities<br>
+            • Short Course on Inclusive Education<br></p><br>
+
+        <p class="foedu_qu">4. Will I be an external student?</p>
+        <p class="foedu_answer">• All Open University of Sri Lanka (OUSL) students are internal students. We provide
+            comprehensive learner
+            support through study material, tutorial support and<br> other academic assistance to all our students.</p>
+        <br>
+
+        <p class="foedu_qu">5. Can I study while being employed?</p>
+        <p class="foedu_answer">• Yes, our university has been established primarily to cater to adults and the
+            employed.<br>
+            • Flexible teaching-learning mode is particularly suited to those employed to achieve their higher
+            educational aspirations.<br>
+            • Face-to-face teaching sessions are minimal. No regular lectures as in conventional universities.</p>
+        <br>
+
+        <p class="foedu_qu"> 6. When will applications be called for the Study Programmes?</p>
+        <p class="foedu_answer">• Applications are called once every year through newspaper advertisements and
+            university website.</p><br>
+
+        <p class="foedu_qu"> 7. How can I apply for a study programme?</p>
+        <p class="foedu_answer">• Applications must be submitted ONLINE before the deadline, using the link in the OUSL
+            webpage.<br>
+            • International students should contact the International Relations Division.<br>
+            Email : dirir@ou.ac.lk ; ird@ou.ac.lk </p><br>
+
+        <p class="foedu_qu">8. What are the entry requirements for admission to a Study Programme?</p>
+        <p class="foedu_answer">• Please refer the latest Student Handbook in the Faculty webpage.</p><br>
+
+        <p class="foedu_qu"> 9. Is there any possibility to follow any degree programme without G.C.E.
+            A/L qualification?</p>
+        <p class="foedu_answer">• Yes. However, you need to follow relevant Advanced Certificate Programme (foundation
+            programme)
+            recommended by the faculty before applying for the<br> programme.</p><br>
+
+        <p class="foedu_qu">10. How can I get more information about programmes?</p>
+        <p class="foedu_answer">• You may download the Student Handbook from the Faculty website.</p><br>
+
+        <p class="foedu_qu"> 11. Are there Selection Tests for study programmes?</p>
+        <p class="foedu_answer">There are selection tests for the following programmes.<br>
+            • Bachelor of Education (Honours) in Primary Education Degree Programme<br>
+            • Post Graduate Diploma in Education Programme<br>
+            • Degree of Master of Education Programme</p><br>
+
+        <p class="foedu_qu">12. Are there interviews for study programmes?</p>
+        <p class="foedu_answer">There are interviews for the following programmes.<br>
+            • Degree of Master of Teacher Education Programme<br>
+            • Degree of Master of Arts in Education Programme<br>
+            • Degree of Master of Special Needs Education Degree Programme</p><br>
+
+        <p class="foedu_qu"> 13. Is there any age limit to follow any programme?</p>
+        <p class="foedu_answer">• Should be over 18 years.</p><br>
+
+        <p class="foedu_qu">14. How am I informed about the registration?</p>
+        <p class="foedu_answer">• Students will be informed individually to register for the Programme on a specified
+            date by e-mail.</p><br>
+
+        <p class="foedu_qu"> 15. What are the documents that I should produce for the registration?</p>
+        <p class="foedu_answer">• Educational qualifications, birth certificate, national Identity card (NIC)<br>
+            • Two passport size colour photographs</p><br>
+
+        <p class="foedu_qu">16. When will the registration take place?</p>
+        <p class="foedu_answer">• Usually, one month after the closing date of the applications<br>
+            • Must register on the date specified.</p><br>
+
+        <p class="foedu_qu"> 17. Do I have to come in-person for the registration?</p>
+        <p class="foedu_answer">• Yes, it is essential that you come yourself for registration as there may be
+            clarifications to make.<br>
+            • In unavoidable circumstances you may send all relevant documents with copies through a nominated person
+            with a letter of authorisation.</p><br>
+
+        <p class="foedu_qu"> 18. How much will I have to pay?</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Programme</th>
+                    <th>Amount (Approximately)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Certificate in Pre-School Education Programme Level 2</td>
+                    <td>Rs. 20,000/-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bachelor of Education (Honours) in Natural Sciences Degree Programme Level 5 & 6</td>
+                    <td>Rs. 146,320/-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor of Education (Honours) in Drama and Theatre Degree Programme Level 5 & 6</td>
+                    <td>Rs. 247,420/-</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bachelor of Education (Honours) in Special Needs Education Degree Programme Level 5 & 6</td>
+                    <td>Rs. 150,200/-</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bachelor of Education (Honours) in Primary Education Degree Programme Levels 3, 4, 5 & 6</td>
+                    <td>Rs. 206,000/-</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Post Graduate Diploma in Education Programme</td>
+                    <td>Rs. 69,100/-</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Post Graduate Diploma in Special Needs Education Programme</td>
+                    <td>Rs. 80,000/-</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Degree of Master of Education Programme</td>
+                    <td>Rs. 90,000/-</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Degree of Master of Teacher Education Programme</td>
+                    <td>Rs. 111,000/-</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Degree of Master of Special Needs Education Programme</td>
+                    <td>Rs. 120,000/-</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Degree of Master of Arts in Education Programme</td>
+                    <td>Not yet offered</td>
+                </tr>
+            </tbody>
+
+        </table><br><br>
+
+        <p class="foedu_qu"> 19. Should I pay full amount at once during the registration?</p>
+        <p class="foedu_answer">• Payment can be made in four installments per year.</p><br>
+
+        <p class="foedu_qu"> 20. Will I be able to obtain a Mahapola or other Bursary awarded by the
+            Open University?</p>
+        <p class="foedu_answer">• You are entitled to Mahapola bursaries if you are unemployed.<br>
+            • But you may be entitled to other bursaries awarded by the OUSL on merit/needs basis.<br>
+            • Student Handbook and OUSL website provide information on bursaries.</p><br>
+
+        <p class="foedu_qu"> 21. Can I add/drop courses after registration?</p>
+        <p class="foedu_answer">• Yes, the OUSL permits to add or drop courses during the ‘add/drop’ period, and to drop
+            courses on the ‘drop
+            date’.<br>
+            • Add/drop’ period and ‘drop date’ are informed through the Faculty webpage.<br>
+            • If you fail to drop a course during the ‘add/drop’ period but drop it subsequently, the fees applicable to
+            that course will be forfeited. However, this will not have <br> any effects on the grades that you would get
+            for
+            this course after a subsequent registration.
+            • If you fail to drop a course even on the ‘drop date’, you are considered to have failed the course, and if
+            you
+            register again and follow the course the highest<br> grade you are entitled to is C grade.</p><br>
+
+        <p class="foedu_qu">22. Can I withdraw from the programme after registration?</p>
+        <p class="foedu_answer">Yes, you can. If you withdraw from the programme before the ‘add/drop’ period, you are
+            refunded 90% of the
+            course fees paid. Otherwise, all the course fees<br> paid will be forfeited.</p><br>
+
+        <p class="foedu_qu"> 23. Can I get exemptions for prior qualifications?</p>
+        <p class="foedu_answer">• Yes, you may apply for specific exemptions from courses based on relevant prior
+            qualifications.<br>
+            • Please refer Student Handbook for exemptions approved by the Faculty.<br>
+            • Applications can also be submitted for evaluation of other qualifications for exemptions. Application form
+            can
+            be downloaded from Faculty webpage.</p><br>
+
+        <p class="foedu_qu">24. Can I follow the Study Programme from any centre?</p>
+        <p class="foedu_answer">• All study programmes are conducted at Colombo Regional Centre.<br>
+            • Also, most of the study programs are conducted in Regional and study centres. For more information read
+            the
+            student handbook of the relevant study<br> programme.</p><br>
+
+        <p class="foedu_qu"> 25. What is the medium of Instruction?</p>
+        <p class="foedu_answer">• In most of the programmes medium of instruction are Sinhala, Tamil, and English.</p>
+        <br>
+
+        <p class="foedu_qu">26. What is distance mode of teaching-learning?</p>
+        <p class="foedu_answer">• Can pursue learning in your own time and pace, irrespective of location, age, or other
+            barriers.<br>
+            • Learn via self-study course materials in the form of written texts and audio/visual aids.<br>
+            • Minimum number of face-to-face interactive sessions are conducted called ‘dayschools’.<br>
+            • Extensive support through online components.<br>
+            • Day schools (discussions), tutorials, and assignments facilitate learning. Day schools can be face-to-face
+            or
+            via web conferencing (such as Zoom platform).<br>
+            • Other teaching-learning activities include compulsory practical components, continuous assessments, and
+            final
+            examinations.</p><br>
+
+        <p class="foedu_qu">27. What is the duration of the Programme(s)?</p>
+
+        <head>
+            <style>
+                table {
+                    width: 80%;
+                    border-collapse: collapse;
+                    margin: 20px;
+                }
+
+                th,
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #fff;
+                }
+
+                tr:hover {
+                    background-color: #f5f5f5;
+                }
+
+                td {
+                    border-bottom: 2px solid pink;
+                    /* Pink color for row lines */
+                }
+
+                th:first-child,
+                td:first-child {
+                    border-left: 2px solid white;
+                    /* White color for the first column line */
+                }
+
+                th:last-child,
+                td:last-child {
+                    border-right: 2px solid white;
+                    /* White color for the last column line */
+                }
+            </style>
+        </head>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Programme</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Certificate in Pre School Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bachelor of Education (Honours) in Natural Sciences Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor of Education (Honours) in Drama and Theatre Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bachelor of Education (Honours) in Special Needs Education Degree Programme</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bachelor of Education (Honours) in Primary Education</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Post Graduate Diploma in Education Programme</td>
+                    <td>15 months</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Post Graduate Diploma in Special Needs Education Programme</td>
+                    <td>15 months</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Degree of Master of Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Degree of Master of Teacher Education Programme</td>
+                    <td>1 year</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Degree of Master of Arts in Education Programme</td>
+                    <td>2 years</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Degree of Master of Special Needs Education Programme</td>
+                    <td>2 years</td>
+                </tr>
+            </tbody>
+        </table> <br><br>
+
+        </table>
+
+        <p class="foedu_qu">28. What is a credit?</p>
+        <p class="foedu_answer">• A “Credit” is the academic value of an OUSL course.<br>
+            • Time you will have to allocate for studying a course depends on its credit rating.<br>
+            • One Credit = 50 notional learning hours.</p><br>
+
+        <p class="foedu_qu">29. When will I be issued my course material?</p>
+        <p class="foedu_answer">• Course material will be issued during the registration in print/ soft copy format
+            after the
+            registration.</p><br>
+
+        <p class="foedu_qu">30. How can I get further information and help?</p>
+        <p class="foedu_answer">• Faculty Prospectus and Student Handbook: These publications provide important
+            information in more detail for
+            prospective and registered students.<br>
+            • Orientation and counselling sessions: Provide advice on how to plan studies before registration to a
+            Programme.<br>
+            • Contact staff: After registering students can meet academic staff in relevant department and get advice/
+            clarify doubts on academic related queries.
+            • Contact Faculty Help Desk- Ms. Morin Perera on 071-6368235 /raper@ou.ac.lk<br>
+            • Contact relevant Head of the Department.</p><br><br>
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                table {
+                    width: 80%;
+                    border-collapse: collapse;
+                    margin: 20px;
+                }
+
+                th,
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #fff;
+                }
+
+                tr:hover {
+                    background-color: #f5f5f5;
+                }
+            </style>
+            <title>Contact Table</title>
+        </head>
+
+        <body>
+
+            <h2>Contact Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Telephone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Head/Department of Secondary and Tertiary Education</td>
+                        <td>112881425<br>112881231</td>
+                        <td>hdste@ou.ac.lk</td>
+                    </tr>
+                    <tr>
+                        <td>Head/Early Childhood and Primary Education</td>
+                        <td>112881400</td>
+                        <td>hdecpe@ou.ac.lk</td>
+                    </tr>
+                    <tr>
+                        <td>Head/Special Needs Education</td>
+                        <td>112881015</td>
+                        <td>hdsne@ou.ac.lk</td>
+                    </tr>
+                    <tr>
+                        <td>Head/Educational Leadership and Management</td>
+                        <td>112881668</td>
+                        <td>hdelm@ou.ac.lk</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </body>
+
+        </html>
+
+
+        </p>
+    </div>
+</body>
