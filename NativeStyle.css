@@ -4,18 +4,33 @@
         width: 100%; /* Make the banner image full width */
         height: auto; /* Keep aspect ratio */
     }
-
-    .banner_text {
-        font-size: 40px; /* Adjust font size for smaller screens */
-        padding: 5px; /* Adjust padding */
+    
+    .banner {
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
+    .banner_text {
+        font-size: 40px; /* Adjust font size */
+        position: relative; /* Position the text absolutely within the banner */
+        top: 60%; /* Position from the top */
+        left: 0%; /* Position from the left */
+        z-index: 999; /* Ensure the text appears above other elements */
+        color: white; /* Text color */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 5px; /* Rounded corners */
+        max-width: 100%; /* Limit maximum width */
+        text-align: center; /* Center align the text */
+    }
+    
     .navbar {
         font-size: 14px; /* Adjust font size for navbar links */
     }
 
     .middle {
-        font-size: 14px; /* Adjust font size for middle section */
+        text-align: center; /* Center align text */
+        margin-top: 59%; /* Add some top margin */
+        font-size: 16px; /* Adjust font size */
     }
 
     /* Add more styles as needed for mobile responsiveness */
