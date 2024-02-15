@@ -3,6 +3,11 @@
     border: 3px solid #fff;
 }
 
+.banner {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 /* Styling for the banner image */
 .banner img {
     float: left;
