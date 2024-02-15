@@ -1,0 +1,72 @@
+/* Customize Slideshow Container */
+.slideshow-container {
+    max-width: 800px; /* Adjust maximum width */
+    margin: 0 auto; /* Center the slideshow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Customize Previous and Next Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Customize Dot Styling */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Customize Caption Text Styling */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Add Animation Effects (Example) */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
