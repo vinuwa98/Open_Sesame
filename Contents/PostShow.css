@@ -1,7 +1,7 @@
 /* StylePost.css */
 
 .photo-square {
-    width: 1300px; /* Adjust the size of the square */
+    max-width: 80%; /* Adjust the size of the square */
     height: 1300px; /* Adjust the size of the square */
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Position relative for absolute positioning of images */
