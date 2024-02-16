@@ -301,25 +301,65 @@
 }
 
 /*----------------------About us page styles------------------*/
+#aboutus-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#aboutus-paragraph {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 18px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 150%;
+}
+
+#aboutus-team-img {
+    margin-bottom: 10%;
+}
+
+#aboutus-paragraph span{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 99, 0); 
+}
+
+#aboutus-paragraph p{
+    margin-bottom: 4%;
+}
 
 #about-us-logo {
-    /*just to center the logo*/
     margin: 0 auto;
-    display:block;
+    display: block;
 }
-#h1_style {
-    font-family:monospace;
+
+#slogan {
+    width: 100%;
+    display: flex;
+    display: inline-block;
     text-align: center;
-    font-stretch: ultra-expanded;
-    font-size: 60px;
+    justify-content: center;
+    align-items: center;
 }
+
+#sloganParagraph {
+    font-family: "Silkscreen", sans-serif;
+    animation: fadeIn 5s ease forwards;
+}
+
 .heading_font {
-    font-family: fantasy;
+    font-family: "Bungee", sans-serif;
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 5px;
-    font-size: 30px;
-    color: orangered;
+    font-size: 50px;
+    color:rgb(247, 99, 0);
+    text-shadow: 5px 5px 0px orange;
+    margin: 0;
 }
 
 #aboutus_para {
@@ -327,41 +367,42 @@
     font-family: 'Snell Roundhand', cursive;
 }
 
-#team-container{
-    display:grid;
+#team-container {
+    display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, 50%);
+    grid-template-rows: repeat(3, 34%);
     row-gap: 10%;
     margin-bottom: 7%;
 }
 
 .member {
     border: 1px solid black;
-    border-radius:30px ;
+    border-radius: 30px;
     background-color: rgb(51, 49, 49);
+    box-shadow: 0px 4px 8px black;
 }
 
 .mem_pp {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    float:left;
+    float: left;
     margin: 10px;
 }
 
 .mem_name {
     font-family: monospace;
     color: white;
-    font-size:20px;
+    font-size: 20px;
     padding-bottom: 0px;
-    line-height: 0%; /* Adjust the line height as needed */
+    line-height: 0%;
 }
 
 .mem_title {
     font-family: monospace;
     color: gray;
-    font-size:15px;
+    font-size: 15px;
     margin-top: -2%;
 }
 
@@ -371,10 +412,11 @@
 }
 
 .mem_soc_rec {
-    width:20px;
-    height:20px;
-    border:1px solid white;
-    margin:1% 6% 0% 0%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin: 1% 6% 0% 0%;
+    
 }
 
 .fb_logo {
@@ -382,11 +424,11 @@
 }
 
 .insta_logo {
-    content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeS0hRnfcT7cwS_PrzWLcF15Mwm5pNSzxqUQ&usqp=CAU');
+    content: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRaC0q2xUf-0r-0x-kLULtFtYa3sMyv50AuNoPjrx2EL_pIZSohDsp-1TU8IEYx0vrCU2w6ePKYLw_mhtD3ySjXJPEKQw=s1600');
 }
 
 .lkin_logo {
-    content: url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-icon.png');
+    content: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRs88g81zuc3ZVVYnA4JMUIpECPQRW5m12s4t564oFOrO5ReuXw0p6TRosKaG-crkqdxhMP2IiERVXE78hAW3TDWt55DQ=s2560');
 }
 
 
@@ -394,10 +436,70 @@
     content: url('https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=626&ext=jpg&ga=GA1.1.1862338985.1707062131&semt=ais');
 }
 
+.gthb_logo {
+    content: url('https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png');
+}
+
 #footer_para {
     text-align: center;
 }
 
+
+#whatsappButton {
+    background-image: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYT35QQZz7ogvLBoYRr4Akj29AicxjeLzFpGXd75eT-DF9hi5MPP_7Xl2huNdkIYUuNhMASvM5xo-P2d0HfRJmWgOujb-w=s2560');
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 4px 8px black;
+}
+
+#linkedInButton {
+    background-image: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYRs88g81zuc3ZVVYnA4JMUIpECPQRW5m12s4t564oFOrO5ReuXw0p6TRosKaG-crkqdxhMP2IiERVXE78hAW3TDWt55DQ=s2560');
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 11%;
+    right: 1%;
+    z-index: 999;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 4px 8px black;
+}
+
+#logoLetters {
+    text-align: center;
+}
+
+.logoLetter {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 64px;
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*-------------------------------- End of About us page styles  ----------------------------------------*/
+
+button {
+    cursor:pointer;
+}
 
 /*----------------------Article page styles------------------*/  
 
