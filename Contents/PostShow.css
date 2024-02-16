@@ -1,0 +1,37 @@
+/* StylePost.css */
+
+.photo-square {
+    width: 1300px; /* Adjust the size of the square */
+    height: 1300px; /* Adjust the size of the square */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Position relative for absolute positioning of images */
+    margin: 0 auto; /* Center the square horizontally */
+}
+
+.photo-container {
+    display: flex; /* Arrange images in a row */
+    position: absolute; /* Position absolutely inside the square */
+    left: 50%; /* Move the container 50% from the left edge */
+    transform: translateX(-50%); /* Center the container horizontally */
+    animation: movePhotos var(--animation-speed) linear infinite; /* Apply animation with customizable speed */
+}
+
+.photo-container img {
+    width: var(--photo-size); /* Set customizable photo size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.photo-container img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+@keyframes movePhotos {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(calc(-100% + var(--photo-size))); /* End position */
+    }
+}
