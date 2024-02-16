@@ -11,6 +11,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="NativeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <!--Font of the slogan-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--End of Font of the slogan-->
+
+    <!--Font of the headings-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Honk&family=Protest+Revolution&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!--End of font -->
+
+    <!--Font for the about us Paragraph-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!--End in Font of the about us Paragraph-->
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Initial text
@@ -18,9 +41,9 @@
 
             // Array of messages to loop through
             const messages = [
-                "To know about your university",
-                "To know about all events",
-                "To know about all degrees"
+                "To know about  university",
+                "To know about  events",
+                "To know about  degree"
             ];
 
             let index = 0;
@@ -33,20 +56,21 @@
 
         });
 
-        function biglogo(x){
-            x.style.height="32px";
-            x.style.width="32px";
+        function biglogo(x) {
+            x.style.height = "32px";
+            x.style.width = "32px";
         }
 
-        function normallogo(x){
-            x.style.height="20px";
-            x.style.width="20px";
+        function normallogo(x) {
+            x.style.height = "20px";
+            x.style.width = "20px";
         }
     </script>
 
 </head>
 
-<body>
+<body
+    style="cursor: url('https://lh3.googleusercontent.com/drive-viewer/AEYmBYSqyflt7XmFBZ1ziYGYLY3obqxaqbYMOiyB7JUK3bKq16quXwDwUw8rEw8KACJVDy6NXYAtwNawqLTb5yChtBRj0za8=s2560'), grab;">
 
     <div class="top">
         <div class="banner">
@@ -72,30 +96,38 @@
     </header>
 
     <div class="about-us-container">
-        <img src="Source/kylix.png" alt="Kylix Logo" id="about-us-logo">
-        <h1 id="h1_style">Team Kylix</h1>
-        <hr>
+
         <div class="about-us-content">
-            <h2 class="heading_font">About Us</h2>
-            <p id="aboutus_para">
-                Team Kylix,is a dynamic force in the software
-                development arena. Founded in December 2022, our team has blossomed into a vibrant community of
-                dedicated individuals united by a shared passion for innovation and excellence. With a relentless drive
-                to push the boundaries of technology, we embark on each project with enthusiasm and determination,
-                fueled by the belief that every challenge is an opportunity for growth. Together, we strive to create
-                meaningful software solutions that not only meet but exceed expectations, leaving a lasting impact on
-                the industry and society at large.
+            <h2 class="heading_font">Our Story</h2>
 
-                At the heart of Team Kylix lies a relentless drive to push the boundaries of what's possible, fueled by
-                a passion for problem-solving and a thirst for knowledge. With each project we undertake, we strive not
-                only to deliver exceptional results but also to leave a lasting impression on the industry. As
-                trailblazers in the ever-evolving landscape of software development, we embrace challenges as
-                opportunities for growth and innovation. Our dedication to excellence and our unwavering commitment to
-                our craft propel us forward, inspiring us to reach new heights and set new standards for success.
+            <div id="aboutus-div">
+                <div id="aboutus-paragraph">
+                    <p><span>T</span>eam Kylix,is a dynamic force in the software
+                        development arena. Founded in December 2022, our team has blossomed into a vibrant community of
+                        dedicated individuals united by a shared passion for innovation and excellence. With a relentless drive
+                        to push the boundaries of technology, we embark on each project with enthusiasm and determination,
+                        fueled by the belief that every challenge is an opportunity for growth. Together, we strive to create
+                        meaningful software solutions that not only meet but exceed expectations, leaving a lasting impact on
+                        the industry and society at large.</p>
+        
+                    <p>At the heart of Team Kylix lies a relentless drive to push the boundaries of what's possible, fueled by
+                        a passion for problem-solving and a thirst for knowledge. With each project we undertake, we strive not
+                        only to deliver exceptional results but also to leave a lasting impression on the industry. As
+                        trailblazers in the ever-evolving landscape of software development, we embrace challenges as
+                        opportunities for growth and innovation. Our dedication to excellence and our unwavering commitment to
+                        our craft propel us forward, inspiring us to reach new heights and set new standards for success.</p>
+        
+                    <p>Join us on our journey as we write the next chapter in our story, where the possibilities are limitless,
+                        and the future is ours to shape. Together, let's harness the power of technology to make a meaningful
+                        difference in the world, one line of code at a time.</p>
+                </div>
 
-                Join us on our journey as we write the next chapter in our story, where the possibilities are limitless,
-                and the future is ours to shape. Together, let's harness the power of technology to make a meaningful
-                difference in the world, one line of code at a time.</p>
+                <div id="aboutus-image">
+                    <img id="aboutus-team-img" src="https://devsquad.com/assets/site/homepage/hero-team.svg" alt="Image of a team">
+                </div>
+            </div>
+
+
             <h3 class="heading_font">Meet Our Team</h3>
             <div id="team-container">
 
@@ -108,13 +140,20 @@
                         <p class="mem_title">Founder & Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/vinuwa98', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -123,20 +162,26 @@
                 <!--Team member 02-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/116260105?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/116260105?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Ishfa Ishak</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/Ishfaishak', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/ishfa_ishak?igsh=ZGUzMzM3NWJiOQ', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/ishfa_ishak?igsh=ZGUzMzM3NWJiOQ', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/ishfa-ishak-a41073239', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/ishfa-ishak-a41073239', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -152,13 +197,20 @@
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/kanzulnuha2002', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -167,20 +219,26 @@
                 <!--Team member 04-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/119842704?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/119842704?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Shamra Faizal</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/Shamra5', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/shamra__faizal', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/shamra__faizal', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.twitter.com', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -189,20 +247,21 @@
                 <!--Team member 05-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://lh3.googleusercontent.com/nQoqkJdwxQMxFeA9bcSS6xzCLkliYmd_-0SUwtiNobA8RknKCFTMQsZFyOQvbmfAnNroy2MuwzJKSWS6nUIv8UYgIMRgiP4Qm6r2wok=s120"
+                    <img src="https://avatars.githubusercontent.com/u/144241980?s=400&u=d268d6683e3b0f8ef2e47ce0ae1496f7c82f870c&v=4"
                         class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Oshada Rathnasiri</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com', '_blank');"
-                                class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com', '_blank');"
-                                class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/oshadaDev', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/oshada-rathnasiri-858098246/', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://www.twitter.com', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/crp_oshada', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -211,20 +270,26 @@
                 <!--Team member 06-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/107571029?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/107571029?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Hafsa Sindikar</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.facebook.com/profile.php?id=100086929982474', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/HafsaSindikar', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.facebook.com/profile.php?id=100086929982474', '_blank');"
                                 class="fb_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/hafsazinthikar', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/hafsazinthikar', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/hafsa-sindikar-8195532a0/', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/hafsa-sindikar-8195532a0/', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onclick="window.open('https://twitter.com/hafsasindikar', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/hafsasindikar', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
@@ -233,29 +298,61 @@
                 <!--Team member 07-->
                 <div class="member">
                     <!--Change your PP here--->
-                    <img src="https://avatars.githubusercontent.com/u/116559859?v=4"
-                        class="mem_pp">
+                    <img src="https://avatars.githubusercontent.com/u/116559859?v=4" class="mem_pp">
                     <div class="mem_details">
                         <p class="mem_name">Vidura Abeysinghe</p>
                         <p class="mem_title">Developer of team Kylix | Undergraduate</p>
                         <div class="mem_socials">
                             <!--Change ur socials here-->
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.instagram.com/vd___a', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://github.com/vidura13', '_blank');"
+                                class="gthb_logo mem_soc_rec"></div>
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.instagram.com/vd___a', '_blank');"
                                 class="insta_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://www.linkedin.com/in/viduraabeysinghe/', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://www.linkedin.com/in/viduraabeysinghe/', '_blank');"
                                 class="lkin_logo mem_soc_rec"></div>
-                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)" onclick="window.open('https://twitter.com/Vidura_13', '_blank');"
+                            <div onmouseover="biglogo(this)" onmouseout="normallogo(this)"
+                                onclick="window.open('https://twitter.com/Vidura_13', '_blank');"
                                 class="twt_logo mem_soc_rec"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <hr>
+        <img src="Source/kylix.png" alt="Kylix Logo" id="about-us-logo">
+
+        <div id="logoLetters">
+            <span style="animation-delay:0.2s ;" class="logoLetter">T</span>
+            <span style="animation-delay:0.4s ;" class="logoLetter">e</span>
+            <span style="animation-delay:0.6s ;" class="logoLetter">a</span>
+            <span style="animation-delay:0.8s ;" class="logoLetter">m</span>
+            <span style="animation-delay:1s ;" class="logoLetter">&nbsp;</span>
+            <span style="animation-delay:1.2s ;" class="logoLetter">K</span>
+            <span style="animation-delay:1.4s ;" class="logoLetter">y</span>
+            <span style="animation-delay:1.6s ;" class="logoLetter">l</span>
+            <span style="animation-delay:1.8s ;" class="logoLetter">i</span>
+            <span style="animation-delay:2s ;" class="logoLetter">x</span>
+        </div>
+
+        <div id="slogan">
+            <p id="sloganParagraph">&lt;/&gt;&nbsp;Relax; it's only ONEs and ZEROs&nbsp;&lt;/&gt;</p>
+        </div>
+
+
     </div>
 
-    <footer>
-        <p id="footer_para">&copy; 2024</p>
-    </footer>
+
+
+    <button onclick="window.open('https://whatsapp.com/channel/0029VaChd6G3wtb0OKkKEg23', '_blank');"
+        id="whatsappButton">
+    </button>
+
+    <button onclick="window.open('https://www.linkedin.com/company/team-kylix/', '_blank');" id="linkedInButton">
+    </button>
+
 </body>
 
 </html>
