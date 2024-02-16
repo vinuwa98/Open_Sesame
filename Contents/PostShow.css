@@ -5,7 +5,8 @@
     height: 1300px; /* Adjust the size of the square */
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Position relative for absolute positioning of images */
-    margin: 0 auto; /* Center the square horizontally */
+    margin: auto; /* Center the square horizontally */
+    padding-top: 1%;
 }
 
 .photo-container {
@@ -21,6 +22,11 @@
     height: auto; /* Maintain aspect ratio */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: transform 0.3s ease; /* Add transition effect */
+    margin-right: 10px; /* Add space between photos */
+}
+
+.photo-container img:last-child {
+    margin-right: 0; /* Remove margin from the last photo */
 }
 
 .photo-container img:hover {
