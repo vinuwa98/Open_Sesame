@@ -348,7 +348,7 @@
 
 #sloganParagraph {
     font-family: "Silkscreen", sans-serif;
-    animation: fadeIn 5s ease forwards;
+    animation: fadeIn 15s ease forwards;
 }
 
 .heading_font {
