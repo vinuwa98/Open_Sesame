@@ -1,5 +1,12 @@
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
+
+    body, html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
     /* Banner */
     .banner img {
         width: 100%; /* Make the banner image full width */
@@ -27,7 +34,7 @@
     /* Navbar */
     .navbar {
         font-size: 14px; /* Adjust font size for navbar links */
-        font-weight: bold;
+        font-weight: ;
     }
 
     /* Middle section */
@@ -37,11 +44,14 @@
         font-size: 16px; /* Adjust font size */
     }
 
-    /* About Us specific styles */
-    .about-us-container {
-        text-align: center;
-        margin-top: 20px;
-    }
+   /* Slideshow container */
+    .slideshow-container {
+    max-width: 100% !important; /* Adjust maximum width for mobile version */
+    margin: 0 auto; /* Center the slideshow */
+    position: relative;
+    overflow: hidden;
+    padding-top: 1%;
+}
 
     #about-us-logo {
         width: 100px; /* Adjust logo size */
@@ -113,8 +123,8 @@
     }
 
     /* Slideshow container */
-    #slideshow-container {
-        max-width: 98%; /* Adjust maximum width */
+    .slideshow-container {
+        max-width: 100%; /* Adjust maximum width */
     }
 
     /* Previous and next button */
@@ -149,8 +159,9 @@
     }
 
     .photo-square {
-        max-width: 98%; /* Adjust the size of the square */
+        max-width: 98% !important;
     }
+    
 }
 
 /* Ensure proper rendering on smaller screens */
