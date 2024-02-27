@@ -14,7 +14,7 @@
     position: absolute; /* Position absolutely inside the square */
     left: 50%; /* Move the container 50% from the left edge */
     transform: translateX(-50%); /* Center the container horizontally */
-    animation: movePhotos var(--animation-speed) linear infinite; /* Apply animation with customizable speed */
+    animation: movePhotos var(--animation-speed) linear infinite forwards; /* Add `forwards` keyword */
 }
 
 .photo-container img {
@@ -33,11 +33,12 @@
     transform: scale(1.1); /* Scale up on hover */
 }
 
+
 @keyframes movePhotos {
     0% {
         transform: translateX(0); /* Start position */
     }
     100% {
-        transform: translateX(calc(-100% + var(--photo-size))); /* End position */
+        transform: translateX(-100%); /* End position outside the container */
     }
 }
