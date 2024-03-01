@@ -16,7 +16,7 @@
 
 - **Bursary Information:** Learn about Mahapola and other bursaries available to OUSL students.
 
-## Getting Started
+## Getting Starteda
 
 To get started with "Open Sesame," follow these steps:
 
