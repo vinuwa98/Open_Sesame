@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Program Information:** Explore details about various programs offered by the Open University of Sri Lankaa.
+- **Program Information:** Explore details about various programs offered by the Open University of Sri Lanka.
 
 - **Frequently Asked Questions (FAQs):** Find answers to common queries and concerns that students may have.
 
