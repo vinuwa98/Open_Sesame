@@ -2,7 +2,7 @@
 
 ## Overview
 
-"Open Sesameeeeeeeee" is a website designed to assist students of the Open University of Sri Lanka. It aims to provide valuable information, resources, and features to enhance the overall experience of OUSL students.
+"Open Sesameeeeeeee" is a website designed to assist students of the Open University of Sri Lanka. It aims to provide valuable information, resources, and features to enhance the overall experience of OUSL students.
 
 ## Features
 
