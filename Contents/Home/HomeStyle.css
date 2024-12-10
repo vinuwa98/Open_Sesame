@@ -1,4 +1,51 @@
-    #about_faculty
+/* Styling for the top section */
+.top {
+    border: 3px solid #fff;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.banner {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Styling for the banner image */
+.banner img {
+    float: left;
+    width: auto;
+    height: 115px;
+}
+
+/* Styling for the banner text */
+.banner_text {
+    padding: 15px;
+    width: auto;
+    height: 95px;
+    float: right;
+    font-size: 65px;
+    font-weight: bolder;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Styling for the middle section */
+.middle {
+    background-color: rgb(247, 99, 0);
+    margin-top: 115px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+ 
+ #about_faculty
 {
 	width:100%; height:auto; float:left;
 	margin-top:30px; margin-bottom:60px;
