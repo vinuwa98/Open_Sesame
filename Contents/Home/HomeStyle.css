@@ -33,6 +33,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     background-color: rgb(255, 255, 255);
+	box-sizing: content-box;
 }
 
 /* Styling for the middle section */
