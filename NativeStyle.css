@@ -34,7 +34,7 @@
     /* Navbar */
     .navbar {
         font-size: 14px; /* Adjust font size for navbar links */
-        font-weight: ;
+        font-weight: bold; /* Make navbar links bold */
     }
 
     /* Middle section */
