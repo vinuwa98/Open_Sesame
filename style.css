@@ -22,7 +22,18 @@
 }
 
 /* Styling for the banner text */
-
+.banner_text {
+    padding: 15px;
+    width: auto;
+    height: 95px;
+    float: right;
+    font-size: 65px;
+    font-weight: bolder;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
 
 /* Styling for the middle section */
 .middle {
