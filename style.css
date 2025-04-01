@@ -3,24 +3,6 @@
     border: 3px solid #fff;
 }
 
-<<<<<<< Updated upstream
-=======
-
-  
-
-.page-container {
-    
-    flex-direction: column;
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-      
-      /* Full viewport height */
-}
-
->>>>>>> Stashed changes
 .banner {
     padding-left: 5%;
     padding-right: 5%;
