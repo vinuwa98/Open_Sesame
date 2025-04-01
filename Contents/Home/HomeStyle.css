@@ -231,3 +231,62 @@ clear: both;
     box-sizing: content-box;
 }
 
+#home_brand_slider {
+    display:block;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.photo-square {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scrollAnimation var(--animation-speed, 10s) linear infinite;
+}
+
+.photo-container {
+    display: flex;
+    gap: 15px;
+}
+
+.photo-container img {
+    width: var(--photo-size, 15%);
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 10s ease-in-out;
+}
+
+.photo-container img:hover {
+    transform: scale(1.1);
+}
+
+section {
+    min-height: 70px;
+    background-color: #fff;
+    overflow: visible !important;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+    .photo-container img {
+        width: 50px;
+    }
+}
