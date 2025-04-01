@@ -3,6 +3,24 @@
     border: 3px solid #fff;
 }
 
+<<<<<<< Updated upstream
+=======
+
+  
+
+.page-container {
+    
+    flex-direction: column;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+      
+      /* Full viewport height */
+}
+
+>>>>>>> Stashed changes
 .banner {
     padding-left: 5%;
     padding-right: 5%;
@@ -581,4 +599,71 @@ button {
   }
   
   
+<<<<<<< Updated upstream
   
+=======
+/* Styling for the section */
+section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+/* Styling for the title */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Centering and sizing the brand slider */
+#home_brand_slider {
+    display: flexbox;
+    height: 500px !important;
+    min-height: auto !important;
+    justify-content: baseline;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 120%;
+    margin: auto;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+section {
+    
+    min-height: auto;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.partners {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.partner-slider img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+>>>>>>> Stashed changes
