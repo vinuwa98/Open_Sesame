@@ -492,27 +492,261 @@ div.desc {
 
         <!-- Add faculties -->
     </div>
+    <section>
+        <h1>BIG NEWS ABOUT OUR UNIVERSITY</h1>
+        <video controls width="600">
+            <source src="Source/cf.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+          
+    </section>
+
+    <section>
+        <h1>OUR LOCAL AND INTERNATIONAL PARTNERS </h1>
+        <div class="slider-container">
+        <button class="slider-btn prev">&lt;</button>
+        
+        <div class="slider">
+            <div class="slide">
+                <div class="logo abans"><img src="Source/abans.jpg" alt=""></div>
+            </div>
+
+            <div class="slide">
+                <div class="logo AIA"><img src="Source/AIA_Group_logo.svg.png" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo synoergo"><img src="Source/synoergo.jpeg" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo slic"><img src="Source/slic.jpg" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo pace"><img src="Source/pace intitute.png" alt=""></div>
+            </div>
+
+            <div class="slide">
+                <div class="logo maximus"><img src="Source/maximus.png" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo jeevan"><img src="Source/jeevan.jpg" alt=""></div>
+            </div>
+
+            <div class="slide">
+                <div class="logo igrid"><img src="Source/i gride holding.webp" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo gaphq"><img src="Source/gaphq.png" alt=""></div>
+            </div>
+            
+            <div class="slide">
+                <div class="logo ebayond"><img src="Source/ebayond.png" alt=""></div>
+            </div>
+
+            <div class="slide">
+                <div class="logo "><img src="Source/gaphq.png" alt=""></div>
+            </div>
+
+            <div class="slide">
+                <div class="logo cargiils"><img src="Source/cargiils.png" alt=""></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <button class="slider-btn next">&gt;</button>
+        
+        <div class="slider-nav">
+            <span class="slider-dot active"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            
+            let currentIndex = 0;
+            const slideCount = slides.length;
+            
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Next slide
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateSlider();
+            });
+            
+            // Previous slide
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                updateSlider();
+            });
+            
+            // Click on dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                });
+            });
+            
+            // Auto-advance (optional)
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateSlider();
+            }, 3000);
+        });
+    </script>
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .slider-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .slide {
+            min-width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-weight: bold;
+            color: #333;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        
+        .engineers-australia {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        
+        .william-angliss {
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        .aacsb {
+            font-size: 18px;
+        }
+        
+        .aacsb-subtext {
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 5px;
+        }
+        
+        .slider-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .slider-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        .slider-dot.active {
+            background-color: #333;
+        }
+        
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+            z-index: 10;
+        }
+        
+        .prev {
+            left: 10px;
+        }
+        
+        .next {
+            right: 10px;
+        }
+
+        .logo img {
+            width: 150px; /* Set a fixed width */
+            height: 100px; /* Set a fixed height */
+            object-fit: contain; /* Maintain aspect ratio and prevent stretching */
+            display: block;
+            margin: auto; /* Center the image */
+    }
+
+    </style>
+
+    </section>
 
 <!--line-->
 <hr>
 
-<section>
-    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #11100f;">OUR LOCAL AND INTERNATIONAL PARTNERSHIPS</h2>
-        <div id="home_brand_slider">
-            <div class="photo-square" style="--animation-speed: 5s ; --photo-size: 15%;  ">
-            <div class="photo-container">
-                <img src="Source/slasscom.png" alt="Photo 1" onclick="location.href='https://slasscom.lk/';">
-                <img src="Source/orelit-logo.png" alt="Photo 2" onclick="location.href='//www.orelit.com/';">
-                <img src="Source/wso2-logo.png" alt="Photo 3" onclick="location.href='https://wso2.com/';">
-                <img src="Source/SriLankan_Airlines_Logo.svg.5893408c5b896.avif" alt="Photo 4" onclick="location.href='https://www.srilankan.com/en_uk/us';">
-                <img src="Source/png-clipart-logo-hemas-holdings-plc-hemas-hospitals-brand-font-non-toxic-text-logo.png" alt="Photo 5" onclick="location.href='https://www.hemas.com/';">
-                <img src="Source/law.png" alt="Photo 6" onclick="location.href='https://www.sllc.ac.lk';">
-                <img src="Source/uk ou.png" alt="Photo 7" onclick="location.href='//www.open.ac.uk/';">
-                
-        </div>
-        
-        
-</section>
+
 
 
 <section>
