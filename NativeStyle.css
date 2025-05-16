@@ -1,60 +1,83 @@
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
 
-    body, html {
+    body,
+    html {
         width: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
     }
+
     /* Banner */
     .banner img {
-        width: 100%; /* Make the banner image full width */
-        height: auto; /* Keep aspect ratio */
+        width: 100%;
+        /* Make the banner image full width */
+        height: auto;
+        /* Keep aspect ratio */
     }
-    
+
     .banner {
         padding-left: 0%;
         padding-right: 0%;
     }
 
     .banner_text {
-        font-size: 40px; /* Adjust font size */
-        position: relative; /* Position the text absolutely within the banner */
-        top: 60%; /* Position from the top */
-        left: 0%; /* Position from the left */
-        z-index: 999; /* Ensure the text appears above other elements */
-        color: white; /* Text color */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        border-radius: 5px; /* Rounded corners */
-        max-width: 100%; /* Limit maximum width */
-        text-align: center; /* Center align the text */
+        font-size: 40px;
+        /* Adjust font size */
+        position: relative;
+        /* Position the text absolutely within the banner */
+        top: 60%;
+        /* Position from the top */
+        left: 0%;
+        /* Position from the left */
+        z-index: 999;
+        /* Ensure the text appears above other elements */
+        color: white;
+        /* Text color */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+        border-radius: 5px;
+        /* Rounded corners */
+        max-width: 100%;
+        /* Limit maximum width */
+        text-align: center;
+        /* Center align the text */
     }
 
     /* Navbar */
     .navbar {
-        font-size: 14px; /* Adjust font size for navbar links */
-        font-weight: bold; /* Make navbar links bold */
+        font-size: 14px;
+        /* Adjust font size for navbar links */
+        font-weight: bold;
+        /* Make navbar links bold */
     }
 
     /* Middle section */
     .middle {
-        text-align: center; /* Center align text */
-        margin-top: 59%; /* Add some top margin */
-        font-size: 16px; /* Adjust font size */
+        text-align: center;
+        /* Center align text */
+        margin-top: 59%;
+        /* Add some top margin */
+        font-size: 16px;
+        /* Adjust font size */
     }
 
-   /* Slideshow container */
+    /* Slideshow container */
     .slideshow-container {
-    max-width: 100% !important; /* Adjust maximum width for mobile version */
-    margin: 0 auto; /* Center the slideshow */
-    position: relative;
-    overflow: hidden;
-    padding-top: 1%;
-}
+        max-width: 100% !important;
+        /* Adjust maximum width for mobile version */
+        margin: 0 auto;
+        /* Center the slideshow */
+        position: relative;
+        overflow: hidden;
+        padding-top: 1%;
+    }
 
     #about-us-logo {
-        width: 100px; /* Adjust logo size */
+        width: 100px;
+        /* Adjust logo size */
         height: auto;
         margin-bottom: 20px;
     }
@@ -81,8 +104,10 @@
     #team-container {
         display: flex;
         flex-wrap: wrap;
-        width: 100%; /* Make the container full width */
-        margin: 0; /* Remove default margin */
+        width: 100%;
+        /* Make the container full width */
+        margin: 0;
+        /* Remove default margin */
     }
 
     .member {
@@ -91,7 +116,8 @@
     }
 
     .member img {
-        width: 80px; /* Adjust member image size */
+        width: 80px;
+        /* Adjust member image size */
         height: 80px;
         border-radius: 50%;
         margin-bottom: 10px;
@@ -124,11 +150,13 @@
 
     /* Slideshow container */
     .slideshow-container {
-        max-width: 100%; /* Adjust maximum width */
+        max-width: 100%;
+        /* Adjust maximum width */
     }
 
     /* Previous and next button */
-    .prev, .next {
+    .prev,
+    .next {
         padding: 12px;
     }
 
@@ -161,11 +189,12 @@
     .photo-square {
         max-width: 98% !important;
     }
-    
+
 }
 
 /* Ensure proper rendering on smaller screens */
 @media screen and (max-width: 600px) {
+
     /* Navbar link font size */
     .navbar a {
         font-size: 14px;
@@ -183,6 +212,7 @@
 
     /* Slideshow container width */
     .slideshow-container {
-        max-width: 90%; /* Adjust maximum width */
+        max-width: 90%;
+        /* Adjust maximum width */
     }
 }

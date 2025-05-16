@@ -1,3 +1,12 @@
+/* Css Resets */
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+
 /* Styling for the top section */
 .top {
     border: 3px solid #fff;
@@ -6,7 +15,8 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
+    /* Full viewport height */
 }
 
 .banner {
@@ -98,18 +108,24 @@
 #total-price-container {
     text-align: center;
     margin-top: 20px;
-    background-color: #f0f0f0; /* Background color for the square */
-    padding: 20px; /* Padding for the square */
-    border: 2px solid #000; /* Border for the square */
-    border-radius: 10px; /* Rounded corners for the square */
+    background-color: #f0f0f0;
+    /* Background color for the square */
+    padding: 20px;
+    /* Padding for the square */
+    border: 2px solid #000;
+    /* Border for the square */
+    border-radius: 10px;
+    /* Rounded corners for the square */
 }
 
 /* Styling for total price and total degree price */
 #total-price,
 #total-degree-price {
-    font-size: 30px; /* Adjust the font size as needed */
+    font-size: 30px;
+    /* Adjust the font size as needed */
     font-weight: bold;
-    margin: 10px 0; /* Margin for spacing between elements */
+    margin: 10px 0;
+    /* Margin for spacing between elements */
 }
 
 /* Styling for the header section */
@@ -127,16 +143,20 @@
 /* Styling for the navbar with background color and full width */
 .navbar {
     background-color: rgb(237, 124, 49);
-    width: 100%; /* Set the width to 100% */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    text-align: center; /* Align the content to the right */
+    width: 100%;
+    /* Set the width to 100% */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    text-align: center;
+    /* Align the content to the right */
     font-weight: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Styling for navbar links */
 .navbar a {
-    display: inline-block; /* Display links as inline-block to make them align horizontally */
+    display: inline-block;
+    /* Display links as inline-block to make them align horizontally */
     color: white;
     text-align: center;
     padding: 20px 5%;
@@ -165,8 +185,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
+
+
 }
 
 /* Styling for each gallery item with position, flex, margin, and transition */
@@ -188,7 +208,7 @@
 /* Styling for gallery images with full width and border radius */
 .gallery img {
     width: 100%;
-    
+
     height: 100%;
     border-radius: 8px;
 }
@@ -209,6 +229,7 @@
 .gallery a:hover .overlay {
     opacity: 1;
 }
+
 /* Styling for sections*/
 .section {
     padding: 10px;
@@ -226,15 +247,17 @@
     color: #c2c2c2;
     font-size: 20px;
 }
- /* recent posts */
 
- /* Your existing styles go here */
+/* recent posts */
+
+/* Your existing styles go here */
 
 .vertical-articles {
     justify-content: flex-end;
-    width:25%; /* Adjust the width as needed */
+    width: 25%;
+    /* Adjust the width as needed */
     margin: 20px;
-    float :left;
+    float: left;
 }
 
 .vertical-articles h2 {
@@ -243,26 +266,33 @@
 }
 
 .article {
-    display:flex; /* Use flexbox for layout */
-    border: 1px solid #c4c4c4; /* Border for the box */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1px; /* Padding inside the box */
+    display: flex;
+    /* Use flexbox for layout */
+    border: 1px solid #c4c4c4;
+    /* Border for the box */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 1px;
+    /* Padding inside the box */
     margin-bottom: 10px;
-    
-    
+
+
 }
 
 
 .article img {
-    width: 150px; /* Adjust the width as needed */
+    width: 150px;
+    /* Adjust the width as needed */
     height: auto;
     border-radius: 8px;
-    margin-right: 10px; /* Add some spacing between image and content */
+    margin-right: 10px;
+    /* Add some spacing between image and content */
     transition: transform 0.3s;
 }
 
 .article-content {
-    flex-grow: 1; /* Allow content to grow and take available space */
+    flex-grow: 1;
+    /* Allow content to grow and take available space */
 }
 
 .article h3 {
@@ -274,6 +304,7 @@
     font-size: 30px;
     color: #353434;
 }
+
 /*Upcoming events gallery*/
 .upcoming-gallery {
     display: grid;
@@ -294,12 +325,13 @@
 .upcoming-gallery img:hover {
     transform: scale(1.1);
 }
+
 .upcoming-gallery a {
     display: block;
     text-decoration: none;
     color: inherit;
 }
- 
+
 .figcaption {
     margin-top: 10px;
     text-align: center;
@@ -328,14 +360,14 @@
     margin-bottom: 10%;
 }
 
-#aboutus-paragraph span{
+#aboutus-paragraph span {
     font-family: "Chakra Petch", sans-serif;
     font-size: 40px;
     text-decoration: underline;
-    text-decoration-color: rgb(247, 99, 0); 
+    text-decoration-color: rgb(247, 99, 0);
 }
 
-#aboutus-paragraph p{
+#aboutus-paragraph p {
     margin-bottom: 4%;
 }
 
@@ -364,7 +396,7 @@
     letter-spacing: 2px;
     word-spacing: 5px;
     font-size: 50px;
-    color:rgb(247, 99, 0);
+    color: rgb(247, 99, 0);
     text-shadow: 5px 5px 0px orange;
     margin: 0;
 }
@@ -423,7 +455,7 @@
     height: 20px;
     border: 1px solid white;
     margin: 1% 6% 0% 0%;
-    
+
 }
 
 .fb_logo {
@@ -497,6 +529,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -505,29 +538,30 @@
 /*-------------------------------- End of About us page styles  ----------------------------------------*/
 
 button {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-/*----------------------Article page styles------------------*/  
+/*----------------------Article page styles------------------*/
 
-.course-button{
+.course-button {
     font-size: 15px;
 }
 
-.faq_qu{
+.faq_qu {
     font-size: 18px;
     color: brown;
 }
-.faq_answer{
+
+.faq_answer {
     font-size: 17px;
 }
 
-.foedu_qu{
+.foedu_qu {
     color: rgb(76, 76, 228);
     font-size: 18px;
 }
 
-.foedu_answer{
+.foedu_answer {
     color: #000;
     font-size: 17px;
 }
@@ -537,22 +571,22 @@ button {
     background-color: #f8f4f4;
     padding: 40px 20px;
     text-align: center;
-  }
-  
-  .faculty_title {
+}
+
+.faculty_title {
     font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
-  }
-  
-  .faculty_container {
+}
+
+.faculty_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-  }
-  
-  .faculty_section {
+    justify-content: space-evenly;
+}
+
+.faculty_section {
     width: 15%;
     height: 300px;
     margin: 20px 10px;
@@ -562,31 +596,32 @@ button {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-  }
-  
-  .faculty_section:hover {
+}
+
+.faculty_section:hover {
     transform: translateY(-5px);
-  }
-  
-  .faculty_section>h3{
+}
+
+.faculty_section>h3 {
     font-size: 25px;
-    
-  }
-  
-  .faculty_section,a{
+
+}
+
+.faculty_section,
+a {
     text-decoration: none;
-    color: black; 
-  }
-  
-  .faculty_bg {
+    color: black;
+}
+
+.faculty_bg {
     width: 100%;
     max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
-  }
-  
-  
+}
+
+
 /* Styling for the section */
 section {
     text-align: center;
@@ -602,7 +637,7 @@ section h2 {
 
 /* Centering and sizing the brand slider */
 #home_brand_slider {
-    
+
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -622,3 +657,16 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* content wrapper */
+
+.wrapper {
+    max-width: 1600px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+@media screen and (max-width:600px) {
+    .wrapper {
+        padding-inline: 12px;
+    }
+}

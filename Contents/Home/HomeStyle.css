@@ -6,7 +6,8 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
+    /* Full viewport height */
 }
 
 .banner {
@@ -44,66 +45,155 @@
     color: #fff;
 }
 
- 
- #about_faculty
-{
-	width:100%; height:auto; float:left;
-	margin-top:30px; margin-bottom:60px;
-}
-#about_faculty h2
-{
-	width: 100%; height:auto; float:left;
-	font-size:24px; letter-spacing:2px; text-transform:uppercase; 
-}
-#faculty_about_left
-{
-	width:50%; height:auto; float:left; 
-	padding-right:5%; border-right: 3px solid #e77a20;
-}
-#faculty_about_left ul
-{
-	width:100%; height:auto; float:left;
-	margin-top:30px;
-}
-#faculty_about_left ul li
-{
-	width:46%; height:100px; float:left;
-	padding-top:15px; padding-bottom:15px; margin-left:2%; margin-right:2%; margin-top:1.5%; margin-bottom:1.5%; padding-left:10px; padding-right:10px;
-	background:#e06f2d; border-radius:15px;
-}
-#faculty_about_left ul li a
-{
-	width:100%; height:auto; float:left;
-	font-size:24px; color:#FFF; text-transform:uppercase; letter-spacing:2px; text-align:center; font-weight:700; text-decoration:none;
-}
-#faculty_about_right
-{
-	width:45%; height:auto; float:left;
-	margin-left:5%; margin-top:50px; 
-}
-#faculty_about_right img
-{
-	width:75%; height:auto; float:left;
-	margin-right:25%;
-}
-#faculty_about_right p
-{
-	width:100%; height:auto; float:left; 
-	margin-top:30px; 
-	font-size:16px; line-height:27px; 
-}
-#faculty_about_right span
-{
-	width:100%; height:auto; float:left;
-	margin-top:15px; 
-	font-size:18px; text-transform:uppercase; letter-spacing:2px; color:#B35B51; font-weight:600;
+
+/*----------------------Explore Our Facilities Section Start------------------*/
+
+#about-faculty {
+    max-width: 100%;
+    margin-block: 40px;
 }
 
-    
+.about-faculty-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    margin-block: 40px;
+}
+
+#about_faculty h2 {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#faculty_about_left {
+    border-right: 3px solid #e77a20;
+    flex: 1;
+    width: 100%;
+    padding-inline-end: 30px;
+}
+
+#faculty_about_left ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#faculty_about_left ul li {
+    height: 120px;
+    background: #e06f2d;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+#faculty_about_left ul li a {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 200ms ease-in-out;
+}
+
+#faculty_about_left ul li:hover {
+    background-color: #e06f2dde;
+    transform: scale(1.03);
+}
+
+#faculty_about_left ul li a:hover {
+    transform: scale(1.03);
+}
+
+#faculty_about_right {
+    flex: 1;
+}
+
+#faculty_about_right img {
+    max-width: 75%;
+    height: auto;
+}
+
+#faculty_about_right p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-block: 20px;
+}
+
+.faculty_about_right_read_more {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 300ms ease-in-out;
+}
+
+.faculty_about_right_read_more a {
+    color: #d48439;
+}
+
+
+.faculty_about_right_read_more :hover {
+    color: #fd7200;
+}
+
+/* responsive styles for explore our facilities section start */
+@media screen and (max-width:1200px) {
+    .about-faculty-container {
+        flex-direction: column;
+    }
+
+    #faculty_about_left ul {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    #faculty_about_left {
+        border-bottom: 3px solid #e77a20;
+        padding-bottom: 30px;
+        border-right: none;
+        padding-inline-end: 0px;
+    }
+
+    #faculty_about_left ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:639px) {
+    #faculty_about_left ul li {
+        height: 100px;
+    }
+}
+
+/* responsive styles for explore our facilities section end */
+
+
+/*----------------------Explore Our Facilities Section End------------------*/
+
+
+
+/*----------------------Home News  Section Start------------------*/
+
+.home_news {
+    padding-inline: 0;
+}
+
 #home_news {
     width: 100%;
     height: auto;
-    margin: 30px 0 60px;
+    margin-block: 30px;
 }
 
 #home_news h2 {
@@ -111,7 +201,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 35px;
-    
+
 }
 
 #home_news h5 {
@@ -123,31 +213,35 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#home_news_inner {
-    width: 100%;
-}
 
 #home_news_inner ul {
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
+    gap: 24px;
+    padding-inline-start: 0px;
 }
 
 #home_news_inner ul li {
-    width: 31.33%;
+    width: 100%;
+    aspect-ratio: 3 / 2;
     position: relative;
-    overflow: hidden;
+    margin-inline: auto;
+
 }
 
-#home_news_inner ul li a {
-    display: block;
+.home_news_inner_img {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 15px;
 }
 
 .home_news_inner_img img {
     width: 100%;
-    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
 }
 
 .home_news_inner_text {
@@ -179,52 +273,64 @@
     text-align: center;
 }
 
+.home_news_more_link h5 {
+    margin-block: 30px;
+}
+
+@media screen and (max-width:927px) {
+    #home_news_inner ul {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 16px;
+    }
+
+    .home_news_inner_img {
+        border-radius: 8px;
+    }
+}
+
+/*----------------------Home News  Section End------------------*/
 
 div.gallery {
-border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-border: 1px solid #777;
+    border: 1px solid #777;
 }
 
 div.gallery img {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-padding: 15px;
-text-align: center;
-}
-
-* {
-box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
 }
 
 .responsive {
-padding: 0 6px;
-float: left;
-width: 24.99999%;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
-.responsive {
-width: 49.99999%;
-margin: 6px 0;
-}
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-.responsive {
-width: 100%;
-}
+    .responsive {
+        width: 100%;
+    }
 }
 
 .clearfix:after {
-content: "";
-display: table;
-clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .banner_text {
@@ -232,7 +338,7 @@ clear: both;
 }
 
 #home_brand_slider {
-    display:block;
+    display: block;
     justify-content: center;
     overflow: hidden;
     padding: 10px 0;
@@ -277,6 +383,7 @@ section {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -284,8 +391,9 @@ section {
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
+
     .photo-container img {
         width: 50px;
     }
