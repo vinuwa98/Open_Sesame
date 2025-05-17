@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="Contents/PostShow.css">
     <link rel="stylesheet" href="Contents/Footer.css">
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Initial text
             document.querySelector('.banner_text').innerText = "To know about your payment";
 
@@ -30,18 +31,18 @@
             let index = 0;
 
             // Set interval to change text every 5 seconds
-            const intervalId = setInterval(function() {
+            const intervalId = setInterval(function () {
                 document.querySelector('.banner_text').innerText = messages[index];
                 index = (index + 1) % messages.length; // Move to the next message, loop back to the start if at the end
             }, 2000);
 
         });
     </script>
-    
+
 </head>
 
 <body>
-    
+
     <div class="top">
         <div class="banner">
             <img src="Source/Open sesame.png" alt="banner">
@@ -49,8 +50,8 @@
         </div>
     </div>
     <div class="middle">
-        General Inquiries: (+94) 011 2881 000 
-        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040   
+        General Inquiries: (+94) 011 2881 000
+        Exams/Certificates: (+94) 11-2881461 | (+94) 11-2881040
     </div>
 
     <header class="header">
@@ -147,220 +148,255 @@
 
     </script>
 
-<div id="about-faculty">
-<div class="container">
-    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0e0d0d;">EXPLORE OUR FACULTIES </h2>
-    <div id="faculty_about_left">
-        <ul>
-            <li>
-                <a href="">ENGINEERING</a>
-            </li>
-            <li>
-                <a href="">NATURAL SCIENCE</a>
-            </li>
-            <li>
-                <a href="">HEALTH SCIENCE</a>
-            </li>
-            <li>
-                <a href="">EDUCATION</a>
-            </li>
-            <li>
-                <a href="">SOCIAL SCIENCE</a>
-            </li>
-            <li>
-                <a href="">MANAGMENT STUDIES</a>
-            </li>
-        </ul>
+    <div id="about-faculty">
+        <div class="wrapper">
+            <h2
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0e0d0d;">
+                EXPLORE OUR FACULTIES </h2>
+            <div class="about-faculty-container">
+                <div id="faculty_about_left">
+                    <ul>
+                        <li>
+                            <a href="">ENGINEERING</a>
+                        </li>
+                        <li>
+                            <a href="">NATURAL SCIENCE</a>
+                        </li>
+                        <li>
+                            <a href="">HEALTH SCIENCE</a>
+                        </li>
+                        <li>
+                            <a href="">EDUCATION</a>
+                        </li>
+                        <li>
+                            <a href="">SOCIAL SCIENCE</a>
+                        </li>
+                        <li>
+                            <a href="">MANAGMENT STUDIES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="faculty_about_right">
+                    <img src="Source/ousl_logo-1024x231.png" alt="">
+
+                    <p
+                        style="text-align: justify; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        The Open University of Sri Lanka (OUSL; Sinhala: ශ්‍රී ලංකා විවෘත විශ්වවිද්‍යාලය, Tamil: இலங்கை
+                        திறந்த பல்கலைக்கழகம்)
+                        is a national university in Sri Lanka. It is unique
+                        within the Sri Lankan national university system for being the only university to offer programs
+                        of
+                        study leading to certificate, diploma, degrees and postgraduate degrees up to PhD level through
+                        the
+                        Open and Distance
+                        Mode of Learning (ODL). The degrees awarded by the university are treated as equivalent to
+                        degrees
+                        awarded by any other Sri Lankan University under the preview of the University Grants Commission
+                    </p>
+                    <span class="faculty_about_right_read_more">
+                        <a href="https://ou.ac.lk/"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Read
+                            More -></a>
+                        <i class="angle_right" aria-hidden="true"></i>
+
+                    </span>
+                </div>
+            </div>
+        </div>
+
     </div>
-<div id="faculty_about_right">
-    <img src="Source/ousl_logo-1024x231.png" alt="">
 
-    <p style="text-align: justify; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The Open University of Sri Lanka (OUSL; Sinhala: ශ්‍රී ලංකා විවෘත විශ්වවිද්‍යාලය, Tamil: இலங்கை திறந்த பல்கலைக்கழகம்)
-        is a national university in Sri Lanka. It is unique 
-        within the Sri Lankan national university system for being the only university to offer programs of 
-        study leading to certificate, diploma, degrees and postgraduate degrees up to PhD level through the Open and Distance 
-        Mode of Learning (ODL). The degrees awarded by the university are treated as equivalent to degrees awarded by any other Sri Lankan University under the preview of the University Grants Commission </p>
-<span>
-    <a href="https://ou.ac.lk/" style="color: #d48439;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Read More></a>
-    <i class="angle_right" aria-hidden="true"></i>
-    
-</span>
-</div>              
-</div>
+    <section class="home_news">
+        <div>
+            <div id="home_news">
+                <div class="wrapper">
+                    <h2
+                        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #181717;">
+                        SPOTLIGHT NEWS</h2>
+                    <div id="home_news_inner">
+                        <ul>
+                            <li>
+                                <a href="https://web.facebook.com/share/p/EcgefFA2NYahgccB/g">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/dean.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
+                                        <h4
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                            SESoc Software Engineering Society Inaugural General Meeting'24</h4>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/education.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
+                                        <h3>...........</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/news.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
+                                        <h3>...........</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/acedemic.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">ACADEMIC</big>
+                                        <h3>...........</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/event.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">STUDENT
+                                            LIFE</big>
+                                        <h3>...........</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://web.facebook.com/share/p/hGCaGxbs75M3gmp2/">
+                                    <div class="home_news_inner_img">
+                                        <img src="Source/upcomming.jpg" alt="">
+                                    </div>
+                                    <div class="home_news_inner_text">
+                                        <big
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">UPCOMMING</big>
+                                        <h4
+                                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                            Field Visit 2: Enriching Cattle Management Experience</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="home_news_more_link">
+                        <h5 style="color: #ec722c;">ALL NEWS, EVENTS & ANNOUNCEMENTS</h5>
+                    </a>
+                </div>
+            </div>
 
-</div>
-
-<section>
-<div>
-<div id="home_news">
-    <div class="container">
-        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #181717;">SPOTLIGHT NEWS</h2>
-        <div id="home_news_inner">
-            <ul>
-                <li>
-                    <a href="https://web.facebook.com/share/p/EcgefFA2NYahgccB/g">
-                        <div class="home_news_inner_img">
-                            <img src="Source/dean.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
-                            <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SESoc Software Engineering Society Inaugural General Meeting'24</h4>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="home_news_inner_img">
-                            <img src="Source/education.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
-                            <h3>...........</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="home_news_inner_img">
-                            <img src="Source/news.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">NEWS</big>
-                            <h3>...........</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="home_news_inner_img">
-                            <img src="Source/acedemic.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">ACADEMIC</big>
-                            <h3>...........</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="home_news_inner_img">
-                            <img src="Source/event.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">STUDENT LIFE</big>
-                            <h3>...........</h3>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.facebook.com/share/p/hGCaGxbs75M3gmp2/">
-                        <div class="home_news_inner_img">
-                            <img src="Source/upcomming.jpg" alt="">
-                        </div>
-                        <div class="home_news_inner_text">
-                            <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">UPCOMMING</big>
-                            <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Field Visit 2: Enriching Cattle Management Experience</h4>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </div>
-        <a href="">
-            <h5 style="color: #ec722c;">ALL NEWS, EVENTS & ANNOUNCEMENTS</h5>
-        </a>
-    </div>
-</div>
+    </section>
+    <hr>
+    <div class="article_menu">
+        <div class="faculty_title"
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            IMPORTANT EVENTS</div>
 
-</div>
-</section>
-<hr>
-<div class="article_menu">
-    <div class="faculty_title" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">IMPORTANT EVENTS</div>
+        <div class="faculty_container">
+            <div class="faculty_section">
+                <img src="" class="">
+                <h3><a href="">
+                        <big
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
+                    </a></h3>
+            </div>
 
-    <div class="faculty_container">
-        <div class="faculty_section">
-            <img src="" class="">
-            <h3><a href="">
-                    <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
-                </a></h3>
+            <div class="faculty_section">
+                <img src="" class="">
+                <h3><a href="">
+                        <big
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
+                    </a></h3>
+            </div>
+
+            <div class="faculty_section">
+                <img src="" class="">
+                <h3><a href="">
+                        <big
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
+                    </a></h3>
+
+            </div>
         </div>
 
-        <div class="faculty_section">
-            <img src="" class="">
-            <h3><a href="">
-                    <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
-                </a></h3>
-        </div>
-
-        <div class="faculty_section">
-            <img src="" class="">
-            <h3><a href="">
-                    <big style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">date</big>
-                </a></h3>
-                
-        </div>
-
-        
 
         <!-- Add faculties -->
     </div>
 
-<!--line-->
-<hr>
+    <!--line-->
+    <hr>
 
-<section>
-    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #11100f;">OUR LOCAL AND INTERNATIONAL PARTNERSHIPS</h2>
+    <section>
+        <h2
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #11100f;">
+            OUR LOCAL AND INTERNATIONAL PARTNERSHIPS</h2>
         <div id="home_brand_slider">
             <div class="photo-square" style="--animation-speed: 5s ; --photo-size: 15%;  ">
-            <div class="photo-container">
-                <img src="Source/slasscom.png" alt="Photo 1" onclick="location.href='https://slasscom.lk/';">
-                <img src="Source/orelit-logo.png" alt="Photo 2" onclick="location.href='//www.orelit.com/';">
-                <img src="Source/wso2-logo.png" alt="Photo 3" onclick="location.href='https://wso2.com/';">
-                <img src="Source/SriLankan_Airlines_Logo.svg.5893408c5b896.avif" alt="Photo 4" onclick="location.href='https://www.srilankan.com/en_uk/us';">
-                <img src="Source/png-clipart-logo-hemas-holdings-plc-hemas-hospitals-brand-font-non-toxic-text-logo.png" alt="Photo 5" onclick="location.href='https://www.hemas.com/';">
-                <img src="Source/law.png" alt="Photo 6" onclick="location.href='https://www.sllc.ac.lk';">
-                <img src="Source/uk ou.png" alt="Photo 7" onclick="location.href='//www.open.ac.uk/';">
-                
-        </div>
-        
-        
-</section>
+                <div class="photo-container">
+                    <img src="Source/slasscom.png" alt="Photo 1" onclick="location.href='https://slasscom.lk/';">
+                    <img src="Source/orelit-logo.png" alt="Photo 2" onclick="location.href='//www.orelit.com/';">
+                    <img src="Source/wso2-logo.png" alt="Photo 3" onclick="location.href='https://wso2.com/';">
+                    <img src="Source/SriLankan_Airlines_Logo.svg.5893408c5b896.avif" alt="Photo 4"
+                        onclick="location.href='https://www.srilankan.com/en_uk/us';">
+                    <img src="Source/png-clipart-logo-hemas-holdings-plc-hemas-hospitals-brand-font-non-toxic-text-logo.png"
+                        alt="Photo 5" onclick="location.href='https://www.hemas.com/';">
+                    <img src="Source/law.png" alt="Photo 6" onclick="location.href='https://www.sllc.ac.lk';">
+                    <img src="Source/uk ou.png" alt="Photo 7" onclick="location.href='//www.open.ac.uk/';">
 
+                </div>
+    </section>
 
-<section>
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>Email: info@opensesame.lk</p>
-            <p>Phone: (+94) 011 2881 000</p>
-        </div>
-        <div class="footer-column">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+    <footer class="footer">
+        <div class="wrapper footer-container ">
+            <div class="footer-column footer_contact_us">
+                <h3>Contact Us</h3>
+                <div>
+                    <p>Email: info@opensesame.lk</p>
+                    <p>Phone: (+94) 011 2881 000</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="footer-column footer_quick_links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Calculate.html">Calculate</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Calculate.html">Calculate</a></li>
-                <li><a href="article.html">Article</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Open Sesame. All rights reserved.</p>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Open Sesame. All rights reserved.</p>
-    </div>
-</footer>
-   
-</section>
+    </footer>
+
+
 
 
 
