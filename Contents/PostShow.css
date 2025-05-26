@@ -1,47 +1,57 @@
 /* StylePost.css */
 
-.photo-square {
-    max-width: 80%; /* Adjust the size of the square */
-    height: 1300px; /* Adjust the size of the square */
-    overflow: hidden; /* Hide overflowing content */
-    position: relative; /* Position relative for absolute positioning of images */
-    margin: auto; /* Center the square horizontally */
-    padding-top: 1%;
+#home_brand_slider {
+    width: 100%;
+    overflow: hidden;
+    margin-block: 100px;
+    position: relative;
 }
 
-.photo-container {
-    display: flex; /* Arrange images in a row */
-    position: absolute; /* Position absolutely inside the square */
-    left: 50%; /* Move the container 50% from the left edge */
-    transform: translateX(-50%); /* Center the container horizontally */
-    animation: movePhotos var(--animation-speed) linear infinite forwards;
-    width: calc(100% + var(--photo-size)); /* Add container width */
+.brand-container {
+    display: flex;
+    gap: 40px;
+    animation: autoRun 20s linear infinite;
+    width: max-content;
 }
 
-.photo-container img {
-    width: var(--photo-size); /* Set customizable photo size */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.3s ease; /* Add transition effect */
-    margin-right: 10px; /* Add space between photos */
+.brand_photo {
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
 }
 
-.photo-container img:last-child {
-    margin-right: 0; /* Remove margin from the last photo */
+.brand_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.photo-container img:hover {
-    transform: scale(1.1); /* Scale up on hover */
+.brand_photo img:hover {
+    transform: scale(1.1);
 }
 
-
-@keyframes movePhotos {
+@keyframes autoRun {
     0% {
-        transform: translateX(calc(var(--photo-size) * -1)); /* Start off-screen to the right */
+        transform: translateX(0);
     }
-    0% {
-        transform: translateX(-100%); /* End position outside the container */
+
+    100% {
+        transform: translateX(calc(-50% - 20px));
     }
 }
 
+/*Responsive media queries for brand slider*/
 
+@media (max-width:768px) {
+    .brand_photo img {
+        width: 100%;
+        height: 40px;
+
+    }
+
+    .brand-container {
+        gap: 20px;
+    }
+}
